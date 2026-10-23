@@ -1,0 +1,257 @@
+{
+  "recorded_inputs": {
+    "RGB-D.mat": {
+      "filename": "RGB-D.mat",
+      "bytes": 16035060,
+      "sha256": "b41e6f68bd1a1d4b632b0c1ecf9ecf2314c7f26519b16ffeb4ec25f27ef6ac88",
+      "variables": [
+        [
+          "X",
+          [
+            1,
+            2
+          ],
+          "cell"
+        ],
+        [
+          "Y",
+          [
+            1449,
+            1
+          ],
+          "double"
+        ]
+      ],
+      "cell_shapes": {
+        "X": [
+          [
+            1449,
+            2048
+          ],
+          [
+            1449,
+            300
+          ]
+        ]
+      }
+    },
+    "Mfeat.mat": {
+      "filename": "Mfeat.mat",
+      "bytes": 3483654,
+      "sha256": "f5ad03f0fbdea89e1af38b6a6e2941be8d6bc85ec641b4cdcf884d04c7c94bda",
+      "variables": [
+        [
+          "X",
+          [
+            6,
+            1
+          ],
+          "cell"
+        ],
+        [
+          "Y",
+          [
+            2000,
+            1
+          ],
+          "double"
+        ]
+      ],
+      "cell_shapes": {
+        "X": [
+          [
+            2000,
+            216
+          ],
+          [
+            2000,
+            76
+          ],
+          [
+            2000,
+            64
+          ],
+          [
+            2000,
+            6
+          ],
+          [
+            2000,
+            240
+          ],
+          [
+            2000,
+            47
+          ]
+        ]
+      }
+    },
+    "Hdigit.mat": {
+      "filename": "Hdigit.mat",
+      "bytes": 5055209,
+      "sha256": "af2f600a05137ab12697a169397864d6be7c5bee40ba4ce25db7f4074f0296ce",
+      "variables": [
+        [
+          "data",
+          [
+            1,
+            2
+          ],
+          "cell"
+        ],
+        [
+          "truelabel",
+          [
+            1,
+            2
+          ],
+          "cell"
+        ]
+      ],
+      "cell_shapes": {
+        "data": [
+          [
+            784,
+            10000
+          ],
+          [
+            256,
+            10000
+          ]
+        ],
+        "truelabel": [
+          [
+            1,
+            10000
+          ],
+          [
+            1,
+            10000
+          ]
+        ]
+      }
+    },
+    "ALOI-100.mat": {
+      "filename": "ALOI-100.mat",
+      "bytes": 10563851,
+      "sha256": "e20bb24d6473a14e84aba93a92cfd19c4ddbb8ea3fa41618a63049f533da8323",
+      "variables": [
+        [
+          "X",
+          [
+            1,
+            4
+          ],
+          "cell"
+        ],
+        [
+          "Y",
+          [
+            10800,
+            1
+          ],
+          "double"
+        ]
+      ],
+      "cell_shapes": {
+        "X": [
+          [
+            10800,
+            77
+          ],
+          [
+            10800,
+            13
+          ],
+          [
+            10800,
+            64
+          ],
+          [
+            10800,
+            125
+          ]
+        ]
+      }
+    },
+    "cifar10.mat": {
+      "filename": "cifar10.mat",
+      "bytes": 784746626,
+      "sha256": "9b8ef1e354f54382a26b1c5b11812d4ad94e63c5da78c56df19e8195398e60fb",
+      "variables": [
+        [
+          "MissingStatus",
+          [
+            50000,
+            3
+          ],
+          "double"
+        ],
+        [
+          "data",
+          [
+            3,
+            1
+          ],
+          "cell"
+        ],
+        [
+          "index",
+          [
+            1,
+            3
+          ],
+          "cell"
+        ],
+        [
+          "truelabel",
+          [
+            3,
+            1
+          ],
+          "cell"
+        ]
+      ]
+    },
+    "cifar100.mat": {
+      "filename": "cifar100.mat",
+      "bytes": 791423677,
+      "sha256": "d693a211fd03adc9ce3a0e64208a19a23fd69582739f13686b9edcee90265c82",
+      "variables": [
+        [
+          "MissingStatus",
+          [
+            50000,
+            3
+          ],
+          "double"
+        ],
+        [
+          "data",
+          [
+            3,
+            1
+          ],
+          "cell"
+        ],
+        [
+          "index",
+          [
+            1,
+            3
+          ],
+          "cell"
+        ],
+        [
+          "truelabel",
+          [
+            3,
+            1
+          ],
+          "cell"
+        ]
+      ]
+    }
+  },
+  "note": "Hashes identify the recorded MAT containers. For reserialized feature copies, also check matrices, labels and stored view order. Cloud package access points are documented in data/README.md; cloud archive bytes were not re-verified for this packaging."
+}

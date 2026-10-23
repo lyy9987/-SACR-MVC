@@ -1,0 +1,69 @@
+{
+  "dataset": "Mfeat",
+  "table_run": {
+    "args": {
+      "seed": 404,
+      "batch_size": 256,
+      "mse_epochs": 200,
+      "con_epochs": 0
+    },
+    "env": {
+      "SACR_PREPROCESS_NORM": "standard",
+      "SACR_REDUCER": "none",
+      "SACR_MAX_VIEW_DIM": "0",
+      "SACR_PREPROCESS_SEED": "303",
+      "SACR_FORCE_FINAL_N_INIT": "20",
+      "SACR_CONFIDENCE_MODE": "none"
+    }
+  },
+  "frozen_runs": {
+    "303": {
+      "args": {
+        "seed": 303,
+        "batch_size": 256,
+        "mse_epochs": 200,
+        "con_epochs": 0
+      },
+      "env": {
+        "SACR_PREPROCESS_NORM": "standard",
+        "SACR_REDUCER": "none",
+        "SACR_MAX_VIEW_DIM": "0",
+        "SACR_PREPROCESS_SEED": "303",
+        "SACR_FORCE_FINAL_N_INIT": "20",
+        "SACR_CONFIDENCE_MODE": "none"
+      }
+    },
+    "101": {
+      "args": {
+        "seed": 101,
+        "batch_size": 256,
+        "mse_epochs": 200,
+        "con_epochs": 0
+      },
+      "env": {
+        "SACR_PREPROCESS_NORM": "standard",
+        "SACR_REDUCER": "none",
+        "SACR_MAX_VIEW_DIM": "0",
+        "SACR_PREPROCESS_SEED": "303",
+        "SACR_FORCE_FINAL_N_INIT": "20",
+        "SACR_CONFIDENCE_MODE": "none"
+      }
+    },
+    "404": {
+      "args": {
+        "seed": 404,
+        "batch_size": 256,
+        "mse_epochs": 200,
+        "con_epochs": 0
+      },
+      "env": {
+        "SACR_PREPROCESS_NORM": "standard",
+        "SACR_REDUCER": "none",
+        "SACR_MAX_VIEW_DIM": "0",
+        "SACR_PREPROCESS_SEED": "303",
+        "SACR_FORCE_FINAL_N_INIT": "20",
+        "SACR_CONFIDENCE_MODE": "none"
+      }
+    }
+  }
+}

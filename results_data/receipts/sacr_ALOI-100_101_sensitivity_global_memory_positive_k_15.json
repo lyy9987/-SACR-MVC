@@ -1,0 +1,36 @@
+{
+  "id": "sacr_ALOI-100_101_sensitivity_global_memory_positive_k_15",
+  "dataset": "ALOI-100",
+  "seed": 101,
+  "args": [
+    "--seed",
+    "101",
+    "--batch_size",
+    "256",
+    "--mse_epochs",
+    "200",
+    "--con_epochs",
+    "100",
+    "--global_memory_positive_k",
+    "15"
+  ],
+  "env": {
+    "SACR_DATASET_ROOT": "F:\\SACR_MVC_project\\release\\frozen_20260923_v1\\data",
+    "SACR_PREPROCESS_NORM": "minmax",
+    "SACR_REDUCER": "none",
+    "SACR_MAX_VIEW_DIM": "0",
+    "SACR_PREPROCESS_SEED": "303",
+    "SACR_FORCE_FINAL_N_INIT": "200",
+    "SACR_CONFIDENCE_MODE": "none"
+  },
+  "exit_code": 0,
+  "metrics": {
+    "ACC": 0.9322222222222222,
+    "NMI": 0.9630926896557903,
+    "PUR": 0.9403703703703704,
+    "ARI": 0.907475103234805,
+    "Fscore": 0.9086590073225924
+  },
+  "route": "scalable_global_memory",
+  "log": "F:\\SACR_MVC_project\\paper_draft_20260923\\manual_sensitivity\\sacr_ALOI-100_101_sensitivity_global_memory_positive_k_15.log"
+}

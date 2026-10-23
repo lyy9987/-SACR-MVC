@@ -1,0 +1,536 @@
+{
+  "title": "SACR-MVC: Contrastive multi-view clustering with structure anchoring and reliable consensus",
+  "status": "SACR-MVC implementation and supporting result data.",
+  "manuscript_source": "output/neurocomputing_final_review_20261022/01_manuscript/English_LaTeX/main.tex",
+  "manuscript_sha256": "a191b8379a98ea128de3c801ba14e52f6af58f94bd568530c9ae3d5942492b2d",
+  "units": {
+    "tables3_to5": "0-1",
+    "table6": "ACC/NMI percent; delta ACC percentage points",
+    "figures4_to9": "see columns; percentages use x100 of receipt value"
+  },
+  "source_files": [
+    {
+      "source_id": "release/gcfagg_results.jsonl:7",
+      "package_file": "receipts/baseline_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/gcfagg_results.jsonl",
+      "source_line": 7,
+      "line_sha256": "ee3285a4acd5fa5f0b3d8362d670fd7de1ab1c24aa58b3c617200455f8deeaf6"
+    },
+    {
+      "source_id": "release/gcfagg_results.jsonl:8",
+      "package_file": "receipts/baseline_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/gcfagg_results.jsonl",
+      "source_line": 8,
+      "line_sha256": "94f1b806e3af5c5dc8551feb86ccb852d571f523c903d023b9e7ff559d90e47f"
+    },
+    {
+      "source_id": "release/cafe_multiview_results.jsonl:2",
+      "package_file": "receipts/baseline_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/cafe_multiview_results.jsonl",
+      "source_line": 2,
+      "line_sha256": "d2f95893bb2d118563d5b7c8749ed4556d43cb75d6a0f433206dd4b10b4f4d93"
+    },
+    {
+      "source_id": "release/gcfagg_results.jsonl:4",
+      "package_file": "receipts/baseline_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/gcfagg_results.jsonl",
+      "source_line": 4,
+      "line_sha256": "7a994cf7dffe154c3a1e0eb999a783f86577719b65a79f9536a6069d3a66026e"
+    },
+    {
+      "source_id": "release/cafe_mfeat_results.jsonl:1",
+      "package_file": "receipts/baseline_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/cafe_mfeat_results.jsonl",
+      "source_line": 1,
+      "line_sha256": "525290f209f9a86224a012bbf525949c81f5739446c0ccb15ae698046f286886"
+    },
+    {
+      "source_id": "release/cafe_multiview_results.jsonl:1",
+      "package_file": "receipts/baseline_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/cafe_multiview_results.jsonl",
+      "source_line": 1,
+      "line_sha256": "b4a5e4047b0fe0934ffae966e5fc1452d2aab6178da5ffd931fafaf942a0579e"
+    },
+    {
+      "package_file": "receipts/sacr_ALOI-100_101_sensitivity_global_memory_positive_k_15.json",
+      "kind": "unmodified_individual_receipt",
+      "source_file": "paper_draft_20260923/manual_sensitivity/sacr_ALOI-100_101_sensitivity_global_memory_positive_k_15.json",
+      "source_sha256": "11baa5a541fae41070e992704e69a8208bd07c28b9903d5a25f993b8f29706f2"
+    },
+    {
+      "package_file": "receipts/sacr_ALOI-100_101_sensitivity_global_memory_positive_k_5.json",
+      "kind": "unmodified_individual_receipt",
+      "source_file": "paper_draft_20260923/manual_sensitivity/sacr_ALOI-100_101_sensitivity_global_memory_positive_k_5.json",
+      "source_sha256": "bfdbbc3ce956971c28a83e073fdf18a2568878b651ff2ba927a5185ff8eee999"
+    },
+    {
+      "source_id": "sacr_Mfeat_404_Full",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 3,
+      "line_sha256": "274161ac4f0eeac53edad5b6d20d8e5d7d18c74a3575fc6170e43f0f061598f2"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_Full",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 4,
+      "line_sha256": "897c709bbf6f74e25b2c11af804555f38f6140eb96b931661dde798231938ff6"
+    },
+    {
+      "source_id": "sacr_Hdigit_303_Full",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 5,
+      "line_sha256": "2038e1adc84ebb66258a7de7811b5d0ef998b53c11481ec21d6ed76e2b7336ba"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_Full",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 7,
+      "line_sha256": "5c883ebfdd4a19c02b06be3d9d221ccbfc6b0bf845ba3ab5ea8d39ae94f0782f"
+    },
+    {
+      "source_id": "sacr_CIFAR100_101_Full",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 11,
+      "line_sha256": "28c3ccfc973b0f7f4729aca4682690bd1e822d7db567efa1370339d244a89d1d"
+    },
+    {
+      "source_id": "sacr_Mfeat_404_no_guard",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 24,
+      "line_sha256": "12543de4a6fd376317bcc177d02c511c117674f7f8210144d9846ad01a2067e1"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_no_anchor",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 28,
+      "line_sha256": "3f5818540f00ca11350bf0bf8b37ddfadbdfa6f62babcc00f144857c4adc7611"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_no_responsibility",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 37,
+      "line_sha256": "cd35536825db59db9f1656fbc2a70642ae2b9b635e7294ccf5c26c5d050f27f4"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_no_dcd",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 43,
+      "line_sha256": "a4eb67e7ecb0b4d612c543369d444c80bf44e1f7036a59844b42ff10a393fc23"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_no_relation",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 46,
+      "line_sha256": "a281dbe03312edf39e8c39b8d95365aeb0a39cb2de6411cec671a4ad9554af52"
+    },
+    {
+      "source_id": "sacr_Hdigit_303_no_anchor",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 52,
+      "line_sha256": "5ce622da462116a2d708ce43bc2c121c275afded9dc1a8b57277728a2907e786"
+    },
+    {
+      "source_id": "sacr_Hdigit_303_no_responsibility",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 61,
+      "line_sha256": "05e828c038e241347e88cfce1f10e7b392fc7d01e816b717f1fda9faec149e74"
+    },
+    {
+      "source_id": "sacr_Hdigit_303_no_dcd",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 67,
+      "line_sha256": "ff66942196dd40c16958e54925a75ca324e841f87e0c16c900d7b23f854f0f6e"
+    },
+    {
+      "source_id": "sacr_Hdigit_303_no_relation",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 70,
+      "line_sha256": "753689efcac8dbab80cd7ead191b7f8fb13c87182a5052183bb0d79fa9623925"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_no_anchor",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 76,
+      "line_sha256": "06b87f10253db2f359064ce35480e43e792292d58cf7b983b974580cb898379e"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_no_pretrain_selection",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 79,
+      "line_sha256": "7a421d07f3032bfd00b5d77b3b128a29d1925e289b5c4a8d7aa5989bbb76f1eb"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_no_responsibility",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 84,
+      "line_sha256": "57ee182bfd89e96d9f2c123a0a131aab8cf65f606452ccfbd37540feced715bd"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_no_confidence",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 87,
+      "line_sha256": "9397b77c9f2522b921c08705a20fe862d82c7de21aa232b80b049d6753522f01"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_no_relation",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 88,
+      "line_sha256": "6ffb39a7114dbc046dd52c08239cb27498d656376e515c778f3e4eb388c26339"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_no_dcd",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 89,
+      "line_sha256": "34d07d6a794884233094414b6912048fa18fab57f28c32e4afa5809f0328bd28"
+    },
+    {
+      "source_id": "dcmvc_Mfeat_101_native_con100",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 109,
+      "line_sha256": "235c9af7020f3cb76f3891a6953df719df1dbc208a8c28c7434905142bddf3ce"
+    },
+    {
+      "source_id": "dcmvc_Hdigit_303_native_con100",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 112,
+      "line_sha256": "c4026dc321f11eab531036c046a75c21b35a5c79abeb23898301aa5d4c91eb04"
+    },
+    {
+      "source_id": "dcmvc_ALOI-100_202_native_con100",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 116,
+      "line_sha256": "3c6a2439bd8a888ecf057fbc488d1ad24419e07a508d6fc446189777b08ac5d5"
+    },
+    {
+      "source_id": "dcmvc_RGB-D_303_native_con100",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 118,
+      "line_sha256": "e13889371b69bfc111df01d850adb088af515a313bbfbe2e51b185a623b5e99e"
+    },
+    {
+      "source_id": "dcmvc_CIFAR100_101_native_con100",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 121,
+      "line_sha256": "2e5bdce6795b9669c4db7e3015787beab1bbeefef7d3aa98ebd3f1ffaa079542"
+    },
+    {
+      "source_id": "dcmvc_CIFAR10_404_native_con100",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 135,
+      "line_sha256": "69e1cc6ca77e83d752ea3c8b01a119928d1fbaf18c0dbd5774328d40fececf2c"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_grid_a0.005_b0.5",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 136,
+      "line_sha256": "7b6bf1a809cd10bd5ca6dac16523c4d29d3b86d4a540ae3ddc343273075a7172"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_grid_a0.005_b1",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 137,
+      "line_sha256": "539f9931e09ae2c23bc2431ceedec9c987eb0f2aaa2b892d320040bb224354c0"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_grid_a0.005_b2",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 138,
+      "line_sha256": "d3f4a2acc7a759c7909c9d81d8e481e218701307a39c52ce08d2fa974b8c6b7c"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_grid_a0.01_b0.5",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 139,
+      "line_sha256": "fbf0326910d1beea431f59a924a771807bc699d7e5383cef7d97b6fe4111b78d"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_grid_a0.01_b1",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 140,
+      "line_sha256": "4754c01760eec12bb286ca940811552e279cbc933de3dca09d51cded0307026f"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_grid_a0.01_b2",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 141,
+      "line_sha256": "6a47a66aada1e01b03dc2bffb67729c7a58f9ed133c19675533046fc580675c9"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_grid_a0.02_b0.5",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 142,
+      "line_sha256": "cd4aa294e224d349cd479ea8a226df64991580253392c6fc4ea20ee453dded49"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_grid_a0.02_b1",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 143,
+      "line_sha256": "0d17670dd4fd8df10a6c2183416edceafe894aa9d021b313e9a34c577df81ddd"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_grid_a0.02_b2",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 144,
+      "line_sha256": "8f9b22c9e112f11dec48fbed28d136f27c50cc137dd389a8cf67a1ad74c2eac6"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_grid_a0.05_b0.0005",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 145,
+      "line_sha256": "aaaf01fae8fc09ef91f715f3cc76234c2205c2cb6b4b7d18284ef2d6c8ecc971"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_grid_a0.05_b0.001",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 146,
+      "line_sha256": "220f5556a0f69a447b434f41dba64a3ead0ee96bf9f1ff9bcc56bc9ea96b4a52"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_grid_a0.05_b0.002",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 147,
+      "line_sha256": "a9dcc5d63be57ef4793255ba153ef2368b93fd62b51c33a80246a683f7e5951a"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_grid_a0.1_b0.0005",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 148,
+      "line_sha256": "96d17c22bf837dedcab4c8f35fdf3a1794318dad9eb54061d29538a504274c0d"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_grid_a0.1_b0.001",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 149,
+      "line_sha256": "c64a7950067b50d5eb4641d5b9128a469088c4a650f511a64b0318ca56d1aea0"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_grid_a0.1_b0.002",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 150,
+      "line_sha256": "f16a5ed6f8f928a727f503227ab2bcb76b2aae5fe0f96623670ae3b93f654bf1"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_grid_a0.2_b0.0005",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 151,
+      "line_sha256": "2d0a0fcf91c6100f74175f3ac5469729906653cf753044ee40d13baeab2991a5"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_grid_a0.2_b0.001",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 152,
+      "line_sha256": "8fc7d61b7951e3fe2ef7d8cde18d3bb862981cd1c8178d9deb00a0680f56a724"
+    },
+    {
+      "source_id": "sacr_ALOI-100_101_grid_a0.2_b0.002",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 153,
+      "line_sha256": "0d5cbe834595166f68f71b176f70a4d07bc318bcd419412bc2127237cdee5d11"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_sensitivity_structural_anchor_epochs_10",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 159,
+      "line_sha256": "38a0b5eec9ef6abfd0e3e9e45fad6fdc1ea727f255bd494b713638a0b00d77b2"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_sensitivity_structural_anchor_epochs_60",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 160,
+      "line_sha256": "b1c252d5645be398b972774f6a2ae6d55a4115890ca4574fdd953b0fb8d6c9d9"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_sensitivity_k_5",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 161,
+      "line_sha256": "5c2304c2626bc7f9dfe99772e0b8bfdaa88bc0d0a5b9a4bd5a197748ea344124"
+    },
+    {
+      "source_id": "sacr_RGB-D_303_sensitivity_k_20",
+      "package_file": "receipts/frozen_selected.jsonl",
+      "kind": "unmodified_JSON_line",
+      "source_file": "release/frozen_20260923_v1/results.jsonl",
+      "source_line": 162,
+      "line_sha256": "0125c51f1a0115b33aaacdcf0f7657b1bbc6fc4d24d716353e0b4c108de31f56"
+    },
+    {
+      "source_id": "cifar10_r5_svd384_tw20_seed2424",
+      "package_file": "receipts/cifar10_promoted_RESULT_JSON.txt",
+      "kind": "unmodified_RESULT_JSON_line",
+      "source_file": "release/tune_r5/cifar10_r5_svd384_tw20_seed2424.log",
+      "source_line": 94,
+      "source_sha256": "ea77bb65453d200b5e614f3c8c888561b945255adcedd9db11abb7813660cfd9",
+      "line_sha256": "13412d89bb1f148e874a9a53a91092d445f845ba5e79756c5d7c91d50436f8cc"
+    },
+    {
+      "package_file": "visualization/RGB-D_stage0.npz",
+      "kind": "unmodified_saved_stage_representations",
+      "source_file": "release/frozen_20260923_v1/tsne_dumps/RGB-D_stage0.npz",
+      "source_sha256": "281b54e0136e961c442d85ca2a695089a0aaf81304e1c8bf0d2d69a1102b96d8",
+      "arrays": {
+        "stage0": {
+          "shape": [
+            1449,
+            256
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "package_file": "visualization/RGB-D_finetune.npz",
+      "kind": "unmodified_saved_stage_representations",
+      "source_file": "release/frozen_20260923_v1/tsne_dumps/RGB-D_finetune.npz",
+      "source_sha256": "5ce69e384d3257d796bc0c7d15fcd4f23547a60302510983b6d42b994e21b415",
+      "arrays": {
+        "stage25": {
+          "shape": [
+            1449,
+            256
+          ],
+          "dtype": "float32"
+        },
+        "stage50": {
+          "shape": [
+            1449,
+            256
+          ],
+          "dtype": "float32"
+        },
+        "stage100": {
+          "shape": [
+            1449,
+            256
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "package_file": "visualization/RGB-D_labels.csv",
+      "kind": "label_metadata_extracted_without_feature_arrays",
+      "source_file": "release/frozen_20260923_v1/data/RGB-D.mat",
+      "source_sha256": "b41e6f68bd1a1d4b632b0c1ecf9ecf2314c7f26519b16ffeb4ec25f27ef6ac88",
+      "source_mat_key": "Y",
+      "sample_order": "original row order; zero-based sample_index",
+      "label_values": "preserved integers, not reindexed"
+    },
+    {
+      "package_file": "scripts/reproduce_fig6_rgbd.py",
+      "kind": "portable adaptation of existing plotting script; RGB-D only; no training",
+      "source_file": "paper_draft_20260923/make_tsne_figure_v18.py",
+      "source_sha256": "c210e7276eed6ab10cdc31a41d0800e0e53c8d1b17f81e5ad12f6358a809ed68",
+      "current_Fig6_sha256": "bbc0b89fd42a8a8648f7e26fb7f24a332735fc08c462693226ce343312d6350e"
+    }
+  ],
+  "boundaries": [
+    "Reported comparison rows are explicitly manuscript transcriptions, not raw logs or original experiments. Their original-paper or reproduction status is described in the manuscript; this package does not claim independent revalidation of all external comparisons.",
+    "Current CIFAR10 SACR-MVC main result comes from the promoted r5 seed2424 run, not the older frozen seed404 Full run.",
+    "Figure 6 uses preserved stage0 and finetune files, not RGB-D_two_phase.npz. Epoch0 is after pretraining. Labels are used for coloring.",
+    "No training was launched, no measurement was synthesized and no external publication/upload was performed.",
+    "Most per-sample predictions and model checkpoints are not included. The supplied receipts verify reported metrics; they are not a full raw training archive.",
+    "This candidate includes no third-party original feature arrays. Benchmark labels and derived representations retain any applicable source-data rights; their inclusion is not a grant of a new data license.",
+    "No open-source license or repository data license has been selected on behalf of the authors."
+  ],
+  "repository_url": "https://github.com/lyy9987/-SACR-MVC"
+}

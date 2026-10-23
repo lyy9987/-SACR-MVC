@@ -1,0 +1,7 @@
+table,method,dataset,source_id,reported_metrics_checked,config,meaning
+3,GCFAgg (CVPR'23),RGB-D,release/gcfagg_results.jsonl:7,"ACC,NMI,PUR,ARI",gcfagg_RGBD_seed202,"same method, dataset and displayed metrics; no new equivalence or protocol claim"
+3,GCFAgg (CVPR'23),ALOI-100,release/gcfagg_results.jsonl:8,"ACC,NMI,PUR,ARI",gcfagg_ALOI100_seed10,"same method, dataset and displayed metrics; no new equivalence or protocol claim"
+3,CAFE (TPAMI'26),ALOI-100,release/cafe_multiview_results.jsonl:2,"ACC,NMI,ARI",config/ALOI100_mv.yaml,"same method, dataset and displayed metrics; no new equivalence or protocol claim"
+4,GCFAgg (CVPR'23),Mfeat,release/gcfagg_results.jsonl:4,"ACC,NMI,PUR,ARI",gcfagg_Mfeat_seed202,"same method, dataset and displayed metrics; no new equivalence or protocol claim"
+4,CAFE (TPAMI'26),Mfeat,release/cafe_mfeat_results.jsonl:1,"ACC,NMI,ARI",config/Mfeat_mv.yaml,"same method, dataset and displayed metrics; no new equivalence or protocol claim"
+4,CAFE (TPAMI'26),CIFAR10,release/cafe_multiview_results.jsonl:1,"ACC,NMI,ARI",config/cifar10_mv.yaml,"same method, dataset and displayed metrics; no new equivalence or protocol claim"

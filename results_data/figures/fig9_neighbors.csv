@@ -1,0 +1,7 @@
+figure,dataset,parameter,value,main_setting,ACC_percent,NMI_percent,source_id
+9,RGB-D,k,5,10,54.589371980676326,47.47920000013363,sacr_RGB-D_303_sensitivity_k_5
+9,RGB-D,k,10,10,55.21048999309869,48.95158612015206,sacr_RGB-D_303_Full
+9,RGB-D,k,20,10,45.20358868184955,39.27686958886659,sacr_RGB-D_303_sensitivity_k_20
+9,ALOI-100,k_+,5,9,94.7037037037037,96.52926712070644,sacr_ALOI-100_101_sensitivity_global_memory_positive_k_5
+9,ALOI-100,k_+,9,9,94.46296296296296,96.52344109206074,sacr_ALOI-100_101_Full
+9,ALOI-100,k_+,15,9,93.22222222222221,96.30926896557904,sacr_ALOI-100_101_sensitivity_global_memory_positive_k_15

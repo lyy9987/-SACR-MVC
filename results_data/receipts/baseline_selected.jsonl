@@ -1,0 +1,6 @@
+{"method": "GCFAgg", "dataset": "RGB-D", "seed": 202, "config": "gcfagg_RGBD_seed202", "rec_epochs": 200, "fine_tune_epochs": 100, "batch_size": 256, "norm": "minmax", "seconds": 28.8, "device": "cuda", "ACC": 0.2836, "NMI": 0.1998, "PUR": 0.4458, "ARI": 0.1261}
+{"method": "GCFAgg", "dataset": "ALOI-100", "seed": 10, "config": "gcfagg_ALOI100_seed10", "rec_epochs": 200, "fine_tune_epochs": 100, "batch_size": 256, "norm": "minmax", "seconds": 394.2, "device": "cuda", "ACC": 0.8729, "NMI": 0.9406, "PUR": 0.8831, "ARI": 0.8379}
+{"method": "CAFE", "dataset": "ALOI-100", "config": "config/ALOI100_mv.yaml", "seconds": 1419.9, "exit_code": 0, "best_epoch": 199, "NMI": 0.8606, "ARI": 0.6881, "F": 0.6919, "ACC": 0.8001}
+{"method": "GCFAgg", "dataset": "Mfeat", "seed": 202, "config": "gcfagg_Mfeat_seed202", "rec_epochs": 200, "fine_tune_epochs": 100, "batch_size": 256, "norm": "minmax", "seconds": 87.4, "device": "cuda", "ACC": 0.8345, "NMI": 0.8111, "PUR": 0.8345, "ARI": 0.7442}
+{"method": "CAFE", "dataset": "Mfeat", "config": "config/Mfeat_mv.yaml", "seconds": 205.2, "exit_code": 0, "best_epoch": 190, "NMI": 0.8962, "ARI": 0.8853, "F": 0.8967, "ACC": 0.9455}
+{"method": "CAFE", "dataset": "CIFAR10", "config": "config/cifar10_mv.yaml", "seconds": 2695.3, "exit_code": 0, "best_epoch": 110, "NMI": 0.9574, "ARI": 0.9639, "F": 0.9676, "ACC": 0.9834}
