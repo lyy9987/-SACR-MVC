@@ -8,6 +8,8 @@ Repository: [SACR-MVC](https://github.com/lyy9987/-SACR-MVC).
 
 Supporting numerical results, retained experiment receipts, and RGB-D visualization inputs are in [`results_data`](results_data/README.md). Run `python results_data/scripts/verify_results.py` to check the packaged values.
 
+For comparable experimental settings, results are first taken from the original paper tables. If a required result is not available there, it is transcribed from published comparison tables; local reproduction is used when neither source provides a usable result.
+
 ## Environment
 
 The recorded experiments used Python 3.8.20, PyTorch 2.4.1 and CUDA 11.8. Create an isolated environment, install the matching PyTorch build, then install the listed dependencies:

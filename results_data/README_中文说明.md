@@ -4,9 +4,9 @@
 
 ## 来源与结果选择
 
-`tables/main_comparison.csv`包含66个方法—数据集条目，采用0–1数值；`tables/entry_sources.csv`区分原文结果、二手报告、本地记录和保存预测。优先采用原论文表格，原表未提供时使用已标明来源的二手报告，其余采用有记录的本地复现。文献值保留原统计含义。本地保留多次候选时按ACC选择，全部可用指标取自同一次运行或日志epoch；缺失指标留空。显示值保留四位小数，百分点差值优先使用未舍入记录。
+`tables/main_comparison.csv`包含66个方法—数据集条目，采用0–1数值；`tables/entry_sources.csv`提供逐项来源索引。
 
-`evidence/source_statistics_and_candidates.json`保存GCFAgg在RGB-D、ALOI-100和Mfeat上每组三次真实候选，并说明CAFE和GDR-CGDR的文献统计含义：CAFE报告五个随机种子中的最佳结果；GDR-CGDR对每个参数设置重复十次、统计均值与标准差，再报告最佳设置的表现，其文献值不等同于单次运行最大值。两处带标记的CGDR原文NMI保留在`NMI_source_reported`，不参与算术NMI排名，归一化来源说明在逐项索引中。
+`evidence/source_statistics_and_candidates.json`记录来源材料、保留候选及核验资料，逐项原始值和引用保留在对应索引文件。
 
 `tables/additional_literature_reference.csv`保留附带来源的其他文献结果。图4数据与表3一致；其余表格和图件数据对应消融及参数分析。
 

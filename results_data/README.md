@@ -4,9 +4,9 @@ This material supports Table 3 (ten baselines and SACR-MVC on six datasets), Tab
 
 ## Result sources and selection
 
-`tables/main_comparison.csv` contains 66 method–dataset entries in 0–1 units. `tables/entry_sources.csv` identifies each original-paper result, secondary report, local record or saved prediction. Original-paper tables take priority; identified secondary reports are used when those tables do not provide the value, followed by documented local reproduction. Published entries retain their reported statistics. Multiple retained local candidates are selected by ACC, with all available metrics taken from the same run or logged epoch. Missing metrics are left blank. Metrics are displayed to four decimal places; percentage-point differences use unrounded records when available.
+`tables/main_comparison.csv` contains 66 method–dataset entries in 0–1 units. `tables/entry_sources.csv` provides the entry-level source index.
 
-`evidence/source_statistics_and_candidates.json` records three retained GCFAgg candidates for each of RGB-D, ALOI-100 and Mfeat, and clarifies the published CAFE and GDR-CGDR statistics. CAFE reports the best result over five random seeds. GDR-CGDR repeats each parameter setting ten times, summarizes mean/standard deviation and reports the best setting; its displayed literature values are not single-run maxima. The two marked published CGDR NMI values remain in `NMI_source_reported` and are excluded from the arithmetic-NMI ranking; the source-normalization details remain in the entry index.
+`evidence/source_statistics_and_candidates.json` records source materials, retained candidates and verification information. Entry-level original values and citations remain in the corresponding index files.
 
 `tables/additional_literature_reference.csv` retains additional published results with their sources. `figures/fig4_acc.csv` matches Table 3; the remaining table and figure data accompany the ablation and parameter analyses.
 
