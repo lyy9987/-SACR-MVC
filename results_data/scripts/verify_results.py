@@ -57,6 +57,7 @@ for record in manifest['protected_base_files']:
     assert sha(ROOT/record['path'])==record['sha256'],record['path']
 
 main=rows(BASE/'tables/main_comparison.csv')
+assert sha(BASE/'tables/main_comparison.csv')==manifest['authoritative_main_csv_sha256']
 sources=rows(BASE/'tables/entry_sources.csv')
 assert len(main)==len(sources)==66
 lookup={(r['method_key'],r['dataset']):r for r in main}

@@ -1,6 +1,6 @@
 {
   "title": "SACR-MVC Supplementary Material S1",
-  "authoritative_main_csv_sha256": "19e43cde1acdb2177eb9d16d42dc43d46a8b9c6483a29fb82051a60619038e13",
+  "authoritative_main_csv_sha256": "8e2bb81b882dfe7be8b78dfc9fdf080a883467df025ac4496dcf229df91dc664",
   "baseline_methods": 10,
   "main_rows": 66,
   "entry_source_rows": 66,
@@ -576,5 +576,6 @@
     "active_path": "pretraining/final readout; con_epochs=0",
     "saved_prediction_available": false
   },
-  "source_statistic_metadata": "evidence/source_statistics_and_candidates.json"
+  "source_statistic_metadata": "evidence/source_statistics_and_candidates.json",
+  "authoritative_main_csv_path": "tables/main_comparison.csv"
 }

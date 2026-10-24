@@ -91,8 +91,6 @@
         "seed_count": null,
         "parameter_combination_count": null,
         "parameter_selection": "grid search; each combination repeated ten times with mean/std; then best performance reported",
-        "not_ten_parameter_combinations": true,
-        "not_ten_documented_seeds": true,
         "source_aggregate_run_count": 10,
         "available_run_count": null,
         "selected_run_count": null
@@ -112,8 +110,6 @@
         "seed_count": null,
         "parameter_combination_count": null,
         "parameter_selection": "grid search; each combination repeated ten times with mean/std; then best performance reported",
-        "not_ten_parameter_combinations": true,
-        "not_ten_documented_seeds": true,
         "source_aggregate_run_count": 10,
         "available_run_count": null,
         "selected_run_count": null
