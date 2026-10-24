@@ -1,67 +1,67 @@
-figure,dataset,method,ACC_percent,source_id,evidence_kind
-4,RGB-D,MFLVC (CVPR'22),41.48,manuscript Table 3; reference 1,reported_table_transcription
-4,ALOI-100,MFLVC (CVPR'22),54.99000000000001,manuscript Table 3; reference 1,reported_table_transcription
-4,Hdigit,MFLVC (CVPR'22),92.66,manuscript Table 3; reference 1,reported_table_transcription
-4,RGB-D,GCFAgg (CVPR'23),28.360000000000003,manuscript Table 3; reference 6,reported_table_transcription
-4,ALOI-100,GCFAgg (CVPR'23),87.29,manuscript Table 3; reference 6,reported_table_transcription
-4,Hdigit,GCFAgg (CVPR'23),97.44,manuscript Table 3; reference 6,reported_table_transcription
-4,RGB-D,SCMVC (TMM'24),29.189999999999998,manuscript Table 3; reference 5,reported_table_transcription
-4,ALOI-100,SCMVC (TMM'24),81.8,manuscript Table 3; reference 5,reported_table_transcription
-4,Hdigit,SCMVC (TMM'24),94.02000000000001,manuscript Table 3; reference 5,reported_table_transcription
-4,RGB-D,DCMVC (TIP'24),52.449999999999996,manuscript Table 3; reference 3,reported_table_transcription
-4,ALOI-100,DCMVC (TIP'24),94.0,manuscript Table 3; reference 3,reported_table_transcription
-4,Hdigit,DCMVC (TIP'24),99.28,manuscript Table 3; reference 3,reported_table_transcription
-4,RGB-D,TMCN (ICASSP'25),19.32,manuscript Table 3; reference 39,reported_table_transcription
-4,ALOI-100,TMCN (ICASSP'25),76.97,manuscript Table 3; reference 39,reported_table_transcription
-4,Hdigit,TMCN (ICASSP'25),97.56,manuscript Table 3; reference 39,reported_table_transcription
-4,RGB-D,ACCMVC (TNNLS'25),33.89,manuscript Table 3; reference 7,reported_table_transcription
-4,ALOI-100,ACCMVC (TNNLS'25),88.6,manuscript Table 3; reference 7,reported_table_transcription
-4,Hdigit,ACCMVC (TNNLS'25),97.06,manuscript Table 3; reference 7,reported_table_transcription
-4,RGB-D,GDR-CGDR (TKDE'26),34.98,manuscript Table 3; reference 41,reported_table_transcription
-4,ALOI-100,GDR-CGDR (TKDE'26),53.56999999999999,manuscript Table 3; reference 41,reported_table_transcription
-4,Hdigit,GDR-CGDR (TKDE'26),81.88,manuscript Table 3; reference 41,reported_table_transcription
-4,RGB-D,RAV (ICLR'26),20.84,manuscript Table 3; reference 8,reported_table_transcription
-4,ALOI-100,RAV (ICLR'26),82.6,manuscript Table 3; reference 8,reported_table_transcription
-4,Hdigit,RAV (ICLR'26),99.38,manuscript Table 3; reference 8,reported_table_transcription
-4,RGB-D,CAFE (TPAMI'26),31.47,manuscript Table 3; reference 38,reported_table_transcription
-4,ALOI-100,CAFE (TPAMI'26),80.01,manuscript Table 3; reference 38,reported_table_transcription
-4,Hdigit,CAFE (TPAMI'26),99.56,manuscript Table 3; reference 38,reported_table_transcription
-4,RGB-D,GDCN (SPL'26),27.400000000000002,manuscript Table 3; reference 40,reported_table_transcription
-4,ALOI-100,GDCN (SPL'26),90.69,manuscript Table 3; reference 40,reported_table_transcription
-4,Hdigit,GDCN (SPL'26),95.02000000000001,manuscript Table 3; reference 40,reported_table_transcription
-4,RGB-D,SACR-MVC (Ours),55.21,sacr_RGB-D_303_Full,run_receipt
-4,ALOI-100,SACR-MVC (Ours),94.46,sacr_ALOI-100_101_Full,run_receipt
-4,Hdigit,SACR-MVC (Ours),99.63,sacr_Hdigit_303_Full,run_receipt
-4,Mfeat,MFLVC (CVPR'22),85.8,manuscript Table 4; reference 1,reported_table_transcription
-4,CIFAR10,MFLVC (CVPR'22),99.18,manuscript Table 4; reference 1,reported_table_transcription
-4,CIFAR100,MFLVC (CVPR'22),80.03,manuscript Table 4; reference 1,reported_table_transcription
-4,Mfeat,GCFAgg (CVPR'23),83.45,manuscript Table 4; reference 6,reported_table_transcription
-4,CIFAR10,GCFAgg (CVPR'23),99.22999999999999,manuscript Table 4; reference 6,reported_table_transcription
-4,CIFAR100,GCFAgg (CVPR'23),95.97,manuscript Table 4; reference 6,reported_table_transcription
-4,Mfeat,SCMVC (TMM'24),94.65,manuscript Table 4; reference 5,reported_table_transcription
-4,CIFAR10,SCMVC (TMM'24),99.49,manuscript Table 4; reference 5,reported_table_transcription
-4,CIFAR100,SCMVC (TMM'24),89.66,manuscript Table 4; reference 5,reported_table_transcription
-4,Mfeat,DCMVC (TIP'24),96.39999999999999,manuscript Table 4; reference 3,reported_table_transcription
-4,CIFAR10,DCMVC (TIP'24),99.53999999999999,manuscript Table 4; reference 3,reported_table_transcription
-4,CIFAR100,DCMVC (TIP'24),98.64,manuscript Table 4; reference 3,reported_table_transcription
-4,Mfeat,TMCN (ICASSP'25),62.17,manuscript Table 4; reference 39,reported_table_transcription
-4,CIFAR10,TMCN (ICASSP'25),87.61,manuscript Table 4; reference 39,reported_table_transcription
-4,CIFAR100,TMCN (ICASSP'25),98.53,manuscript Table 4; reference 39,reported_table_transcription
-4,Mfeat,ACCMVC (TNNLS'25),88.1,manuscript Table 4; reference 7,reported_table_transcription
-4,CIFAR10,ACCMVC (TNNLS'25),99.5,manuscript Table 4; reference 7,reported_table_transcription
-4,CIFAR100,ACCMVC (TNNLS'25),99.95,manuscript Table 4; reference 7,reported_table_transcription
-4,Mfeat,GDR-CGDR (TKDE'26),87.83,manuscript Table 4; reference 41,reported_table_transcription
-4,CIFAR10,GDR-CGDR (TKDE'26),98.61999999999999,manuscript Table 4; reference 41,reported_table_transcription
-4,CIFAR100,GDR-CGDR (TKDE'26),99.35000000000001,manuscript Table 4; reference 41,reported_table_transcription
-4,Mfeat,RAV (ICLR'26),81.8,manuscript Table 4; reference 8,reported_table_transcription
-4,CIFAR10,RAV (ICLR'26),99.51,manuscript Table 4; reference 8,reported_table_transcription
-4,CIFAR100,RAV (ICLR'26),78.83,manuscript Table 4; reference 8,reported_table_transcription
-4,Mfeat,CAFE (TPAMI'26),94.55,manuscript Table 4; reference 38,reported_table_transcription
-4,CIFAR10,CAFE (TPAMI'26),98.34,manuscript Table 4; reference 38,reported_table_transcription
-4,CIFAR100,CAFE (TPAMI'26),99.16,manuscript Table 4; reference 38,reported_table_transcription
-4,Mfeat,GDCN (SPL'26),93.85,manuscript Table 4; reference 40,reported_table_transcription
-4,CIFAR10,GDCN (SPL'26),99.46000000000001,manuscript Table 4; reference 40,reported_table_transcription
-4,CIFAR100,GDCN (SPL'26),99.97,manuscript Table 4; reference 40,reported_table_transcription
-4,Mfeat,SACR-MVC (Ours),96.6,sacr_Mfeat_404_Full,run_receipt
-4,CIFAR10,SACR-MVC (Ours),99.55000000000001,cifar10_r5_svd384_tw20_seed2424,run_receipt
-4,CIFAR100,SACR-MVC (Ours),99.98,sacr_CIFAR100_101_Full,run_receipt
+table,dataset,dataset_order,method,method_key,method_order,ACC_percent,source_id
+3,RGB-D,1,MFLVC (CVPR'22),MFLVC,1,41.4800,manuscript Table 3; reference 1
+3,ALOI-100,2,MFLVC (CVPR'22),MFLVC,1,54.9900,manuscript Table 3; reference 1
+3,Hdigit,3,MFLVC (CVPR'22),MFLVC,1,92.6600,manuscript Table 3; reference 1
+3,Mfeat,4,MFLVC (CVPR'22),MFLVC,1,85.8000,manuscript Table 4; reference 1
+3,CIFAR10,5,MFLVC (CVPR'22),MFLVC,1,99.1800,manuscript Table 4; reference 1
+3,CIFAR100,6,MFLVC (CVPR'22),MFLVC,1,80.0300,manuscript Table 4; reference 1
+3,RGB-D,1,GCFAgg (CVPR'23),GCFAgg,2,28.3600,manuscript Table 3; reference 6
+3,ALOI-100,2,GCFAgg (CVPR'23),GCFAgg,2,87.2900,manuscript Table 3; reference 6
+3,Hdigit,3,GCFAgg (CVPR'23),GCFAgg,2,97.4400,manuscript Table 3; reference 6
+3,Mfeat,4,GCFAgg (CVPR'23),GCFAgg,2,83.4500,manuscript Table 4; reference 6
+3,CIFAR10,5,GCFAgg (CVPR'23),GCFAgg,2,99.2300,manuscript Table 4; reference 6
+3,CIFAR100,6,GCFAgg (CVPR'23),GCFAgg,2,95.9700,manuscript Table 4; reference 6
+3,RGB-D,1,SCM (IJCAI'24),SCM,3,34.1600,SCM_IJCAI2024_fixed_final_RGB-D
+3,ALOI-100,2,SCM (IJCAI'24),SCM,3,46.2700,SCM_IJCAI2024_fixed_final_ALOI-100
+3,Hdigit,3,SCM (IJCAI'24),SCM,3,98.8700,SCM_IJCAI2024_fixed_final_Hdigit
+3,Mfeat,4,SCM (IJCAI'24),SCM,3,86.1000,SCM_IJCAI2024_fixed_final_Mfeat
+3,CIFAR10,5,SCM (IJCAI'24),SCM,3,99.0600,SCM_IJCAI2024_fixed_final_CIFAR10
+3,CIFAR100,6,SCM (IJCAI'24),SCM,3,81.3000,SCM_IJCAI2024_fixed_final_CIFAR100
+3,RGB-D,1,SCMVC (TMM'24),SCMVC,4,36.8500,SCMVC_RGB-D_verified_group_20261024
+3,ALOI-100,2,SCMVC (TMM'24),SCMVC,4,81.8000,manuscript Table 3; reference 5
+3,Hdigit,3,SCMVC (TMM'24),SCMVC,4,94.0200,manuscript Table 3; reference 5
+3,Mfeat,4,SCMVC (TMM'24),SCMVC,4,94.6500,SCMVC_Mfeat_verified_group_20261024
+3,CIFAR10,5,SCMVC (TMM'24),SCMVC,4,99.5000,"SCMVC; reference 5; Table IV; PDF page 8, printed page 9157"
+3,CIFAR100,6,SCMVC (TMM'24),SCMVC,4,98.3000,"SCMVC; reference 5; Table IV; PDF page 8, printed page 9157"
+3,RGB-D,1,DCMVC (TIP'24),DCMVC,5,52.4500,manuscript Table 3; reference 3
+3,ALOI-100,2,DCMVC (TIP'24),DCMVC,5,94.0000,manuscript Table 3; reference 3
+3,Hdigit,3,DCMVC (TIP'24),DCMVC,5,99.2800,manuscript Table 3; reference 3
+3,Mfeat,4,DCMVC (TIP'24),DCMVC,5,96.4000,manuscript Table 4; reference 3
+3,CIFAR10,5,DCMVC (TIP'24),DCMVC,5,99.5400,manuscript Table 4; reference 3
+3,CIFAR100,6,DCMVC (TIP'24),DCMVC,5,98.6400,manuscript Table 4; reference 3
+3,RGB-D,1,TMCN (ICASSP'25),TMCN,6,19.3200,manuscript Table 3; reference 40
+3,ALOI-100,2,TMCN (ICASSP'25),TMCN,6,76.9700,manuscript Table 3; reference 40
+3,Hdigit,3,TMCN (ICASSP'25),TMCN,6,97.5600,manuscript Table 3; reference 40
+3,Mfeat,4,TMCN (ICASSP'25),TMCN,6,71.7000,TMCN_Mfeat_bestACC_seed0_20261024
+3,CIFAR10,5,TMCN (ICASSP'25),TMCN,6,87.6100,manuscript Table 4; reference 40
+3,CIFAR100,6,TMCN (ICASSP'25),TMCN,6,98.5300,manuscript Table 4; reference 40
+3,RGB-D,1,RAV (ICLR'26),RAV,7,20.8400,manuscript Table 3; reference 8
+3,ALOI-100,2,RAV (ICLR'26),RAV,7,82.6000,manuscript Table 3; reference 8
+3,Hdigit,3,RAV (ICLR'26),RAV,7,99.4000,RAV_Hdigit_seed10_native_argmax_existing
+3,Mfeat,4,RAV (ICLR'26),RAV,7,81.5000,RAV_Mfeat_seed10_native_argmax_existing
+3,CIFAR10,5,RAV (ICLR'26),RAV,7,99.5000,RAV_CIFAR10_seed10_native_argmax_existing
+3,CIFAR100,6,RAV (ICLR'26),RAV,7,69.5100,RAV_CIFAR100_seed10_native_argmax_existing
+3,RGB-D,1,GDR-CGDR (TKDE'26),GDR-CGDR,8,37.2700,GDR-CGDR_RGB-D_bestACC_seed5_20261024
+3,ALOI-100,2,GDR-CGDR (TKDE'26),GDR-CGDR,8,78.1800,"GDR-CGDR; reference 42; Table VIII, CGDR row; PDF page 14, printed page 4654"
+3,Hdigit,3,GDR-CGDR (TKDE'26),GDR-CGDR,8,99.2200,"GDR-CGDR; reference 42; Table VIII, CGDR row; PDF page 14, printed page 4654"
+3,Mfeat,4,GDR-CGDR (TKDE'26),GDR-CGDR,8,78.4500,GDR-CGDR_Mfeat_bestACC_seed3_20261024
+3,CIFAR10,5,GDR-CGDR (TKDE'26),GDR-CGDR,8,87.4300,GDR-CGDR_CIFAR10_bestACC_seed4_20261024
+3,CIFAR100,6,GDR-CGDR (TKDE'26),GDR-CGDR,8,77.0400,GDR-CGDR_CIFAR100_bestACC_seed5_20261024
+3,RGB-D,1,CAFE (TPAMI'26),CAFE,9,31.4700,manuscript Table 3; reference 38
+3,ALOI-100,2,CAFE (TPAMI'26),CAFE,9,80.0100,manuscript Table 3; reference 38
+3,Hdigit,3,CAFE (TPAMI'26),CAFE,9,99.5600,manuscript Table 3; reference 38
+3,Mfeat,4,CAFE (TPAMI'26),CAFE,9,94.5500,manuscript Table 4; reference 38
+3,CIFAR10,5,CAFE (TPAMI'26),CAFE,9,98.3400,manuscript Table 4; reference 38
+3,CIFAR100,6,CAFE (TPAMI'26),CAFE,9,99.1600,manuscript Table 4; reference 38
+3,RGB-D,1,GDCN (SPL'26),GDCN,10,27.4000,manuscript Table 3; reference 41
+3,ALOI-100,2,GDCN (SPL'26),GDCN,10,90.6900,manuscript Table 3; reference 41
+3,Hdigit,3,GDCN (SPL'26),GDCN,10,95.0200,manuscript Table 3; reference 41
+3,Mfeat,4,GDCN (SPL'26),GDCN,10,93.8500,manuscript Table 4; reference 41
+3,CIFAR10,5,GDCN (SPL'26),GDCN,10,99.4600,manuscript Table 4; reference 41
+3,CIFAR100,6,GDCN (SPL'26),GDCN,10,99.9700,manuscript Table 4; reference 41
+3,RGB-D,1,SACR-MVC (Ours),SACR-MVC,11,55.2100,sacr_RGB-D_303_Full
+3,ALOI-100,2,SACR-MVC (Ours),SACR-MVC,11,94.4600,sacr_ALOI-100_101_Full
+3,Hdigit,3,SACR-MVC (Ours),SACR-MVC,11,99.6300,sacr_Hdigit_303_Full
+3,Mfeat,4,SACR-MVC (Ours),SACR-MVC,11,96.6000,sacr_Mfeat_404_Full
+3,CIFAR10,5,SACR-MVC (Ours),SACR-MVC,11,99.5500,cifar10_r5_svd384_tw20_seed2424
+3,CIFAR100,6,SACR-MVC (Ours),SACR-MVC,11,99.9800,sacr_CIFAR100_101_Full

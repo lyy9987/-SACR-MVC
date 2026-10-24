@@ -1,536 +1,580 @@
 {
-  "title": "SACR-MVC: Contrastive multi-view clustering with structure anchoring and reliable consensus",
-  "status": "SACR-MVC implementation and supporting result data.",
-  "manuscript_source": "output/neurocomputing_final_review_20261022/01_manuscript/English_LaTeX/main.tex",
-  "manuscript_sha256": "a191b8379a98ea128de3c801ba14e52f6af58f94bd568530c9ae3d5942492b2d",
-  "units": {
-    "tables3_to5": "0-1",
-    "table6": "ACC/NMI percent; delta ACC percentage points",
-    "figures4_to9": "see columns; percentages use x100 of receipt value"
-  },
-  "source_files": [
+  "title": "SACR-MVC Supplementary Material S1",
+  "authoritative_main_csv_sha256": "19e43cde1acdb2177eb9d16d42dc43d46a8b9c6483a29fb82051a60619038e13",
+  "baseline_methods": 10,
+  "main_rows": 66,
+  "entry_source_rows": 66,
+  "base_package_sha256": "28c698a70b89518accfc6aea6bdf226e2d0a16f5d2899263bbaa5a007d531694",
+  "protected_base_files": [
     {
-      "source_id": "release/gcfagg_results.jsonl:7",
-      "package_file": "receipts/baseline_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/gcfagg_results.jsonl",
-      "source_line": 7,
-      "line_sha256": "ee3285a4acd5fa5f0b3d8362d670fd7de1ab1c24aa58b3c617200455f8deeaf6"
+      "path": ".gitignore",
+      "sha256": "53cf761eda519d849fc6cfe77332cd0263c09dbe062227ca780c27b6c9ce8878"
     },
     {
-      "source_id": "release/gcfagg_results.jsonl:8",
-      "package_file": "receipts/baseline_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/gcfagg_results.jsonl",
-      "source_line": 8,
-      "line_sha256": "94f1b806e3af5c5dc8551feb86ccb852d571f523c903d023b9e7ff559d90e47f"
+      "path": "configs/ALOI-100.json",
+      "sha256": "42ac0530f851019b6ab402a205772c9ec7cbec5d93b4f604f07046a2fc61f82b"
     },
     {
-      "source_id": "release/cafe_multiview_results.jsonl:2",
-      "package_file": "receipts/baseline_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/cafe_multiview_results.jsonl",
-      "source_line": 2,
-      "line_sha256": "d2f95893bb2d118563d5b7c8749ed4556d43cb75d6a0f433206dd4b10b4f4d93"
+      "path": "configs/CIFAR10.json",
+      "sha256": "a7d1c013817e876bd57cc139dc42dab9104352d746a684f992da96a92d5bac7f"
     },
     {
-      "source_id": "release/gcfagg_results.jsonl:4",
-      "package_file": "receipts/baseline_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/gcfagg_results.jsonl",
-      "source_line": 4,
-      "line_sha256": "7a994cf7dffe154c3a1e0eb999a783f86577719b65a79f9536a6069d3a66026e"
+      "path": "configs/CIFAR100.json",
+      "sha256": "f9a5e778cbb0f9db0e5bccdc2e68758dd17812589e332a6788c0a7de4cc2c3a3"
     },
     {
-      "source_id": "release/cafe_mfeat_results.jsonl:1",
-      "package_file": "receipts/baseline_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/cafe_mfeat_results.jsonl",
-      "source_line": 1,
-      "line_sha256": "525290f209f9a86224a012bbf525949c81f5739446c0ccb15ae698046f286886"
+      "path": "configs/Hdigit.json",
+      "sha256": "049b818f42b038723e9644711733dd9b958d94b96c1dca528a14b2c02780f810"
     },
     {
-      "source_id": "release/cafe_multiview_results.jsonl:1",
-      "package_file": "receipts/baseline_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/cafe_multiview_results.jsonl",
-      "source_line": 1,
-      "line_sha256": "b4a5e4047b0fe0934ffae966e5fc1452d2aab6178da5ffd931fafaf942a0579e"
+      "path": "configs/Mfeat.json",
+      "sha256": "683c0777e01d8eb5053271435406e05dfd30da8cc7fb89cdf39b666fef69b50e"
     },
     {
-      "package_file": "receipts/sacr_ALOI-100_101_sensitivity_global_memory_positive_k_15.json",
-      "kind": "unmodified_individual_receipt",
-      "source_file": "paper_draft_20260923/manual_sensitivity/sacr_ALOI-100_101_sensitivity_global_memory_positive_k_15.json",
-      "source_sha256": "11baa5a541fae41070e992704e69a8208bd07c28b9903d5a25f993b8f29706f2"
+      "path": "configs/RGB-D.json",
+      "sha256": "1866136681ac5be74051063c04a12e0433101fccb84587fe56f5907446e1d7cc"
     },
     {
-      "package_file": "receipts/sacr_ALOI-100_101_sensitivity_global_memory_positive_k_5.json",
-      "kind": "unmodified_individual_receipt",
-      "source_file": "paper_draft_20260923/manual_sensitivity/sacr_ALOI-100_101_sensitivity_global_memory_positive_k_5.json",
-      "source_sha256": "bfdbbc3ce956971c28a83e073fdf18a2568878b651ff2ba927a5185ff8eee999"
+      "path": "data/README.md",
+      "sha256": "8c53e833eeca886d7ce5a56a4f253c19d17a5b11e5992e7ed8001085f07217e5"
     },
     {
-      "source_id": "sacr_Mfeat_404_Full",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 3,
-      "line_sha256": "274161ac4f0eeac53edad5b6d20d8e5d7d18c74a3575fc6170e43f0f061598f2"
+      "path": "DATASETS.md",
+      "sha256": "cd1408c3c630e15da2795b5aa6ed387ecce1bd2081f6bfbb61a050aaf6e1709d"
     },
     {
-      "source_id": "sacr_RGB-D_303_Full",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 4,
-      "line_sha256": "897c709bbf6f74e25b2c11af804555f38f6140eb96b931661dde798231938ff6"
+      "path": "evaluate.py",
+      "sha256": "f2cdbcbb3ebc13815dffac74578a8e868bd95aaef3e181f5712e5557cd0cd271"
     },
     {
-      "source_id": "sacr_Hdigit_303_Full",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 5,
-      "line_sha256": "2038e1adc84ebb66258a7de7811b5d0ef998b53c11481ec21d6ed76e2b7336ba"
+      "path": "input_data_manifest.json",
+      "sha256": "8888893cefcc474c585d5fbba5bccb597e246fc68fc47d229ab01058af496e59"
     },
     {
-      "source_id": "sacr_ALOI-100_101_Full",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 7,
-      "line_sha256": "5c883ebfdd4a19c02b06be3d9d221ccbfc6b0bf845ba3ab5ea8d39ae94f0782f"
+      "path": "requirements.txt",
+      "sha256": "56f76bdbb6ec79451835011f6558aaac143d04d926d7e2fab390ed2493b7d6bb"
     },
     {
-      "source_id": "sacr_CIFAR100_101_Full",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 11,
-      "line_sha256": "28c3ccfc973b0f7f4729aca4682690bd1e822d7db567efa1370339d244a89d1d"
+      "path": "results_data/figures/fig5_fscore.csv",
+      "sha256": "6c8ff86cb3923cb42dd8fb00d2710216d30ff419174de1500a78bb2a6774b726"
     },
     {
-      "source_id": "sacr_Mfeat_404_no_guard",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 24,
-      "line_sha256": "12543de4a6fd376317bcc177d02c511c117674f7f8210144d9846ad01a2067e1"
+      "path": "results_data/figures/fig7_fig8_loss_grid.csv",
+      "sha256": "d937776fe042d8b3187f2f6c08a6ebd59e572892850de41cf51fc3cf3c1c359d"
     },
     {
-      "source_id": "sacr_RGB-D_303_no_anchor",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 28,
-      "line_sha256": "3f5818540f00ca11350bf0bf8b37ddfadbdfa6f62babcc00f144857c4adc7611"
+      "path": "results_data/figures/fig9_neighbors.csv",
+      "sha256": "1b009b984457d99df7146c85aefb37d033b2a67997eec3d2f2cd343e9bfd4359"
     },
     {
-      "source_id": "sacr_RGB-D_303_no_responsibility",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 37,
-      "line_sha256": "cd35536825db59db9f1656fbc2a70642ae2b9b635e7294ccf5c26c5d050f27f4"
+      "path": "results_data/receipts/baseline_selected.jsonl",
+      "sha256": "4df6f41dc970d0fd8a23dfc7df8f8b9c64867020774fa2aec00a1a70414e6e61"
     },
     {
-      "source_id": "sacr_RGB-D_303_no_dcd",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 43,
-      "line_sha256": "a4eb67e7ecb0b4d612c543369d444c80bf44e1f7036a59844b42ff10a393fc23"
+      "path": "results_data/receipts/cifar10_promoted_RESULT_JSON.txt",
+      "sha256": "fc0ae6754cb25c6fe89df32dfbe26f5459b6188db9c86bc993e3a48e2bb2d7fb"
     },
     {
-      "source_id": "sacr_RGB-D_303_no_relation",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 46,
-      "line_sha256": "a281dbe03312edf39e8c39b8d95365aeb0a39cb2de6411cec671a4ad9554af52"
+      "path": "results_data/receipts/frozen_selected.jsonl",
+      "sha256": "c9b827cb57cd31c4c6d7eaf3ce2092473f0a8f8eeca91282b0a734ff6f293bd9"
     },
     {
-      "source_id": "sacr_Hdigit_303_no_anchor",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 52,
-      "line_sha256": "5ce622da462116a2d708ce43bc2c121c275afded9dc1a8b57277728a2907e786"
+      "path": "results_data/receipts/sacr_ALOI-100_101_sensitivity_global_memory_positive_k_15.json",
+      "sha256": "11baa5a541fae41070e992704e69a8208bd07c28b9903d5a25f993b8f29706f2"
     },
     {
-      "source_id": "sacr_Hdigit_303_no_responsibility",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 61,
-      "line_sha256": "05e828c038e241347e88cfce1f10e7b392fc7d01e816b717f1fda9faec149e74"
+      "path": "results_data/receipts/sacr_ALOI-100_101_sensitivity_global_memory_positive_k_5.json",
+      "sha256": "bfdbbc3ce956971c28a83e073fdf18a2568878b651ff2ba927a5185ff8eee999"
     },
     {
-      "source_id": "sacr_Hdigit_303_no_dcd",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 67,
-      "line_sha256": "ff66942196dd40c16958e54925a75ca324e841f87e0c16c900d7b23f854f0f6e"
+      "path": "results_data/scripts/reproduce_fig6_rgbd.py",
+      "sha256": "5a72e684f11c5765a49c78d0c80a8f76b33fc9b2895e058b166036024ee83290"
     },
     {
-      "source_id": "sacr_Hdigit_303_no_relation",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 70,
-      "line_sha256": "753689efcac8dbab80cd7ead191b7f8fb13c87182a5052183bb0d79fa9623925"
+      "path": "results_data/tables/strategy_checks.csv",
+      "sha256": "aec095a7393f6b30716ca2b5319ed5e4b8d32bd5323fb6d55e556c7ea227b3e2"
     },
     {
-      "source_id": "sacr_ALOI-100_101_no_anchor",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 76,
-      "line_sha256": "06b87f10253db2f359064ce35480e43e792292d58cf7b983b974580cb898379e"
+      "path": "results_data/visualization/RGB-D_finetune.npz",
+      "sha256": "5ce69e384d3257d796bc0c7d15fcd4f23547a60302510983b6d42b994e21b415"
     },
     {
-      "source_id": "sacr_ALOI-100_101_no_pretrain_selection",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 79,
-      "line_sha256": "7a421d07f3032bfd00b5d77b3b128a29d1925e289b5c4a8d7aa5989bbb76f1eb"
+      "path": "results_data/visualization/RGB-D_labels.csv",
+      "sha256": "29b651b5b1f807da62015957bbd057255b91e494395f7abe75f28357aae5da91"
     },
     {
-      "source_id": "sacr_ALOI-100_101_no_responsibility",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 84,
-      "line_sha256": "57ee182bfd89e96d9f2c123a0a131aab8cf65f606452ccfbd37540feced715bd"
+      "path": "results_data/visualization/RGB-D_stage0.npz",
+      "sha256": "281b54e0136e961c442d85ca2a695089a0aaf81304e1c8bf0d2d69a1102b96d8"
     },
     {
-      "source_id": "sacr_ALOI-100_101_no_confidence",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 87,
-      "line_sha256": "9397b77c9f2522b921c08705a20fe862d82c7de21aa232b80b049d6753522f01"
+      "path": "run.py",
+      "sha256": "d17de36dc52a85455e0ff27054c432fd0ff426438239e4e874b36b07a0b78c6a"
     },
     {
-      "source_id": "sacr_ALOI-100_101_no_relation",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 88,
-      "line_sha256": "6ffb39a7114dbc046dd52c08239cb27498d656376e515c778f3e4eb388c26339"
+      "path": "src/adaptive_topology_selector.py",
+      "sha256": "bffe22d89aaf28ebad7938d83d4e9af327c39e3d3c10ac3e613a877187dee9be"
     },
     {
-      "source_id": "sacr_ALOI-100_101_no_dcd",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 89,
-      "line_sha256": "34d07d6a794884233094414b6912048fa18fab57f28c32e4afa5809f0328bd28"
+      "path": "src/confidence_intervention.py",
+      "sha256": "b699af59e14964dcafcb5ea69888a86208815bcbe9f34ff5c53d883180704302"
     },
     {
-      "source_id": "dcmvc_Mfeat_101_native_con100",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 109,
-      "line_sha256": "235c9af7020f3cb76f3891a6953df719df1dbc208a8c28c7434905142bddf3ce"
+      "path": "src/consensus_guard.py",
+      "sha256": "ed1cf0b888b67df13304b12d36a812a7fc8bb2297ad87519c9b87b07326c44c9"
     },
     {
-      "source_id": "dcmvc_Hdigit_303_native_con100",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 112,
-      "line_sha256": "c4026dc321f11eab531036c046a75c21b35a5c79abeb23898301aa5d4c91eb04"
+      "path": "src/dataloader.py",
+      "sha256": "6b3e75093aa4d12aec8722605c151535c23f90227052993590e07055409013bb"
     },
     {
-      "source_id": "dcmvc_ALOI-100_202_native_con100",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 116,
-      "line_sha256": "3c6a2439bd8a888ecf057fbc488d1ad24419e07a508d6fc446189777b08ac5d5"
+      "path": "src/dataset_metadata.py",
+      "sha256": "67fdf4cf10b866a20d05d40555fdca897c5e46cb8661ad28f97ab9b9ace7c6b2"
     },
     {
-      "source_id": "dcmvc_RGB-D_303_native_con100",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 118,
-      "line_sha256": "e13889371b69bfc111df01d850adb088af515a313bbfbe2e51b185a623b5e99e"
+      "path": "src/global_memory.py",
+      "sha256": "dc15f60d6fa896bd65b36d4cf608e798689dc8e23710a40bfa0e2032711f07d2"
     },
     {
-      "source_id": "dcmvc_CIFAR100_101_native_con100",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 121,
-      "line_sha256": "2e5bdce6795b9669c4db7e3015787beab1bbeefef7d3aa98ebd3f1ffaa079542"
+      "path": "src/loss.py",
+      "sha256": "61d6b13d288ad24b9a02374025a7207aa6c0f86298a78c5f0ec4958946cdb6c6"
     },
     {
-      "source_id": "dcmvc_CIFAR10_404_native_con100",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 135,
-      "line_sha256": "69e1cc6ca77e83d752ea3c8b01a119928d1fbaf18c0dbd5774328d40fececf2c"
+      "path": "src/metric.py",
+      "sha256": "d442d97b7c3cc1bb2acc6710b57622e62899e43957def60e8c29ee1a55debc3f"
     },
     {
-      "source_id": "sacr_RGB-D_303_grid_a0.005_b0.5",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 136,
-      "line_sha256": "7b6bf1a809cd10bd5ca6dac16523c4d29d3b86d4a540ae3ddc343273075a7172"
+      "path": "src/model.py",
+      "sha256": "c24afc9a5dfa249116cc7570996c0285f6459195f145d0b14b41733408d06d67"
     },
     {
-      "source_id": "sacr_RGB-D_303_grid_a0.005_b1",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 137,
-      "line_sha256": "539f9931e09ae2c23bc2431ceedec9c987eb0f2aaa2b892d320040bb224354c0"
+      "path": "src/network.py",
+      "sha256": "0558cb77c0583b53a9a78be4402fe5db5b49cacd1734cbd59db857e25f101689"
     },
     {
-      "source_id": "sacr_RGB-D_303_grid_a0.005_b2",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 138,
-      "line_sha256": "d3f4a2acc7a759c7909c9d81d8e481e218701307a39c52ce08d2fa974b8c6b7c"
+      "path": "src/pretrain_selection.py",
+      "sha256": "a6add99f8d9c5844153b8684aff72da79c2a5843f1acb16378ed890af3af5a41"
     },
     {
-      "source_id": "sacr_RGB-D_303_grid_a0.01_b0.5",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 139,
-      "line_sha256": "fbf0326910d1beea431f59a924a771807bc699d7e5383cef7d97b6fe4111b78d"
+      "path": "src/structural_anchor.py",
+      "sha256": "faf04b184aa432bb1505553803a18aaa6cf6013ca99b86c84e79e2fd2bd89f6c"
     },
     {
-      "source_id": "sacr_RGB-D_303_grid_a0.01_b1",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 140,
-      "line_sha256": "4754c01760eec12bb286ca940811552e279cbc933de3dca09d51cded0307026f"
+      "path": "src/topology_policy.py",
+      "sha256": "15b07617556ca26b4861357a346ba1c5b60771d0f7fc3a0b4f0cfa486d51ef2e"
     },
     {
-      "source_id": "sacr_RGB-D_303_grid_a0.01_b2",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 141,
-      "line_sha256": "6a47a66aada1e01b03dc2bffb67729c7a58f9ed133c19675533046fc580675c9"
+      "path": "src/torch_clustering/__base__.py",
+      "sha256": "e03a1fcf131e2ac46eb9bce0e4dfb90f61d9fb67021fd6925b8724f57ca8bc6f"
     },
     {
-      "source_id": "sacr_RGB-D_303_grid_a0.02_b0.5",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 142,
-      "line_sha256": "cd4aa294e224d349cd479ea8a226df64991580253392c6fc4ea20ee453dded49"
+      "path": "src/torch_clustering/__init__.py",
+      "sha256": "0e5c5086f4285443cb7d8395e719db3d9cdf8582ff7fe068819793d2d5f0c7c6"
     },
     {
-      "source_id": "sacr_RGB-D_303_grid_a0.02_b1",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 143,
-      "line_sha256": "0d17670dd4fd8df10a6c2183416edceafe894aa9d021b313e9a34c577df81ddd"
+      "path": "src/torch_clustering/kmeans/__init__.py",
+      "sha256": "96415180f583095793d5b47f8cff4d8cd4814f4e0ea7b1ad618d1313d72ca697"
     },
     {
-      "source_id": "sacr_RGB-D_303_grid_a0.02_b2",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 144,
-      "line_sha256": "8f9b22c9e112f11dec48fbed28d136f27c50cc137dd389a8cf67a1ad74c2eac6"
+      "path": "src/torch_clustering/kmeans/kmeans.py",
+      "sha256": "be517387f43f3000c7237df5312b43003614aa301924d18205a96078137f3311"
     },
     {
-      "source_id": "sacr_ALOI-100_101_grid_a0.05_b0.0005",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 145,
-      "line_sha256": "aaaf01fae8fc09ef91f715f3cc76234c2205c2cb6b4b7d18284ef2d6c8ecc971"
+      "path": "src/torch_clustering/kmeans/kmeans_plus_plus.py",
+      "sha256": "149878011db111b589a36a45a91eb5318426e1276dc2f7a83a3618bf9ba2b8ee"
     },
     {
-      "source_id": "sacr_ALOI-100_101_grid_a0.05_b0.001",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 146,
-      "line_sha256": "220f5556a0f69a447b434f41dba64a3ead0ee96bf9f1ff9bcc56bc9ea96b4a52"
+      "path": "src/train_final.py",
+      "sha256": "264f1754c62bb06294764be4bde4270564410a9984acea81e6191079b9cf42f5"
     },
     {
-      "source_id": "sacr_ALOI-100_101_grid_a0.05_b0.002",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 147,
-      "line_sha256": "a9dcc5d63be57ef4793255ba153ef2368b93fd62b51c33a80246a683f7e5951a"
+      "path": "src/unified_recovery.py",
+      "sha256": "c9daaf4c97929bf357689ad939cb9ed19223a3676f753d4f1cd069589cbb638f"
     },
     {
-      "source_id": "sacr_ALOI-100_101_grid_a0.1_b0.0005",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 148,
-      "line_sha256": "96d17c22bf837dedcab4c8f35fdf3a1794318dad9eb54061d29538a504274c0d"
+      "path": "src/unified_relation.py",
+      "sha256": "15f23319d3b3cda5a25088a452fa175929ece86cae85bb9d8917ce938c8000e9"
     },
     {
-      "source_id": "sacr_ALOI-100_101_grid_a0.1_b0.001",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 149,
-      "line_sha256": "c64a7950067b50d5eb4641d5b9128a469088c4a650f511a64b0318ca56d1aea0"
-    },
-    {
-      "source_id": "sacr_ALOI-100_101_grid_a0.1_b0.002",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 150,
-      "line_sha256": "f16a5ed6f8f928a727f503227ab2bcb76b2aae5fe0f96623670ae3b93f654bf1"
-    },
-    {
-      "source_id": "sacr_ALOI-100_101_grid_a0.2_b0.0005",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 151,
-      "line_sha256": "2d0a0fcf91c6100f74175f3ac5469729906653cf753044ee40d13baeab2991a5"
-    },
-    {
-      "source_id": "sacr_ALOI-100_101_grid_a0.2_b0.001",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 152,
-      "line_sha256": "8fc7d61b7951e3fe2ef7d8cde18d3bb862981cd1c8178d9deb00a0680f56a724"
-    },
-    {
-      "source_id": "sacr_ALOI-100_101_grid_a0.2_b0.002",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 153,
-      "line_sha256": "0d5cbe834595166f68f71b176f70a4d07bc318bcd419412bc2127237cdee5d11"
-    },
-    {
-      "source_id": "sacr_RGB-D_303_sensitivity_structural_anchor_epochs_10",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 159,
-      "line_sha256": "38a0b5eec9ef6abfd0e3e9e45fad6fdc1ea727f255bd494b713638a0b00d77b2"
-    },
-    {
-      "source_id": "sacr_RGB-D_303_sensitivity_structural_anchor_epochs_60",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 160,
-      "line_sha256": "b1c252d5645be398b972774f6a2ae6d55a4115890ca4574fdd953b0fb8d6c9d9"
-    },
-    {
-      "source_id": "sacr_RGB-D_303_sensitivity_k_5",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 161,
-      "line_sha256": "5c2304c2626bc7f9dfe99772e0b8bfdaa88bc0d0a5b9a4bd5a197748ea344124"
-    },
-    {
-      "source_id": "sacr_RGB-D_303_sensitivity_k_20",
-      "package_file": "receipts/frozen_selected.jsonl",
-      "kind": "unmodified_JSON_line",
-      "source_file": "release/frozen_20260923_v1/results.jsonl",
-      "source_line": 162,
-      "line_sha256": "0125c51f1a0115b33aaacdcf0f7657b1bbc6fc4d24d716353e0b4c108de31f56"
-    },
-    {
-      "source_id": "cifar10_r5_svd384_tw20_seed2424",
-      "package_file": "receipts/cifar10_promoted_RESULT_JSON.txt",
-      "kind": "unmodified_RESULT_JSON_line",
-      "source_file": "release/tune_r5/cifar10_r5_svd384_tw20_seed2424.log",
-      "source_line": 94,
-      "source_sha256": "ea77bb65453d200b5e614f3c8c888561b945255adcedd9db11abb7813660cfd9",
-      "line_sha256": "13412d89bb1f148e874a9a53a91092d445f845ba5e79756c5d7c91d50436f8cc"
-    },
-    {
-      "package_file": "visualization/RGB-D_stage0.npz",
-      "kind": "unmodified_saved_stage_representations",
-      "source_file": "release/frozen_20260923_v1/tsne_dumps/RGB-D_stage0.npz",
-      "source_sha256": "281b54e0136e961c442d85ca2a695089a0aaf81304e1c8bf0d2d69a1102b96d8",
-      "arrays": {
-        "stage0": {
-          "shape": [
-            1449,
-            256
-          ],
-          "dtype": "float32"
-        }
-      }
-    },
-    {
-      "package_file": "visualization/RGB-D_finetune.npz",
-      "kind": "unmodified_saved_stage_representations",
-      "source_file": "release/frozen_20260923_v1/tsne_dumps/RGB-D_finetune.npz",
-      "source_sha256": "5ce69e384d3257d796bc0c7d15fcd4f23547a60302510983b6d42b994e21b415",
-      "arrays": {
-        "stage25": {
-          "shape": [
-            1449,
-            256
-          ],
-          "dtype": "float32"
-        },
-        "stage50": {
-          "shape": [
-            1449,
-            256
-          ],
-          "dtype": "float32"
-        },
-        "stage100": {
-          "shape": [
-            1449,
-            256
-          ],
-          "dtype": "float32"
-        }
-      }
-    },
-    {
-      "package_file": "visualization/RGB-D_labels.csv",
-      "kind": "label_metadata_extracted_without_feature_arrays",
-      "source_file": "release/frozen_20260923_v1/data/RGB-D.mat",
-      "source_sha256": "b41e6f68bd1a1d4b632b0c1ecf9ecf2314c7f26519b16ffeb4ec25f27ef6ac88",
-      "source_mat_key": "Y",
-      "sample_order": "original row order; zero-based sample_index",
-      "label_values": "preserved integers, not reindexed"
-    },
-    {
-      "package_file": "scripts/reproduce_fig6_rgbd.py",
-      "kind": "portable adaptation of existing plotting script; RGB-D only; no training",
-      "source_file": "paper_draft_20260923/make_tsne_figure_v18.py",
-      "source_sha256": "c210e7276eed6ab10cdc31a41d0800e0e53c8d1b17f81e5ad12f6358a809ed68",
-      "current_Fig6_sha256": "bbc0b89fd42a8a8648f7e26fb7f24a332735fc08c462693226ce343312d6350e"
+      "path": "third_party/torch_clustering_LICENSE",
+      "sha256": "002c2696d92b5c8cf956c11072baa58eaf9f6ade995c031ea635c6a1ee342ad1"
     }
   ],
-  "boundaries": [
-    "Reported comparison rows are explicitly manuscript transcriptions, not raw logs or original experiments. Their original-paper or reproduction status is described in the manuscript; this package does not claim independent revalidation of all external comparisons.",
-    "Current CIFAR10 SACR-MVC main result comes from the promoted r5 seed2424 run, not the older frozen seed404 Full run.",
-    "Figure 6 uses preserved stage0 and finetune files, not RGB-D_two_phase.npz. Epoch0 is after pretraining. Labels are used for coloring.",
-    "No training was launched, no measurement was synthesized and no external publication/upload was performed.",
-    "Most per-sample predictions and model checkpoints are not included. The supplied receipts verify reported metrics; they are not a full raw training archive.",
-    "This candidate includes no third-party original feature arrays. Benchmark labels and derived representations retain any applicable source-data rights; their inclusion is not a grant of a new data license.",
-    "No open-source license or repository data license has been selected on behalf of the authors."
+  "source_snapshot_files": [
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/demo.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/demo.m",
+      "sha256": "6ab9aba616b9f9c7ef46ea2f146ce3e5fb00a547b8a762b9fb08e45c6a6883bf"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/MvC_BGDR.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/MvC_BGDR.m",
+      "sha256": "4cef860fbe619536d4a1f14ca39ec8360bf0e11335e8035c751bf25b44cd6d84"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/MvC_CGDR.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/MvC_CGDR.m",
+      "sha256": "f07d0336483a6f719fdc50fad93e6c44dd599bc1b438e460c407315646a4416c"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/AnchorSelect.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/AnchorSelect.m",
+      "sha256": "7c58cfa7b89d2bf0ee924ef4d26513cd262e916f78f933dff63aa32a4f8547cf"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/BKHK/BalancedKM.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/BKHK/BalancedKM.m",
+      "sha256": "c320244b97c340006f43d40670d9fc69c4d64c65856777454d7c97d64365c95a"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/BKHK/hKM.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/BKHK/hKM.m",
+      "sha256": "e7042309ce0e62e5e822e235d2ef530acabfc8df40f56003966b818bd2d6ab26"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/BKHK/TransformL.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/BKHK/TransformL.m",
+      "sha256": "7945f334fa32f39868630da2f6cd425c5147c58cae701c645bf1409ef9b0c751"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/ClusteringMeasure/ClusteringMeasure_All_mzy.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/ClusteringMeasure/ClusteringMeasure_All_mzy.m",
+      "sha256": "fd231af8da84994a534665e6d8d997df8f32006fdd0c657b28a3410910951f3c"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/ClusteringMeasure/ClusteringMeasure_onlyANA.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/ClusteringMeasure/ClusteringMeasure_onlyANA.m",
+      "sha256": "08a1f117116534af34e642a3b6f8093949225aa4fcb2198faf5edb3ce280c179"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/ClusteringMeasure/compute_f.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/ClusteringMeasure/compute_f.m",
+      "sha256": "5aa0042dbdf64fdc998b691757376fbecbb7f41ba86b4e54c6ecb409c4bd6a49"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/ClusteringMeasure/rand_index.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/ClusteringMeasure/rand_index.m",
+      "sha256": "df110a6ae84a28c3e296ca7b27fab77f021ee4f898547958ef38f57ad93c774b"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/EProjSimplex_new.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/EProjSimplex_new.m",
+      "sha256": "4a9f3bf79645dcbe8d1b00b3a5557b60fca8a47267b0774e4b2d817096b91954"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/EuDist2.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/EuDist2.m",
+      "sha256": "fd0f9008b93008fa9fef3bd940f37f7e24e4aaab92dde3648b0d3072335ecfad"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/LearnB.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/LearnB.m",
+      "sha256": "bff19718d60c5845aba00ca353dc95d7f36b79313b1a620e1b5e2a1e98868dbf"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/litekmeans.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/litekmeans.m",
+      "sha256": "326d0f9ee445689880e0598d272e6afc85af14f348bcbcec7570536ee997a6c9"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/n2hi/n2hi.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/n2hi/n2hi.m",
+      "sha256": "5d439f4155b75589bb30bb3380bc680ce651efb750a38eb3a6e655ade9426876"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/n2hi/private/graph_coarsen.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/n2hi/private/graph_coarsen.m",
+      "sha256": "1c7a7cf4cf6bd8fbd1cb337c4c4bdc296b2d3b5f937e0f9bba83a9999ee4b106"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/n2hi/private/map_labels.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/n2hi/private/map_labels.m",
+      "sha256": "970ff06d9935761ddb797494e75afd0228b5a8676ba2518d858d7b3987f28ee3"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/n2hi/private/n2hi_hierarchy.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/n2hi/private/n2hi_hierarchy.m",
+      "sha256": "f1cad3530e17ed6d220cfe0083eb914c275c00f1fd49bf1e05cc87f54ab7a994"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/n2hi/private/req_numclust.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/n2hi/private/req_numclust.m",
+      "sha256": "6e86963c77ec14e263fcfab8bad6d886bd5ed417a1a89c15178b0455a853791a"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/updateAlpha_ALM.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/updateAlpha_ALM.m",
+      "sha256": "09e23e0f537b8193c9f9ee1c15d184951878456f4590f9d54de2b881da5bcb93"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/updateFF.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/updateFF.m",
+      "sha256": "5641c7ee0a8cd15949e8a10b2ab5a5bce3ff138dcfcc29b8f712c4cb434f842c"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_BGDR/updateGG.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_BGDR/updateGG.m",
+      "sha256": "857428be5d36e0947c09163db4d39fb139a4699a394d4a8c8dc4ededf052de59"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_CGDR/fast_cd_BB.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_CGDR/fast_cd_BB.m",
+      "sha256": "7d4623957d3dd27f57260d3c2048dc600d1e136546adca550e88460cc65cb6f3"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "_teammate_all_datasets/03_论文复现代码/new4_sources/GDR/2026-TKDE-GDR-main/subfunc_CGDR/updateAlpha_ALM2.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/upstream/subfunc_CGDR/updateAlpha_ALM2.m",
+      "sha256": "b8f7b5d07b43d85819318052a42d2a9dc1ecde29c4cb981ab3c0931b71f60dbc"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "experiments/comparability_20261024/gdr_native_targeted/compat/ind2vec.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/local/compat/ind2vec.m",
+      "sha256": "5aee1aede042b3fd34c9c4f745ebab7ff7de1ae9c5c96ba5d8700927a546daf3"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "experiments/comparability_20261024/gdr_native_targeted/compat/randsample.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/local/compat/randsample.m",
+      "sha256": "9f0d226c61713d6f2c7c7d71140e1a3ada6c32aed06d69baaa4225cd092746d0"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "experiments/comparability_20261024/gdr_native_targeted/compat/randsrc.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/local/compat/randsrc.m",
+      "sha256": "20f7ebfc57d84fb96fc5a122a30cc9aa1eca82ddb69278b2470edf9c0b4d2654"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "experiments/comparability_20261024/gdr_native_targeted/correct_onehot_compat/TransformL.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/local/correct_onehot_compat/TransformL.m",
+      "sha256": "82b6988dfc764378dfe87fa90a497799fef7895b87789b7fb342525087049a00"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "experiments/comparability_20261024/gdr_native_targeted/memory_safe_support/onehot_branch/AnchorSelect_memory_onehot.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/local/memory_safe_support/onehot_branch/AnchorSelect_memory_onehot.m",
+      "sha256": "246e3f194df711ca0e11144f92529c6e3d5725e1fd2720b4b4f19c9a07e89a46"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "experiments/comparability_20261024/gdr_native_targeted/sparse_adapter/LearnB_sparse.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/local/sparse_adapter/LearnB_sparse.m",
+      "sha256": "a210256eeecccb7d715dcef75bfdc4cd07966795d090c386cd36cf5392ce27a7"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "experiments/comparability_20261024/gdr_native_targeted/sparse_adapter/MvC_CGDR_sparse_onehot.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/local/sparse_adapter/MvC_CGDR_sparse_onehot.m",
+      "sha256": "ebfa3ac17fe38a2c8c9e5f7299032648cde8f8480ca6a46394c3ad81ef81e6e7"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "experiments/comparability_20261024/gdr_native_targeted/memory_safe_support/onehot_branch/AnchorSelect_memory_onehot_fast.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/local/memory_safe_support/onehot_branch/AnchorSelect_memory_onehot_fast.m",
+      "sha256": "73492abd389e60456884b75f6f7990299bf5fab52948fa44ed4157ca8b101056"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "experiments/comparability_20261024/gdr_native_targeted/sparse_adapter/MvC_CGDR_sparse_onehot_fast.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/local/sparse_adapter/MvC_CGDR_sparse_onehot_fast.m",
+      "sha256": "6eeed0ac409f2be2ee437067ac77ae58e3f63d112c8f3cbd8f03e3c012a5eb59"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "experiments/comparability_20261024/gdr_native_targeted/native_correct_small_seeds.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/drivers/native_correct_small_seeds.m",
+      "sha256": "07aecd66b43ff0a18d1e28120995cb2ea1842a5558dfc55c2aefccdaaf821560"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "experiments/comparability_20261024/gdr_native_targeted/native_correct_cifar_seeds.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/drivers/native_correct_cifar_seeds.m",
+      "sha256": "c3b921f67b13564977fe26f40a31ec68aa662e7e8d4f9a99026ba496033d44f0"
+    },
+    {
+      "method": "GDR-CGDR",
+      "historical_source_path": "experiments/comparability_20261024/gdr_native_targeted/native_correct_cifar_seeds_fast.m",
+      "package_file": "benchmark_reproductions/source_snapshot/GDR-CGDR/drivers/native_correct_cifar_seeds_fast.m",
+      "sha256": "964c3fe881e521680d23f2fb6b94180a3b89924c3f1bdfe09053dc754c80bfc1"
+    },
+    {
+      "method": "TMCN",
+      "historical_source_path": "experiments/comparability_20261024/tmcn_mfeat_targeted/work/run_model.py",
+      "package_file": "benchmark_reproductions/source_snapshot/TMCN/run_model.py",
+      "sha256": "f7bd51163b1eefa83448484da6092aa2776409196cb6e986aac3efb6e5872aca"
+    },
+    {
+      "method": "TMCN",
+      "historical_source_path": "experiments/comparability_20261024/tmcn_mfeat_targeted/work/metrics_common.py",
+      "package_file": "benchmark_reproductions/source_snapshot/TMCN/metrics_common.py",
+      "sha256": "6704fb02253ec97771c2c9b42a1b48fcdb243e386ecf3f6bc3e5570f03d20a5c"
+    },
+    {
+      "method": "TMCN",
+      "historical_source_path": "experiments/comparability_20261024/tmcn_mfeat_targeted/work/tmcn_fast_scan.py",
+      "package_file": "benchmark_reproductions/source_snapshot/TMCN/tmcn_fast_scan.py",
+      "sha256": "a542615f5990d14c3ef10b55a2dcdb922c8707178dc7e13822b714c2d9d7f295"
+    },
+    {
+      "method": "TMCN",
+      "historical_source_path": "experiments/comparability_20261024/tmcn_mfeat_targeted/work/prepare_data.py",
+      "package_file": "benchmark_reproductions/source_snapshot/TMCN/prepare_data.py",
+      "sha256": "cb659ada495c5de4fa9e78d5f9d247051fcb4eacfc6b3dae91c4d817e48b3b92"
+    },
+    {
+      "method": "TMCN",
+      "historical_source_path": "experiments/comparability_20261024/tmcn_mfeat_targeted/work/sources/TMCN/network.py",
+      "package_file": "benchmark_reproductions/source_snapshot/TMCN/sources/TMCN/network.py",
+      "sha256": "e3da3680455fec2754867563e4c9a6c2f220dc628c47346c814d796f79261195"
+    },
+    {
+      "method": "TMCN",
+      "historical_source_path": "experiments/comparability_20261024/tmcn_mfeat_targeted/work/sources/TMCN/loss.py",
+      "package_file": "benchmark_reproductions/source_snapshot/TMCN/sources/TMCN/loss.py",
+      "sha256": "7651323b342e525b2eb47a03471d2b93976bcb6c7188c6ed866cf7a3d02249db"
+    },
+    {
+      "method": "TMCN",
+      "historical_source_path": "experiments/comparability_20261024/tmcn_mfeat_targeted/work/sources/TMCN/metric.py",
+      "package_file": "benchmark_reproductions/source_snapshot/TMCN/sources/TMCN/metric.py",
+      "sha256": "e75a545e0f2a14077d75bae55d6b715dcd89b38d6347cae7e3cab899bbe95c18"
+    },
+    {
+      "method": "TMCN",
+      "historical_source_path": "experiments/comparability_20261024/tmcn_mfeat_targeted/work/sources/TMCN/train.py",
+      "package_file": "benchmark_reproductions/source_snapshot/TMCN/sources/TMCN/train.py",
+      "sha256": "c7b609dc18b2e7606338a320ffdf677d6d25d7a0fa6313ea201bcde69ec09097"
+    },
+    {
+      "method": "TMCN",
+      "historical_source_path": "experiments/comparability_20261024/tmcn_mfeat_targeted/work/sources/TMCN/dataloader.py",
+      "package_file": "benchmark_reproductions/source_snapshot/TMCN/sources/TMCN/dataloader.py",
+      "sha256": "cff141a90ea7e11a794bc7199b7ee9aa0b6d9987cef5397139fc8cbb28c8d82f"
+    },
+    {
+      "method": "TMCN",
+      "historical_source_path": "experiments/comparability_20261024/tmcn_mfeat_targeted/work/sources/TMCN/Requirements.txt",
+      "package_file": "benchmark_reproductions/source_snapshot/TMCN/sources/TMCN/Requirements.txt",
+      "sha256": "0ffcf07150f160895b944169f65c39549a851583e74eb904401d04c2b744ffa5"
+    },
+    {
+      "method": "SCM",
+      "package_file": "benchmark_reproductions/source_snapshot/SCM/upstream/train.py",
+      "sha256": "f48ce61a0c051c82e79ed064eda451661f5e483dcfb46fbc6dd7172b8acb9791",
+      "upstream_url": "https://github.com/SubmissionsIn/SCM/blob/f23dbc25a7dda62651f12d6cba53f53aa72548dc/train.py",
+      "git_blob_sha": "dd11975e8808fb717b2a0699781547372265e692",
+      "historical_source_path": "experiments\\comparability_20261024\\accmvc_replacement_scm\\official\\train.py"
+    },
+    {
+      "method": "SCM",
+      "package_file": "benchmark_reproductions/source_snapshot/SCM/upstream/dataloader.py",
+      "sha256": "4574453173280a158826c9f91e4500b61cfd1f9de21de85d49830fd0d715e0fe",
+      "upstream_url": "https://github.com/SubmissionsIn/SCM/blob/f23dbc25a7dda62651f12d6cba53f53aa72548dc/dataloader.py",
+      "git_blob_sha": "ffa97d42f86b912c854bb3611aa91b16d2a5715f",
+      "historical_source_path": "experiments\\comparability_20261024\\accmvc_replacement_scm\\official\\dataloader.py"
+    },
+    {
+      "method": "SCM",
+      "package_file": "benchmark_reproductions/source_snapshot/SCM/upstream/network.py",
+      "sha256": "c9460c167afdb3bf6ec641bc13e27110071d2a2bdcc476b78e1b7b8b242673ff",
+      "upstream_url": "https://github.com/SubmissionsIn/SCM/blob/f23dbc25a7dda62651f12d6cba53f53aa72548dc/network.py",
+      "git_blob_sha": "4af7274c38b18e9382154d29ef9d1d18cd0c7ddf",
+      "historical_source_path": "experiments\\comparability_20261024\\accmvc_replacement_scm\\official\\network.py"
+    },
+    {
+      "method": "SCM",
+      "package_file": "benchmark_reproductions/source_snapshot/SCM/upstream/loss.py",
+      "sha256": "fdaa68921749e8d07a02f9805d143399e6cb2aab5a3934764cc69ab6df3d998c",
+      "upstream_url": "https://github.com/SubmissionsIn/SCM/blob/f23dbc25a7dda62651f12d6cba53f53aa72548dc/loss.py",
+      "git_blob_sha": "4df7284151166aeae665b8a473acbbadae2efede",
+      "historical_source_path": "experiments\\comparability_20261024\\accmvc_replacement_scm\\official\\loss.py"
+    },
+    {
+      "method": "SCM",
+      "package_file": "benchmark_reproductions/source_snapshot/SCM/upstream/metric.py",
+      "sha256": "5bda69d21a7f5084757856c81a87b7dc8b21ae136fc904891e333b411b155ee2",
+      "upstream_url": "https://github.com/SubmissionsIn/SCM/blob/f23dbc25a7dda62651f12d6cba53f53aa72548dc/metric.py",
+      "git_blob_sha": "4428d65166fdd463e10008d169537edfcc4f1495",
+      "historical_source_path": "experiments\\comparability_20261024\\accmvc_replacement_scm\\official\\metric.py"
+    },
+    {
+      "method": "SCM",
+      "package_file": "benchmark_reproductions/source_snapshot/SCM/upstream/TSNE.py",
+      "sha256": "c00441b3050503042eb1ef8f951a3a5c198a7c0fb9a35489eebbbaa2da332403",
+      "upstream_url": "https://github.com/SubmissionsIn/SCM/blob/f23dbc25a7dda62651f12d6cba53f53aa72548dc/TSNE.py",
+      "git_blob_sha": "cba3e03f4b7f70983b35710d0182ca9c9202022c",
+      "historical_source_path": "experiments\\comparability_20261024\\accmvc_replacement_scm\\official\\TSNE.py"
+    },
+    {
+      "method": "SCM",
+      "package_file": "benchmark_reproductions/source_snapshot/SCM/upstream/readme.txt",
+      "sha256": "39ece67a3dfcda9cec32a6b4f12dcc9385513e0e620a99bdf6465c8f8e895406",
+      "upstream_url": "https://github.com/SubmissionsIn/SCM/blob/f23dbc25a7dda62651f12d6cba53f53aa72548dc/readme.txt",
+      "git_blob_sha": "37fae38532dfa711951ae10b238ae91e3814b53b",
+      "historical_source_path": "experiments\\comparability_20261024\\accmvc_replacement_scm\\official\\readme.txt"
+    },
+    {
+      "method": "SCM",
+      "package_file": "benchmark_reproductions/source_snapshot/SCM/run_fixed.py",
+      "sha256": "4213f99c3f414509d8cfb59a0f3ad62dd46862618cb38ecdf1fb656ce79bd600",
+      "historical_source_path": "experiments\\comparability_20261024\\accmvc_replacement_scm\\run_fixed.py",
+      "role": "declared target-data, reproducibility and saved-prediction adapter"
+    }
   ],
-  "repository_url": "https://github.com/lyy9987/-SACR-MVC"
+  "preserved_own_evidence": "six main entries are receipt/log supported; RGB-D additionally has a declared replay partition bound to the historical prediction-array hash; other five are not claimed independently prediction-recomputed",
+  "predictions": {
+    "targeted_complete_runs": 31,
+    "RAV_native": 5,
+    "own_RGBD_bound_partition": 1
+  },
+  "source_documents": {
+    "DCMVC": "https://doi.org/10.1109/TIP.2024.3444269",
+    "GCFAgg": "https://openaccess.thecvf.com/content/CVPR2023/papers/Yan_GCFAgg_Global_and_Cross-View_Feature_Aggregation_for_Multi-View_Clustering_CVPR_2023_paper.pdf",
+    "TMCN": "https://arxiv.org/pdf/2412.16487v2",
+    "RAV": "https://openreview.net/forum?id=uRA9cT4MK6",
+    "CAFE": "https://doi.org/10.1109/TPAMI.2026.3708284",
+    "DCMCS": "https://arxiv.org/pdf/2403.05768v1",
+    "THCRL": "https://arxiv.org/pdf/2512.00368v2"
+  },
+  "additional_reference_rows": 14,
+  "published_behavior_GDR_diagnostics": "11 encoding-behavior runs remain locally retained and are not pooled into the corrected-onehot main branch",
+  "omitted_payloads": "raw feature matrices, model weights, duplicate stdout, full historical ledgers and large fixtures remain local; package preserves selected atomic records, complete selection traces and hashes",
+  "input_verification_boundary": "default verification is self-contained; original MAT-file hashes and ordered canonical labels can additionally be checked with --data-root in the optional prediction verifier",
+  "base_own_code_and_configs_unchanged": true,
+  "Mfeat_historical_source_reconstruction": {
+    "status": "historical_six_component_bundle_exactly_reconstructed_and_Mfeat_active_path_equivalence_established",
+    "target_bundle_sha256": "7D53FEC852B9BEF89270A4EA30D402CE54F4EA4E7A19C2B0CAA77B04AA7B4940",
+    "recipe_file": "evidence/source_reconstruction/Mfeat/recipe.json",
+    "recipe_sha256": "e49791d5d1692763f8052439dd8f9e6fee60f8956024748baa610aa5fef3ede7",
+    "historical_model_file": "evidence/source_reconstruction/Mfeat/model_preimport_7D53.py",
+    "historical_model_sha256": "6abde8bd507be98be090edb6f4af5ed614ad17cac481affd08b90f0a2734a225",
+    "active_path": "pretraining/final readout; con_epochs=0",
+    "saved_prediction_available": false
+  },
+  "source_statistic_metadata": "evidence/source_statistics_and_candidates.json"
 }

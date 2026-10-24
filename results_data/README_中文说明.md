@@ -1,13 +1,31 @@
-# SACR-MVC 支撑实验结果数据
+# 实验数值与来源
 
-本包收录 **SACR-MVC：基于结构锚定与可靠共识的对比多视图聚类** 当前稿件表3—表6、图4—图9所用数值、对应的已保存实验回执，以及图6实际使用的 RGB-D 四阶段表示。算法实现和实验配置见本目录的上一级。
+本材料对应表3（六个数据集上的十种基线及SACR-MVC）、表4–5和图4–9。结果附带逐项来源与实验协议。SACR-MVC训练代码和配置保持已核验实验源码的字节内容。
 
-`tables/` 是主表、消融、单参数表和正文三项策略对照；`figures/` 是各定量图的数值；`receipts/` 保存真实结果文件中的选定原始 JSON 行与两个独立近邻实验回执；`visualization/` 保存图6实际使用的 epoch0、25、50、100阶段表示及绘图所需类别元数据。epoch0 是预训练后的状态。每个来源的文件路径、行号和哈希见 `SOURCE_MANIFEST.json`。
+## 来源与结果选择
 
-主表的外部对比方法行明确标为论文转录值，并未冒称原始实验回执。本文方法的 CIFAR10 采用 r5、seed2424的最终记录，其余采用对应冻结 Full 回执。主表0—1刻度、图中百分数、参数表百分点差值分别列明。当前图6对应 `RGB-D_stage0.npz` 与 `RGB-D_finetune.npz`，与早期 `RGB-D_two_phase.npz` 区分。
+`tables/main_comparison.csv`包含66个方法—数据集条目，采用0–1数值；`tables/entry_sources.csv`区分原文结果、二手报告、本地记录和保存预测。优先采用原论文表格，原表未提供时使用已标明来源的二手报告，其余采用有记录的本地复现。文献值保留原统计含义。本地保留多次候选时按ACC选择，全部可用指标取自同一次运行或日志epoch；缺失指标留空。显示值保留四位小数，百分点差值优先使用未舍入记录。
 
-另外保留6条能直接定位并与当前表格显示数值一致的 GCFAgg、CAFE 结果原始 JSON 行，出处见 `tables/baseline_receipt_index.csv`。
+`evidence/source_statistics_and_candidates.json`保存GCFAgg在RGB-D、ALOI-100和Mfeat上每组三次真实候选，并说明CAFE和GDR-CGDR的文献统计含义：CAFE报告五个随机种子中的最佳结果；GDR-CGDR对每个参数设置重复十次、统计均值与标准差，再报告最佳设置的表现，其文献值不等同于单次运行最大值。两处带标记的CGDR原文NMI保留在`NMI_source_reported`，不参与算术NMI排名，归一化来源说明在逐项索引中。
 
-运行 `python scripts/verify_results.py` 可核对数值与校验和；该脚本仅需 Python 标准库。需要复绘图6时，运行 `python scripts/reproduce_fig6_rgbd.py`，另需 NumPy、Matplotlib、scikit-learn。脚本只使用已保存表示，不启动训练；不同库版本可能使 t-SNE 二维坐标有所变化。
+`tables/additional_literature_reference.csv`保留附带来源的其他文献结果。图4数据与表3一致；其余表格和图件数据对应消融及参数分析。
 
-原始特征仍由正文及上级数据说明中列出的来源提供，本目录保留支撑结果的数值、回执和可视化输入。来源数据适用的使用条件继续有效。
+## 配置与结果证据
+
+`configs/`中六个SACR-MVC预设记录真实预训练和聚类阶段时长、种子、预处理及读出设置。主表条目由与预设关联的完整原子结果记录支持；RGB-D另外提供与历史预测数组哈希一致的划分。精确源码哈希及Mfeat预训练源码重构见`SOURCE_MANIFEST.json`和`evidence/own_Mfeat_source_boundary.json`。
+
+`benchmark_reproductions/run_index.json`关联20组GDR-CGDR、五组TMCN/Mfeat、六组SCM及五组RAV的配置、结果记录与划分；`selected_runs.json`记录五组最高ACC完整运行选择。包内保留小型标签/预测数组，特征矩阵、嵌入、模型权重和完整控制台日志留在本地档案。
+
+## 基线设置
+
+GDR-CGDR使用作者实现，并注明类别到one-hot映射修正、有界内存anchor及稀疏图构造。固定KM、k=20、Maxiter=30，RGB-D/Mfeat/CIFAR10/CIFAR100的h为10/10/12/12；独立数学兼容函数与作者代码分别标明。
+
+TMCN/Mfeat采用种子0–4、200轮预训练和100轮微调，最终KMeans n_init=100；适配器包含注明的纯PyTorch scan兼容实现。TMCN/RGB-D保留epoch300的完整终轮评测。
+
+SCM采用作者网络、损失与优化函数，通过固定目标接口使用全部视图和样本：逐视图全局min-max、seed1、1000次小批次更新、batch256、Adam学习率0.0003、隐藏/投影维数256/128及原生noise/missing参数0.25/0.25/0.4。该预算由公开MNIST-USPS预设统一迁移到六目标。最终归一化z采用已知K、n_init=10、seed1和max_iter300读出。
+
+SCMVC在RGB-D与Mfeat上分别选择ACC最高的完整日志向量epoch247和210。RAV采用保存的原生argmax划分。每个条目的记录与预测证据类型见`entry_sources.csv`。
+
+## 核验与访问
+
+包根目录运行`python results_data/scripts/verify_results.py`可检查来源/表格、完整运行选择、原子记录及全部文件校验和。安装NumPy/SciPy后，`verify_saved_predictions.py`从37份已提供划分独立重算四项指标，不加载模型或重新聚类；可选`--data-root`核对六个MAT哈希与样本标签顺序。数据入口见`data/README.md`，代码来源与组件许可见`THIRD_PARTY_NOTICES.md`。证据中的历史路径仅作来源定位，不是运行依赖。

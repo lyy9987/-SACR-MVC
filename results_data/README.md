@@ -1,28 +1,31 @@
-# SACR-MVC supporting experimental data
+# Supporting numerical data
 
-This package supports the manuscript **SACR-MVC: Contrastive multi-view clustering with structure anchoring and reliable consensus**. It contains the numerical results used in Tables 3–6 and Figs. 4–9, retained result receipts, and the saved RGB-D representations used for Fig. 6. The implementation and experiment configurations are in the parent directory of this supplement.
+This material supports Table 3 (ten baselines and SACR-MVC on six datasets), Tables 4–5 and Figs. 4–9. Entry-specific sources and protocols accompany the results. The SACR-MVC training code and configurations retain the verified experiment-source bytes.
 
-## Files and units
+## Result sources and selection
 
-- `tables/main_comparison.csv`: the displayed comparison values in Tables 3–4, on a 0–1 scale. SACR-MVC rows are checked against the retained receipts. Other comparison values are explicitly labelled as reported-table transcriptions; they are not new measurements or raw experiment logs.
-- `tables/ablation_modules.csv`: Table 5, with full-precision retained metrics on a 0–1 scale. The manuscript rounds these values to four decimal places.
-- `tables/parameter_onefactor.csv`: Table 6. ACC and NMI are percentages; delta ACC is in percentage points relative to the corresponding main setting.
-- `tables/strategy_checks.csv`: the three additional ablation comparisons reported in the text.
-- `tables/baseline_receipt_index.csv`: origins of six directly located GCFAgg/CAFE result records whose method, dataset, and displayed metrics match the comparison table. The original JSON lines are retained in `receipts/baseline_selected.jsonl`.
-- `figures/`: numerical values for the ACC comparison, Fowlkes–Mallows comparison, loss-weight grids, and neighborhood-size analysis. Percentages are calculated as 100 times the corresponding receipt metrics.
-- `receipts/`: the selected original JSON lines from the frozen result file, the promoted CIFAR10 `RESULT_JSON` line, and the two retained standalone neighborhood-study receipts. Selected lines preserve the original fields, including historical local file paths; these paths document provenance and are not required to run the verification script.
-- `visualization/`: the unmodified `RGB-D_stage0.npz` and `RGB-D_finetune.npz` stage files, plus class-label metadata in original row order. These contain four 1449 × 256 float32 arrays: stage0, stage25, stage50, and stage100. Stage0 is the representation after pretraining.
-- `SOURCE_MANIFEST.json`: file origins, source hashes, extraction types, and package boundaries.
-- `CHECKSUMS.sha256`: checksums of the packaged files.
+`tables/main_comparison.csv` contains 66 method–dataset entries in 0–1 units. `tables/entry_sources.csv` identifies each original-paper result, secondary report, local record or saved prediction. Original-paper tables take priority; identified secondary reports are used when those tables do not provide the value, followed by documented local reproduction. Published entries retain their reported statistics. Multiple retained local candidates are selected by ACC, with all available metrics taken from the same run or logged epoch. Missing metrics are left blank. Metrics are displayed to four decimal places; percentage-point differences use unrounded records when available.
 
-## Verification and visualization
+`evidence/source_statistics_and_candidates.json` records three retained GCFAgg candidates for each of RGB-D, ALOI-100 and Mfeat, and clarifies the published CAFE and GDR-CGDR statistics. CAFE reports the best result over five random seeds. GDR-CGDR repeats each parameter setting ten times, summarizes mean/standard deviation and reports the best setting; its displayed literature values are not single-run maxima. The two marked published CGDR NMI values remain in `NMI_source_reported` and are excluded from the arithmetic-NMI ranking; the source-normalization details remain in the entry index.
 
-Run `python scripts/verify_results.py` to check the included numerical CSVs against their result receipts and verify file checksums. Python 3 is sufficient; this check uses the standard library.
+`tables/additional_literature_reference.csv` retains additional published results with their sources. `figures/fig4_acc.csv` matches Table 3; the remaining table and figure data accompany the ablation and parameter analyses.
 
-Run `python scripts/reproduce_fig6_rgbd.py` to recompute the four RGB-D t-SNE panels from the saved representations. This optional script requires NumPy, Matplotlib, and scikit-learn. It uses the original settings: perplexity 30, learning rate 200, PCA initialization, 2000 iterations, random state 0, and the same fixed sample indices across panels. Labels are used for coloring. The code does not train or modify the clustering model. The saved stage representations and fixed settings provide the inputs for recomputing the visualization; coordinates can vary with library versions.
+## Configurations and retained evidence
 
-The CIFAR10 main result and F-score use the promoted r5 run with seed 2424. The other main SACR-MVC entries use the corresponding retained frozen Full runs. F-score entries use each method's own retained representative run; the DCMVC RGB-D, ALOI-100, and Hdigit F-scores are not the literature rows in Table 3.
+The six SACR-MVC presets are in `configs/`. They specify the actual pretraining and clustering-stage durations, seed, preprocessing and readout settings. Main SACR-MVC entries are supported by atomic result records linked to these presets. RGB-D additionally provides a partition matching its historical prediction-array hash. Exact source hashes and the Mfeat pretraining-source reconstruction are documented in `SOURCE_MANIFEST.json` and `evidence/own_Mfeat_source_boundary.json`.
 
-## Source data and rights
+`benchmark_reproductions/run_index.json` links configurations and result records to 20 GDR-CGDR, five TMCN/Mfeat, six SCM and five RAV partitions. `selected_runs.json` identifies the five best-ACC complete-run selections. The package contains these small label/prediction arrays; feature matrices, embeddings, model weights and full console logs remain in the local archive.
 
-Original benchmark features are obtained from the repositories and archives cited in the manuscript and described in S1. They are not redistributed here. Class metadata and learned representations retain any applicable benchmark-source restrictions. No additional rights to third-party benchmark data are granted by this supplement.
+## Baseline settings
+
+GDR-CGDR uses the author implementation with the documented class-to-one-hot correction, bounded-memory anchors and sparse graph construction. Settings are KM, k=20, Maxiter=30 and h=10/10/12/12 for RGB-D/Mfeat/CIFAR10/CIFAR100. Independent mathematical compatibility functions are identified separately from author code.
+
+TMCN/Mfeat uses seeds 0–4, 200 pretraining and 100 fine-tuning epochs, followed by KMeans n_init=100. Its adapter includes the documented pure-PyTorch scan compatibility implementation. TMCN/RGB-D retains its complete terminal evaluation at epoch 300.
+
+SCM uses the author network, loss and optimization function with a fixed target-data adapter: all views and samples, per-view global min-max, seed 1, 1000 minibatch updates, batch 256, Adam lr=0.0003, hidden/projection dimensions 256/128 and native noise/missing settings 0.25/0.25/0.4. This transfers the public MNIST-USPS preset uniformly to the six targets. Terminal normalized z is clustered with known K, n_init=10, seed=1 and max_iter=300.
+
+SCMVC/RGB-D and Mfeat use the complete logged vectors selected by ACC at epochs 247 and 210. RAV uses its saved native argmax partition. Individual record/prediction coverage is identified in `entry_sources.csv`.
+
+## Verification and access
+
+Run `python results_data/scripts/verify_results.py` from the package root for source/table consistency, complete-run selection, atomic-record checks and all file checksums. With NumPy/SciPy, `verify_saved_predictions.py` independently recomputes four metrics from the 37 supplied partitions; it does not load a model or fit clustering. Optional `--data-root` checks the six canonical MAT hashes and ordered labels. Data-access instructions are in `data/README.md`; code sources and component licences are in `THIRD_PARTY_NOTICES.md`. Historical paths in evidence records are provenance locators, not runtime dependencies.

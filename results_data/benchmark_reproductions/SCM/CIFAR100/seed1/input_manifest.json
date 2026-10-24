@@ -1,0 +1,51 @@
+{
+  "dataset": "CIFAR100",
+  "input_file": "F:\\SACR_MVC_project\\release\\frozen_20260923_v1\\data\\cifar100.mat",
+  "input_sha256": "d693a211fd03adc9ce3a0e64208a19a23fd69582739f13686b9edcee90265c82",
+  "N": 50000,
+  "V": 3,
+  "K": 100,
+  "dimensions": [
+    512,
+    2048,
+    1024
+  ],
+  "labels_ordered_sha256": "ac1fc6f67f41e276cbeebcd46daa93fcb61bfea4800008f7ed155d60f08efe57",
+  "sample_order_sha256": "33236cc6bd19fa6b89e06d441d3fcd8eb37dc8540f6a4f2b627b20af10894a41",
+  "views": [
+    {
+      "view": 0,
+      "shape": [
+        50000,
+        512
+      ],
+      "raw_ordered_float64_sha256": "fc1e6162becd3ee079dafc6872ec2b5a66eaa8332435d7f8cf84258a989aeb62",
+      "transformed_float32_sha256": "524d44d820f67bbd111687c0b9a6742a3a2857bfec1b63bb8d0ee21a84a4c2df",
+      "global_min": 0.0,
+      "global_max": 9.387868881225586
+    },
+    {
+      "view": 1,
+      "shape": [
+        50000,
+        2048
+      ],
+      "raw_ordered_float64_sha256": "64eb71cc51141242149feca49c46ea4cf515cca011727b7af246d1f303ab1a81",
+      "transformed_float32_sha256": "0d3e6c02ea0bb470146048135c0cf9332999d97eba0c92a82c085aa0f9a5977f",
+      "global_min": 0.0,
+      "global_max": 6.678576469421387
+    },
+    {
+      "view": 2,
+      "shape": [
+        50000,
+        1024
+      ],
+      "raw_ordered_float64_sha256": "d4106f21b1039023705def0eb4c63c1bc2fa607dac3f8b68491719d3ba6529d1",
+      "transformed_float32_sha256": "071c9730c640f7c03315509a6dbed80cea4808f7b24241d3e62fea0116422484",
+      "global_min": 0.0,
+      "global_max": 12.637140274047852
+    }
+  ],
+  "loading_seconds": 9.1892735
+}

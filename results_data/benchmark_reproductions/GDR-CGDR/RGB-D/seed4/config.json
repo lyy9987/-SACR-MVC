@@ -1,0 +1,17 @@
+{
+  "dataset": "RGB-D",
+  "seed": 4,
+  "k": 20,
+  "h": 10,
+  "init_label": "KM",
+  "is_normal": 1,
+  "Maxiter": 30,
+  "cpu_only": 1,
+  "max_num_comp_threads": 2,
+  "author_main_unchanged": 1,
+  "author_transformL_overridden": 1,
+  "independent_correct_onehot_semantic_patch": 1,
+  "uses_local_compatibility": 1,
+  "decision_basis": "Encode each drawn StartInd class in its own column; branch chosen before corrected-branch scores",
+  "initial_empty_cluster_guard_added": 0
+}

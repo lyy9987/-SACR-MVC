@@ -1,0 +1,87 @@
+{
+  "dataset": "Mfeat",
+  "input_file": "F:\\SACR_MVC_project\\release\\frozen_20260923_v1\\data\\Mfeat.mat",
+  "input_sha256": "f5ad03f0fbdea89e1af38b6a6e2941be8d6bc85ec641b4cdcf884d04c7c94bda",
+  "N": 2000,
+  "V": 6,
+  "K": 10,
+  "dimensions": [
+    216,
+    76,
+    64,
+    6,
+    240,
+    47
+  ],
+  "labels_ordered_sha256": "4e64a02568003d897e7b68ba22d98a34f324c87f72edef91cddc23d3c5cfeb56",
+  "sample_order_sha256": "55f385cf2332d9056aaed6f496e7bebd2df52c6a9547ce2144b309432d4b0290",
+  "views": [
+    {
+      "view": 0,
+      "shape": [
+        2000,
+        216
+      ],
+      "raw_ordered_float64_sha256": "9b0ec35b591d5e71c3e72762dcb14280997659bd3a5db689903d6ed7a00f0717",
+      "transformed_float32_sha256": "d647f9b6fb8dc2f5d7e549aafbb201774c95e3ebb5474c9d1282aa3f54ee7244",
+      "global_min": 0.0,
+      "global_max": 1353.0
+    },
+    {
+      "view": 1,
+      "shape": [
+        2000,
+        76
+      ],
+      "raw_ordered_float64_sha256": "3dbf559801053d699bd86a64bd923b30a2ae2b3e31fd0aa294ee3a27cb526ef4",
+      "transformed_float32_sha256": "5b58a7f7a70134e7b2961da8845b7e5eda45296e1ff97e90f69cc327a560077a",
+      "global_min": 0.00017629000649321824,
+      "global_max": 0.7964872121810913
+    },
+    {
+      "view": 2,
+      "shape": [
+        2000,
+        64
+      ],
+      "raw_ordered_float64_sha256": "5011dd1b5146f0b5a8faf026c166e8aeed2acc0c06306de9af251a242cd32a3d",
+      "transformed_float32_sha256": "ad694844c3a61ddbe95d5a8135ebfcec407d453484478d0063ddf8a73d882ce5",
+      "global_min": -16.459304809570312,
+      "global_max": 17.049015045166016
+    },
+    {
+      "view": 3,
+      "shape": [
+        2000,
+        6
+      ],
+      "raw_ordered_float64_sha256": "898de62f142a7d4904577ecf63da944cdd0ebefb873f498ea744c2d3d101682f",
+      "transformed_float32_sha256": "07d8477956fb1c8d2f893c3a0af2329780a8a57909f797c025acc4bc834beed3",
+      "global_min": 0.0,
+      "global_max": 17572.19921875
+    },
+    {
+      "view": 4,
+      "shape": [
+        2000,
+        240
+      ],
+      "raw_ordered_float64_sha256": "e8bdfbd1d74394d5954e186f2aab1bccd259b28c334318e5a670bba2de48b9e0",
+      "transformed_float32_sha256": "98f4f618fe41234c89770756e1dcfeba42ae2b6e42752e35109bab76ec2ad4a8",
+      "global_min": 0.0,
+      "global_max": 6.0
+    },
+    {
+      "view": 5,
+      "shape": [
+        2000,
+        47
+      ],
+      "raw_ordered_float64_sha256": "50fabead84e7c390f4f4e06957cb5c0f7fcc99e17b44fc6df9f59b0f7c300d66",
+      "transformed_float32_sha256": "464617b048ae89d41811d6decda16ec953d253a4057e9e80b929101fdfceb11f",
+      "global_min": 0.0010943199740722775,
+      "global_max": 777.86181640625
+    }
+  ],
+  "loading_seconds": 0.07739919999999989
+}

@@ -1,0 +1,39 @@
+{
+  "dataset": "RGB-D",
+  "input_file": "F:\\SACR_MVC_project\\release\\frozen_20260923_v1\\data\\RGB-D.mat",
+  "input_sha256": "b41e6f68bd1a1d4b632b0c1ecf9ecf2314c7f26519b16ffeb4ec25f27ef6ac88",
+  "N": 1449,
+  "V": 2,
+  "K": 13,
+  "dimensions": [
+    2048,
+    300
+  ],
+  "labels_ordered_sha256": "f577fcc7ec87b1814ca41de1c8a2d03d105ae3fc4fbcd4c4ec26b8e8f75ca91c",
+  "sample_order_sha256": "d15cd19c4448fc0b70c34f05b36f2811779c0f7a7bbe3afee2e543bc4563ff0c",
+  "views": [
+    {
+      "view": 0,
+      "shape": [
+        1449,
+        2048
+      ],
+      "raw_ordered_float64_sha256": "b1257ee35dcf6863e534fa9d05a31782e3c52ec0f22b84e6a94c3a1c241c784d",
+      "transformed_float32_sha256": "af78850329fb63b537fb943289d8594569042375533c221608b59f418dbf9138",
+      "global_min": 0.0,
+      "global_max": 3.946948766708374
+    },
+    {
+      "view": 1,
+      "shape": [
+        1449,
+        300
+      ],
+      "raw_ordered_float64_sha256": "24a7e4c22d7f907eee22c5edb1c3d8765e3cce6a1c4b2b5b5f0902bb2f45dc6f",
+      "transformed_float32_sha256": "e8ef3a01d5bce89d0456f7903d66d1fa68ddbc88578bcc564fe0b937a7f58cd3",
+      "global_min": 0.0,
+      "global_max": 1.0
+    }
+  ],
+  "loading_seconds": 0.2305761000000004
+}

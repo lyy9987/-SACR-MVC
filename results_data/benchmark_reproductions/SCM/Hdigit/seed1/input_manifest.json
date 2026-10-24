@@ -1,0 +1,39 @@
+{
+  "dataset": "Hdigit",
+  "input_file": "F:\\SACR_MVC_project\\release\\frozen_20260923_v1\\data\\Hdigit.mat",
+  "input_sha256": "af2f600a05137ab12697a169397864d6be7c5bee40ba4ce25db7f4074f0296ce",
+  "N": 10000,
+  "V": 2,
+  "K": 10,
+  "dimensions": [
+    784,
+    256
+  ],
+  "labels_ordered_sha256": "c5575395e636cadcdfe5764ffc8d56f56d234a4dc687096f8fc2d975dd6a5597",
+  "sample_order_sha256": "9e1c19b3fdc185411bd1a987deb6a9fda2531116aac060a84c4d878854d1c099",
+  "views": [
+    {
+      "view": 0,
+      "shape": [
+        10000,
+        784
+      ],
+      "raw_ordered_float64_sha256": "5830afe8b7c07744bb7a6b4c1d8557492163669a9142d25d885200b8aa1f1e82",
+      "transformed_float32_sha256": "50f726d0a6b30ee244557ecf169e059ab4aa3e79835a2b5d69d382bf2b40ea43",
+      "global_min": 0.0,
+      "global_max": 255.0
+    },
+    {
+      "view": 1,
+      "shape": [
+        10000,
+        256
+      ],
+      "raw_ordered_float64_sha256": "1970b6bac25e08af8564bdf21335208e00dc70d3618cb52cf0051bc295fcd4d5",
+      "transformed_float32_sha256": "18d52fb62950013173f2f0469ebd7e92d2bf9161d53e766487c22e2a1f7c8f44",
+      "global_min": 0.0,
+      "global_max": 255.0
+    }
+  ],
+  "loading_seconds": 0.2889452000000001
+}

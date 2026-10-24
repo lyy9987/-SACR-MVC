@@ -1,0 +1,63 @@
+{
+  "dataset": "ALOI-100",
+  "input_file": "F:\\SACR_MVC_project\\release\\frozen_20260923_v1\\data\\ALOI-100.mat",
+  "input_sha256": "e20bb24d6473a14e84aba93a92cfd19c4ddbb8ea3fa41618a63049f533da8323",
+  "N": 10800,
+  "V": 4,
+  "K": 100,
+  "dimensions": [
+    77,
+    13,
+    64,
+    125
+  ],
+  "labels_ordered_sha256": "4ba55c84b28b4d5866eda5452af92479d9da339fb4a8d652fb493add1caadc58",
+  "sample_order_sha256": "f3a00b27bb88f24e3b445f7ec48568a58d1dd4a0880e0ca67e9b032b0e2d36e6",
+  "views": [
+    {
+      "view": 0,
+      "shape": [
+        10800,
+        77
+      ],
+      "raw_ordered_float64_sha256": "1ccc0f5898b860ec698ba9cb194c467eba99dc6144944df403df0a72c4b70db2",
+      "transformed_float32_sha256": "7f7d783dd087dba4627efaeb3e4bd035c0b1e9382cd7a8cdf8ccd0799a33acff",
+      "global_min": 0.15496544539928436,
+      "global_max": 0.8196020126342773
+    },
+    {
+      "view": 1,
+      "shape": [
+        10800,
+        13
+      ],
+      "raw_ordered_float64_sha256": "17bd0dbf5ad6a733ad33c071785d640fac995898fa613f283ec82d2dcd341765",
+      "transformed_float32_sha256": "33d761adabb1f41a023872c9ff2993de2b9438339d23d01e9413caa8324a96f8",
+      "global_min": -28699.341796875,
+      "global_max": 81611609604096.0
+    },
+    {
+      "view": 2,
+      "shape": [
+        10800,
+        64
+      ],
+      "raw_ordered_float64_sha256": "dbf1f1faac174874500c73e7133ce0bb991da2a2ca6ddae3143f41f674adb438",
+      "transformed_float32_sha256": "64c2315441d2059600c886a42c3ca891c0a98df66da05749f9874267d5610d99",
+      "global_min": 0.0,
+      "global_max": 0.48182281851768494
+    },
+    {
+      "view": 3,
+      "shape": [
+        10800,
+        125
+      ],
+      "raw_ordered_float64_sha256": "62d8f99a7166cd0a5623132f4e83e37e0d70a92d30f523a1e7109a1ee4d92a96",
+      "transformed_float32_sha256": "3f31ce7cb78668008f84714d69177b20b3ccb571cc3dc1ca293fc3bd35f633f6",
+      "global_min": 0.0,
+      "global_max": 0.9999005198478699
+    }
+  ],
+  "loading_seconds": 0.17246799999999984
+}

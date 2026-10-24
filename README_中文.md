@@ -52,3 +52,5 @@ python evaluate.py --dataset RGB-D --data-root F:/datasets --checkpoint outputs/
 ## 实现出处
 
 来源说明和第三方许可证见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
+S1数值证据对应统一表3（含SCM的十种基线与SACR-MVC）、表4–5和图4–9。逐项来源和可执行核验见results_data/README_中文说明.md。
