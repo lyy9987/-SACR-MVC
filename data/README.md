@@ -26,7 +26,7 @@ These are upstream package access points, checked on 2026-10-20. The cloud archi
 | CIFAR10 | `cifar10.mat` | 50,000 | 10 | 512; 2,048; 1,024 | `data` 3×1 cell (`d × N`); `truelabel` | Truncated SVD to 384 per view, then standardization |
 | CIFAR100 | `cifar100.mat` | 50,000 | 100 | 512; 2,048; 1,024 | `data` 3×1 cell (`d × N`); `truelabel` | Truncated SVD to 256 per view, then standardization |
 
-The loader accepts `Hdigit_official.mat` or `Hdigit.mat`, preferring the former if both are present. For exact input identity, use the file that matches the `Hdigit.mat` hash below. In `frozen` CIFAR10 runs the dimensionality is 256; the table preset is 384. The reduction seed is 303 in the supplied configurations. Reduction precedes normalization. Generic loaders transpose `d × N` matrices to `N × d` and map one-based labels to zero-based labels. All stored feature views are used; the CIFAR `MissingStatus` and `index` fields are not used to mask or reorder features.
+The loader accepts `Hdigit_official.mat` or `Hdigit.mat`, preferring the former if both are present. For exact input identity, use the file that matches the `Hdigit.mat` hash below. The CIFAR10 table preset uses dimensionality 384. The reduction seed is 303 in the supplied configurations. Reduction precedes normalization. Generic loaders transpose `d × N` matrices to `N × d` and map one-based labels to zero-based labels. All stored feature views are used; the CIFAR `MissingStatus` and `index` fields are not used to mask or reorder features.
 
 ## SHA-256 of the recorded input files
 

@@ -16,26 +16,19 @@ VARIANTS = {
     "no_guard": {"consensus_guard": False},
 }
 
-def preset(dataset, protocol="table", seed=None):
+def preset(dataset, protocol="table"):
+    if protocol != "table":
+        raise ValueError("This package provides the table protocol only")
     spec = json.loads((ROOT / "configs" / (dataset + ".json")).read_text(encoding="utf-8"))
-    if protocol == "table":
-        if seed is not None:
-            raise ValueError("--seed is available with --protocol frozen; table presets already fix a seed")
-        return spec["table_run"]
-    if seed is None:
-        raise ValueError("--protocol frozen requires one of --list-configs seeds")
-    try:
-        return spec["frozen_runs"][str(seed)]
-    except KeyError:
-        raise ValueError("Unknown frozen seed for %s: %s" % (dataset, seed))
+    return spec["table_run"]
+
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--dataset", choices=DATASETS)
     p.add_argument("--data-root", type=Path)
     p.add_argument("--output-dir", type=Path, default=ROOT / "outputs")
-    p.add_argument("--protocol", choices=("table", "frozen"), default="table")
-    p.add_argument("--seed", type=int)
+    p.add_argument("--protocol", choices=("table",), default="table")
     p.add_argument("--variant", choices=tuple(VARIANTS), default="Full")
     p.add_argument("--gpu", default="0", help="CUDA device index; use cpu for CPU execution")
     p.add_argument("--list-configs", action="store_true")
@@ -50,11 +43,11 @@ def main():
     if args.dataset is None:
         p.error("--dataset is required unless --list-configs is used")
     try:
-        cfg = preset(args.dataset, args.protocol, args.seed)
+        cfg = preset(args.dataset, args.protocol)
     except ValueError as e:
         p.error(str(e))
     if args.protocol == "table" and args.dataset == "CIFAR10" and args.variant != "Full":
-        p.error("Use --protocol frozen with a listed seed for the paired CIFAR10 ablations")
+        p.error("This package provides module-ablation presets for ALOI-100 and Hdigit only")
     env = {k: v for k, v in os.environ.items() if not k.startswith("SACR_")}
     env.update(cfg["env"])
     if args.data_root is None:

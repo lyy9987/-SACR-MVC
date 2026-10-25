@@ -16,54 +16,5 @@
       "SACR_CONFIDENCE_MODE": "none"
     }
   },
-  "frozen_runs": {
-    "101": {
-      "args": {
-        "seed": 101,
-        "batch_size": 256,
-        "mse_epochs": 200,
-        "con_epochs": 100
-      },
-      "env": {
-        "SACR_PREPROCESS_NORM": "standard",
-        "SACR_REDUCER": "svd",
-        "SACR_MAX_VIEW_DIM": "256",
-        "SACR_PREPROCESS_SEED": "303",
-        "SACR_FORCE_FINAL_N_INIT": "200",
-        "SACR_CONFIDENCE_MODE": "none"
-      }
-    },
-    "202": {
-      "args": {
-        "seed": 202,
-        "batch_size": 256,
-        "mse_epochs": 200,
-        "con_epochs": 100
-      },
-      "env": {
-        "SACR_PREPROCESS_NORM": "standard",
-        "SACR_REDUCER": "svd",
-        "SACR_MAX_VIEW_DIM": "256",
-        "SACR_PREPROCESS_SEED": "303",
-        "SACR_FORCE_FINAL_N_INIT": "200",
-        "SACR_CONFIDENCE_MODE": "none"
-      }
-    },
-    "404": {
-      "args": {
-        "seed": 404,
-        "batch_size": 256,
-        "mse_epochs": 200,
-        "con_epochs": 100
-      },
-      "env": {
-        "SACR_PREPROCESS_NORM": "standard",
-        "SACR_REDUCER": "svd",
-        "SACR_MAX_VIEW_DIM": "256",
-        "SACR_PREPROCESS_SEED": "303",
-        "SACR_FORCE_FINAL_N_INIT": "200",
-        "SACR_CONFIDENCE_MODE": "none"
-      }
-    }
-  }
+  "frozen_runs": {}
 }

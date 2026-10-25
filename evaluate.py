@@ -11,12 +11,11 @@ def main():
     p.add_argument("--dataset", choices=DATASETS, required=True)
     p.add_argument("--data-root", type=Path, required=True)
     p.add_argument("--checkpoint", type=Path, required=True)
-    p.add_argument("--protocol", choices=("table", "frozen"), default="table")
-    p.add_argument("--seed", type=int)
+    p.add_argument("--protocol", choices=("table",), default="table")
     p.add_argument("--gpu", default="0")
     args = p.parse_args()
     try:
-        cfg = preset(args.dataset, args.protocol, args.seed)
+        cfg = preset(args.dataset, args.protocol)
     except ValueError as e:
         p.error(str(e))
     for name in tuple(os.environ):

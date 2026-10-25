@@ -1,0 +1,460 @@
+{
+  "selected_predictions": [
+    {
+      "run_id": "GDR-CGDR|RGB-D|5",
+      "method": "GDR-CGDR",
+      "dataset": "RGB-D",
+      "seed": 5,
+      "metrics": {
+        "ACC": 0.37267080745341613,
+        "NMI": 0.3195865194768001,
+        "PUR": 0.505175983436853,
+        "ARI": 0.11037772324064814
+      },
+      "prediction_file": "benchmark_reproductions/GDR-CGDR/RGB-D/seed5/prediction.npz",
+      "samples": 1449,
+      "classes": 13,
+      "config_file": "benchmark_reproductions/GDR-CGDR/RGB-D/seed5/config.json",
+      "source_record_file": "benchmark_reproductions/GDR-CGDR/RGB-D/seed5/source_result.json"
+    },
+    {
+      "run_id": "GDR-CGDR|Mfeat|3",
+      "method": "GDR-CGDR",
+      "dataset": "Mfeat",
+      "seed": 3,
+      "metrics": {
+        "ACC": 0.7845,
+        "NMI": 0.8117456033629284,
+        "PUR": 0.8235,
+        "ARI": 0.6968155237694036
+      },
+      "prediction_file": "benchmark_reproductions/GDR-CGDR/Mfeat/seed3/prediction.npz",
+      "samples": 2000,
+      "classes": 10,
+      "config_file": "benchmark_reproductions/GDR-CGDR/Mfeat/seed3/config.json",
+      "source_record_file": "benchmark_reproductions/GDR-CGDR/Mfeat/seed3/source_result.json"
+    },
+    {
+      "run_id": "GDR-CGDR|CIFAR10|4",
+      "method": "GDR-CGDR",
+      "dataset": "CIFAR10",
+      "seed": 4,
+      "metrics": {
+        "ACC": 0.8743,
+        "NMI": 0.9286876476024033,
+        "PUR": 0.89082,
+        "ARI": 0.8600657003965176
+      },
+      "prediction_file": "benchmark_reproductions/GDR-CGDR/CIFAR10/seed4/prediction.npz",
+      "samples": 50000,
+      "classes": 10,
+      "config_file": "benchmark_reproductions/GDR-CGDR/CIFAR10/seed4/config.json",
+      "source_record_file": "benchmark_reproductions/GDR-CGDR/CIFAR10/seed4/source_result.json"
+    },
+    {
+      "run_id": "GDR-CGDR|CIFAR100|5",
+      "method": "GDR-CGDR",
+      "dataset": "CIFAR100",
+      "seed": 5,
+      "metrics": {
+        "ACC": 0.77036,
+        "NMI": 0.9579301900493008,
+        "PUR": 0.82018,
+        "ARI": 0.7732860153620648
+      },
+      "prediction_file": "benchmark_reproductions/GDR-CGDR/CIFAR100/seed5/prediction.npz",
+      "samples": 50000,
+      "classes": 100,
+      "config_file": "benchmark_reproductions/GDR-CGDR/CIFAR100/seed5/config.json",
+      "source_record_file": "benchmark_reproductions/GDR-CGDR/CIFAR100/seed5/source_result.json"
+    },
+    {
+      "run_id": "TMCN|Mfeat|0",
+      "method": "TMCN",
+      "dataset": "Mfeat",
+      "seed": 0,
+      "metrics": {
+        "ACC": 0.717,
+        "NMI": 0.6567657779875549,
+        "PUR": 0.717,
+        "ARI": 0.5530026907594043
+      },
+      "prediction_file": "benchmark_reproductions/TMCN/Mfeat/seed0/prediction.npz",
+      "samples": 2000,
+      "classes": 10,
+      "config_file": "benchmark_reproductions/TMCN/Mfeat/seed0/config.json",
+      "source_record_file": "benchmark_reproductions/TMCN/Mfeat/seed0/source_result.json"
+    },
+    {
+      "run_id": "SCM|RGB-D|1",
+      "method": "SCM",
+      "dataset": "RGB-D",
+      "seed": 1,
+      "metrics": {
+        "ACC": 0.3416149068322981,
+        "NMI": 0.2536644877326505,
+        "PUR": 0.47066942719116633,
+        "ARI": 0.15632742316150017
+      },
+      "prediction_file": "benchmark_reproductions/SCM/RGB-D/seed1/prediction.npz",
+      "samples": 1449,
+      "classes": 13,
+      "config_file": "benchmark_reproductions/SCM/RGB-D/seed1/config.json",
+      "source_record_file": "benchmark_reproductions/SCM/RGB-D/seed1/result.json",
+      "input_manifest_file": "benchmark_reproductions/SCM/RGB-D/seed1/input_manifest.json"
+    },
+    {
+      "run_id": "SCM|ALOI-100|1",
+      "method": "SCM",
+      "dataset": "ALOI-100",
+      "seed": 1,
+      "metrics": {
+        "ACC": 0.4626851851851852,
+        "NMI": 0.6584504258326939,
+        "PUR": 0.4935185185185185,
+        "ARI": 0.34071722754532563
+      },
+      "prediction_file": "benchmark_reproductions/SCM/ALOI-100/seed1/prediction.npz",
+      "samples": 10800,
+      "classes": 100,
+      "config_file": "benchmark_reproductions/SCM/ALOI-100/seed1/config.json",
+      "source_record_file": "benchmark_reproductions/SCM/ALOI-100/seed1/result.json",
+      "input_manifest_file": "benchmark_reproductions/SCM/ALOI-100/seed1/input_manifest.json"
+    },
+    {
+      "run_id": "SCM|Hdigit|1",
+      "method": "SCM",
+      "dataset": "Hdigit",
+      "seed": 1,
+      "metrics": {
+        "ACC": 0.9887,
+        "NMI": 0.9671463511601868,
+        "PUR": 0.9887,
+        "ARI": 0.9750622149748545
+      },
+      "prediction_file": "benchmark_reproductions/SCM/Hdigit/seed1/prediction.npz",
+      "samples": 10000,
+      "classes": 10,
+      "config_file": "benchmark_reproductions/SCM/Hdigit/seed1/config.json",
+      "source_record_file": "benchmark_reproductions/SCM/Hdigit/seed1/result.json",
+      "input_manifest_file": "benchmark_reproductions/SCM/Hdigit/seed1/input_manifest.json"
+    },
+    {
+      "run_id": "SCM|Mfeat|1",
+      "method": "SCM",
+      "dataset": "Mfeat",
+      "seed": 1,
+      "metrics": {
+        "ACC": 0.861,
+        "NMI": 0.7854357420478633,
+        "PUR": 0.861,
+        "ARI": 0.6874526954176969
+      },
+      "prediction_file": "benchmark_reproductions/SCM/Mfeat/seed1/prediction.npz",
+      "samples": 2000,
+      "classes": 10,
+      "config_file": "benchmark_reproductions/SCM/Mfeat/seed1/config.json",
+      "source_record_file": "benchmark_reproductions/SCM/Mfeat/seed1/result.json",
+      "input_manifest_file": "benchmark_reproductions/SCM/Mfeat/seed1/input_manifest.json"
+    },
+    {
+      "run_id": "SCM|CIFAR10|1",
+      "method": "SCM",
+      "dataset": "CIFAR10",
+      "seed": 1,
+      "metrics": {
+        "ACC": 0.99064,
+        "NMI": 0.9749977444035467,
+        "PUR": 0.99064,
+        "ARI": 0.9795076295619063
+      },
+      "prediction_file": "benchmark_reproductions/SCM/CIFAR10/seed1/prediction.npz",
+      "samples": 50000,
+      "classes": 10,
+      "config_file": "benchmark_reproductions/SCM/CIFAR10/seed1/config.json",
+      "source_record_file": "benchmark_reproductions/SCM/CIFAR10/seed1/result.json",
+      "input_manifest_file": "benchmark_reproductions/SCM/CIFAR10/seed1/input_manifest.json"
+    },
+    {
+      "run_id": "SCM|CIFAR100|1",
+      "method": "SCM",
+      "dataset": "CIFAR100",
+      "seed": 1,
+      "metrics": {
+        "ACC": 0.81298,
+        "NMI": 0.9235953635079682,
+        "PUR": 0.84454,
+        "ARI": 0.7626576281926198
+      },
+      "prediction_file": "benchmark_reproductions/SCM/CIFAR100/seed1/prediction.npz",
+      "samples": 50000,
+      "classes": 100,
+      "config_file": "benchmark_reproductions/SCM/CIFAR100/seed1/config.json",
+      "source_record_file": "benchmark_reproductions/SCM/CIFAR100/seed1/result.json",
+      "input_manifest_file": "benchmark_reproductions/SCM/CIFAR100/seed1/input_manifest.json"
+    },
+    {
+      "run_id": "RAV|Hdigit|native",
+      "method": "RAV",
+      "dataset": "Hdigit",
+      "seed": null,
+      "metrics": {
+        "ACC": 0.994,
+        "NMI": 0.9810436540359397,
+        "PUR": 0.994,
+        "ARI": 0.986709773982547
+      },
+      "prediction_file": "benchmark_reproductions/RAV/Hdigit/prediction.npz",
+      "samples": 10000,
+      "classes": 10
+    },
+    {
+      "run_id": "RAV|Mfeat|native",
+      "method": "RAV",
+      "dataset": "Mfeat",
+      "seed": null,
+      "metrics": {
+        "ACC": 0.815,
+        "NMI": 0.8057173128400749,
+        "PUR": 0.815,
+        "ARI": 0.7275735708197185
+      },
+      "prediction_file": "benchmark_reproductions/RAV/Mfeat/prediction.npz",
+      "samples": 2000,
+      "classes": 10
+    },
+    {
+      "run_id": "RAV|CIFAR10|native",
+      "method": "RAV",
+      "dataset": "CIFAR10",
+      "seed": null,
+      "metrics": {
+        "ACC": 0.99502,
+        "NMI": 0.9857342243552794,
+        "PUR": 0.99502,
+        "ARI": 0.9890451074801747
+      },
+      "prediction_file": "benchmark_reproductions/RAV/CIFAR10/prediction.npz",
+      "samples": 50000,
+      "classes": 10
+    },
+    {
+      "run_id": "RAV|CIFAR100|native",
+      "method": "RAV",
+      "dataset": "CIFAR100",
+      "seed": null,
+      "metrics": {
+        "ACC": 0.69512,
+        "NMI": 0.894241476136456,
+        "PUR": 0.74248,
+        "ARI": 0.681724875810011
+      },
+      "prediction_file": "benchmark_reproductions/RAV/CIFAR100/prediction.npz",
+      "samples": 50000,
+      "classes": 100
+    },
+    {
+      "run_id": "RAV|RGB-D|native",
+      "method": "RAV",
+      "dataset": "RGB-D",
+      "seed": null,
+      "metrics": {
+        "ACC": 0.20841959972394755,
+        "NMI": 0.12819404138803184,
+        "PUR": 0.3719806763285024,
+        "ARI": 0.0604533494244108
+      },
+      "prediction_file": "benchmark_reproductions/RAV/RGB-D/prediction.npz",
+      "samples": 1449,
+      "classes": 13
+    },
+    {
+      "run_id": "SACR-MVC|RGB-D|bound",
+      "method": "SACR-MVC",
+      "dataset": "RGB-D",
+      "seed": 303,
+      "metrics": {
+        "ACC": 0.5521048999309869,
+        "NMI": 0.4895158612015206,
+        "PUR": 0.655624568668047,
+        "ARI": 0.3908197666506804
+      },
+      "metrics_display_precision_only": false,
+      "receipt_binding_id": "sacr_RGB-D_303_Full",
+      "prediction_file": "benchmark_reproductions/SACR-MVC/RGB-D/bound_partition.npz",
+      "samples": 1449,
+      "classes": 13
+    }
+  ],
+  "selection_metadata": [
+    {
+      "method": "GDR-CGDR",
+      "dataset": "RGB-D",
+      "statistic_type": "best_ACC_complete_run_from_5",
+      "selected_run_id": "GDR-CGDR|RGB-D|5",
+      "selected_seed": 5,
+      "metrics": {
+        "ACC": 0.37267080745341613,
+        "NMI": 0.3195865194768001,
+        "PUR": 0.505175983436853,
+        "ARI": 0.11037772324064814
+      },
+      "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition",
+      "available_run_count": 5,
+      "selected_run_count": 1
+    },
+    {
+      "method": "GDR-CGDR",
+      "dataset": "Mfeat",
+      "statistic_type": "best_ACC_complete_run_from_5",
+      "selected_run_id": "GDR-CGDR|Mfeat|3",
+      "selected_seed": 3,
+      "metrics": {
+        "ACC": 0.7845,
+        "NMI": 0.8117456033629284,
+        "PUR": 0.8235,
+        "ARI": 0.6968155237694036
+      },
+      "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition",
+      "available_run_count": 5,
+      "selected_run_count": 1
+    },
+    {
+      "method": "GDR-CGDR",
+      "dataset": "CIFAR10",
+      "statistic_type": "best_ACC_complete_run_from_5",
+      "selected_run_id": "GDR-CGDR|CIFAR10|4",
+      "selected_seed": 4,
+      "metrics": {
+        "ACC": 0.8743,
+        "NMI": 0.9286876476024033,
+        "PUR": 0.89082,
+        "ARI": 0.8600657003965176
+      },
+      "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition",
+      "available_run_count": 5,
+      "selected_run_count": 1
+    },
+    {
+      "method": "GDR-CGDR",
+      "dataset": "CIFAR100",
+      "statistic_type": "best_ACC_complete_run_from_5",
+      "selected_run_id": "GDR-CGDR|CIFAR100|5",
+      "selected_seed": 5,
+      "metrics": {
+        "ACC": 0.77036,
+        "NMI": 0.9579301900493008,
+        "PUR": 0.82018,
+        "ARI": 0.7732860153620648
+      },
+      "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition",
+      "available_run_count": 5,
+      "selected_run_count": 1
+    },
+    {
+      "method": "TMCN",
+      "dataset": "Mfeat",
+      "statistic_type": "best_ACC_complete_run_from_5",
+      "selected_run_id": "TMCN|Mfeat|0",
+      "selected_seed": 0,
+      "metrics": {
+        "ACC": 0.717,
+        "NMI": 0.6567657779875549,
+        "PUR": 0.717,
+        "ARI": 0.5530026907594043
+      },
+      "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition",
+      "available_run_count": 5,
+      "selected_run_count": 1
+    }
+  ],
+  "input_files": {
+    "RGB-D": {
+      "file_name": "RGB-D.mat",
+      "input_sha256": "b41e6f68bd1a1d4b632b0c1ecf9ecf2314c7f26519b16ffeb4ec25f27ef6ac88",
+      "labels_ordered_sha256": "f577fcc7ec87b1814ca41de1c8a2d03d105ae3fc4fbcd4c4ec26b8e8f75ca91c",
+      "sample_order_sha256": "d15cd19c4448fc0b70c34f05b36f2811779c0f7a7bbe3afee2e543bc4563ff0c",
+      "N": 1449,
+      "V": 2,
+      "K": 13,
+      "dimensions": [
+        2048,
+        300
+      ]
+    },
+    "ALOI-100": {
+      "file_name": "ALOI-100.mat",
+      "input_sha256": "e20bb24d6473a14e84aba93a92cfd19c4ddbb8ea3fa41618a63049f533da8323",
+      "labels_ordered_sha256": "4ba55c84b28b4d5866eda5452af92479d9da339fb4a8d652fb493add1caadc58",
+      "sample_order_sha256": "f3a00b27bb88f24e3b445f7ec48568a58d1dd4a0880e0ca67e9b032b0e2d36e6",
+      "N": 10800,
+      "V": 4,
+      "K": 100,
+      "dimensions": [
+        77,
+        13,
+        64,
+        125
+      ]
+    },
+    "Hdigit": {
+      "file_name": "Hdigit.mat",
+      "input_sha256": "af2f600a05137ab12697a169397864d6be7c5bee40ba4ce25db7f4074f0296ce",
+      "labels_ordered_sha256": "c5575395e636cadcdfe5764ffc8d56f56d234a4dc687096f8fc2d975dd6a5597",
+      "sample_order_sha256": "9e1c19b3fdc185411bd1a987deb6a9fda2531116aac060a84c4d878854d1c099",
+      "N": 10000,
+      "V": 2,
+      "K": 10,
+      "dimensions": [
+        784,
+        256
+      ]
+    },
+    "Mfeat": {
+      "file_name": "Mfeat.mat",
+      "input_sha256": "f5ad03f0fbdea89e1af38b6a6e2941be8d6bc85ec641b4cdcf884d04c7c94bda",
+      "labels_ordered_sha256": "4e64a02568003d897e7b68ba22d98a34f324c87f72edef91cddc23d3c5cfeb56",
+      "sample_order_sha256": "55f385cf2332d9056aaed6f496e7bebd2df52c6a9547ce2144b309432d4b0290",
+      "N": 2000,
+      "V": 6,
+      "K": 10,
+      "dimensions": [
+        216,
+        76,
+        64,
+        6,
+        240,
+        47
+      ]
+    },
+    "CIFAR10": {
+      "file_name": "cifar10.mat",
+      "input_sha256": "9b8ef1e354f54382a26b1c5b11812d4ad94e63c5da78c56df19e8195398e60fb",
+      "labels_ordered_sha256": "a2084e87c76d1d22ef5ac30a81addb49027565cdc65f0e1b451ae5969d56117e",
+      "sample_order_sha256": "33236cc6bd19fa6b89e06d441d3fcd8eb37dc8540f6a4f2b627b20af10894a41",
+      "N": 50000,
+      "V": 3,
+      "K": 10,
+      "dimensions": [
+        512,
+        2048,
+        1024
+      ]
+    },
+    "CIFAR100": {
+      "file_name": "cifar100.mat",
+      "input_sha256": "d693a211fd03adc9ce3a0e64208a19a23fd69582739f13686b9edcee90265c82",
+      "labels_ordered_sha256": "ac1fc6f67f41e276cbeebcd46daa93fcb61bfea4800008f7ed155d60f08efe57",
+      "sample_order_sha256": "33236cc6bd19fa6b89e06d441d3fcd8eb37dc8540f6a4f2b627b20af10894a41",
+      "N": 50000,
+      "V": 3,
+      "K": 100,
+      "dimensions": [
+        512,
+        2048,
+        1024
+      ]
+    }
+  },
+  "selection_verification_boundary": "Only selected partitions are included; original maxima are described by selection metadata, not rechecked from unselected candidates in this supplement."
+}
