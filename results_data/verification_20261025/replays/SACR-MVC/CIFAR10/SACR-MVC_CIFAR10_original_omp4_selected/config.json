@@ -1,0 +1,64 @@
+{
+  "method": "SACR-MVC",
+  "dataset": "CIFAR10",
+  "run_id": "SACR-MVC_CIFAR10_original_omp4_selected",
+  "verification_only": true,
+  "single_fixed_replay": true,
+  "table_run": {
+    "args": {
+      "seed": 2424,
+      "batch_size": 256,
+      "mse_epochs": 200,
+      "con_epochs": 100,
+      "trust_warmup_epochs": 20
+    },
+    "env": {
+      "SACR_PREPROCESS_NORM": "standard",
+      "SACR_REDUCER": "svd",
+      "SACR_MAX_VIEW_DIM": "384",
+      "SACR_PREPROCESS_SEED": "303",
+      "SACR_FORCE_FINAL_N_INIT": "200",
+      "SACR_CONFIDENCE_MODE": "none"
+    }
+  },
+  "native_arguments": null,
+  "original_native_command": null,
+  "environment_overrides": {
+    "OMP_NUM_THREADS": "4"
+  },
+  "protocol": null,
+  "selected_epoch": null,
+  "capture_policy": null,
+  "input_manifest": {
+    "file_name": "cifar10.mat",
+    "input_sha256": "9b8ef1e354f54382a26b1c5b11812d4ad94e63c5da78c56df19e8195398e60fb",
+    "labels_ordered_sha256": "a2084e87c76d1d22ef5ac30a81addb49027565cdc65f0e1b451ae5969d56117e",
+    "sample_order_sha256": "33236cc6bd19fa6b89e06d441d3fcd8eb37dc8540f6a4f2b627b20af10894a41",
+    "N": 50000,
+    "V": 3,
+    "K": 10,
+    "dimensions": [
+      512,
+      2048,
+      1024
+    ]
+  },
+  "source_files": [],
+  "original_source_locator": "receipts/cifar10_promoted_RESULT_JSON.txt",
+  "original_table_statistic_type": "retained_single_run_selected_by_ACC_within_source_configuration",
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "runtime_thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "NUMEXPR_NUM_THREADS": null
+  },
+  "runtime_thread_source_boundary": "The original caller explicitly set OMP_NUM_THREADS=4. The other historical inherited thread settings were not recorded.",
+  "known_original_thread_setting": {
+    "OMP_NUM_THREADS": "4"
+  },
+  "other_historical_inherited_thread_values": "not recorded",
+  "runtime_provenance_scope": "Actual settings at this run; unrecorded historical inheritance is not asserted to match.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

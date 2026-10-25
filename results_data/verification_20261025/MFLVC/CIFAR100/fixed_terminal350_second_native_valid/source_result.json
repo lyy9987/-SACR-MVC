@@ -1,0 +1,28 @@
+{
+  "entry_id": "MFLVC|CIFAR100",
+  "run_id": "MFLVC_CIFAR100_original_selected",
+  "method": "MFLVC",
+  "dataset": "CIFAR100",
+  "statistic_type": "representative_single_run",
+  "run_count": 1,
+  "seed": 10,
+  "selected_epoch": 350,
+  "native_valid_call": 2,
+  "capture_policy": {
+    "kind": "terminal_native_call",
+    "native_valid_call": 2,
+    "terminal_epoch": 350
+  },
+  "metrics": {
+    "ACC": 0.81988,
+    "NMI": 0.9510486453153785,
+    "PUR": 0.81988,
+    "ARI": 0.7848068541797749
+  },
+  "prediction_file": "verification_20261025/MFLVC/CIFAR100/fixed_terminal350_second_native_valid/prediction.npz",
+  "prediction_sha256": "219c97e22e014c7888b94ece5b0c337b576c46394fda2d80599ba3aa3dbd7841",
+  "config_file": "verification_20261025/MFLVC/CIFAR100/fixed_terminal350_second_native_valid/config.json",
+  "evidence_role": "Reported single fixed-configuration run with the recorded terminal readout; not a historical training-time prediction.",
+  "method_reference": "Manuscript reference 1 (CVPR 2022)",
+  "record_origin": "Reported single fixed-configuration run with the recorded terminal readout; not a historical training-time prediction."
+}

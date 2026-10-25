@@ -1,0 +1,124 @@
+{
+  "method": "CAFE",
+  "dataset": "ALOI-100",
+  "run_id": "baseline_B_CAFE_ALOI_100",
+  "verification_only": true,
+  "single_fixed_replay": true,
+  "table_run": null,
+  "native_arguments": [
+    "--config_file",
+    "ALOI100_mv.yaml"
+  ],
+  "original_native_command": [
+    "python",
+    "-u",
+    "main.py",
+    "--config_file",
+    "config/ALOI100_mv.yaml"
+  ],
+  "environment_overrides": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "PYTHONUNBUFFERED": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "protocol": null,
+  "selected_epoch": 199,
+  "capture_policy": {
+    "kind": "fixed_original_epoch",
+    "fixed_epoch": 199,
+    "epoch_indexing": "Original zero-based CAFE epoch; preserve epochs200 scheduler while ending after this fixed original selected prefix."
+  },
+  "input_manifest": {
+    "file_name": "ALOI-100.mat",
+    "input_sha256": "e20bb24d6473a14e84aba93a92cfd19c4ddbb8ea3fa41618a63049f533da8323",
+    "labels_ordered_sha256": "4ba55c84b28b4d5866eda5452af92479d9da339fb4a8d652fb493add1caadc58",
+    "sample_order_sha256": "f3a00b27bb88f24e3b445f7ec48568a58d1dd4a0880e0ca67e9b032b0e2d36e6",
+    "N": 10800,
+    "V": 4,
+    "K": 100,
+    "dimensions": [
+      77,
+      13,
+      64,
+      125
+    ]
+  },
+  "source_files": [
+    {
+      "file_name": "dataset_loader.py",
+      "sha256": "081559ec08f8381f8e931083f80f59866fa1eeea153734a205cb729434b941fe"
+    },
+    {
+      "file_name": "main.py",
+      "sha256": "346366b647c358acd10f096e29b1e24a8a53c1abfb04065ca8797df8b61cf720"
+    },
+    {
+      "file_name": "model.py",
+      "sha256": "e45b896e2cca8dc13ec7eb14f725c7fbb150935ebad9f08852585a65a497e7f1"
+    },
+    {
+      "file_name": "train.py",
+      "sha256": "ce5d0656e7a070b91852bbab1594489c5e4bc9f517da2caa40cec1a002287ee1"
+    },
+    {
+      "file_name": "utils.py",
+      "sha256": "73ff6e37bdad783b1a751fb0491895637ca34800090b7f24ce18d99a69065a34"
+    },
+    {
+      "file_name": "alias.py",
+      "sha256": "3848e906e07b9331bd819023c5e8699287707ff90cc8acf4c402ef946016e50b"
+    },
+    {
+      "file_name": "line.py",
+      "sha256": "fb25109ba102c34b7e9fb600a4d45f055e6b0fcdb7e9542deb166dd5b0b4d51b"
+    },
+    {
+      "file_name": "__base__.py",
+      "sha256": "1f988a5ce390caf3d555b829895f189ca2ece54d36341c087a582301a4bb693a"
+    },
+    {
+      "file_name": "__init__.py",
+      "sha256": "5dd8f8e26f08019df1773197bfa7a0093acdac50bcb4943a267760fdfa589b4e"
+    },
+    {
+      "file_name": "beta_mixture.py",
+      "sha256": "e883c624027e2e7fb41a81f6e5fa3dc5dce70234cca0367115cad8f58ba83017"
+    },
+    {
+      "file_name": "faiss_kmeans.py",
+      "sha256": "6dc959246c4c86c3a5da822b6e404ff71601591a2f95e314a0e7a51e426f5615"
+    },
+    {
+      "file_name": "gaussian_mixture.py",
+      "sha256": "60b327ae5af5218100655e51d5c74ebeeb95be5dc002e487487eebfd200123a6"
+    },
+    {
+      "file_name": "__init__.py",
+      "sha256": "e4eec7673bca857759eb0c1b84421e63064feadc161c6470e3d21f0815bab59c"
+    },
+    {
+      "file_name": "kmeans.py",
+      "sha256": "296b2a825d51916be6834c3e62c0d0df86ac2f03322dc0b9464a9102ba4c0699"
+    },
+    {
+      "file_name": "kmeans_plus_plus.py",
+      "sha256": "4037a5ddcc01fd053540019e93be5b323be3110d60b9999efd6340daca504023"
+    }
+  ],
+  "original_source_locator": "selected_source_records.jsonl#CAFE|ALOI-100",
+  "original_table_statistic_type": "single_run_native_best_eligible_epoch",
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "selected_native_config_file": {
+    "file_name": "ALOI100_mv.yaml",
+    "text": "dataset: ALOI-100\nn_views: 4\nencoder_dim:\n  - [ 77, 1024, 1024, 1024, 128 ]\n  - [ 13, 1024, 1024, 1024, 128 ]\n  - [ 64, 1024, 1024, 1024, 128 ]\n  - [ 125, 1024, 1024, 1024, 128 ]\nn_classes: 100\nn_samples: 10800\nbatch_size: 10800\ntemperature: 0.9\nalpha: 1\nbeta: 1\nblr: 5.0e-5\nweight_decay: 0\ndata_path: ${DATA_ROOT}\noutput_dir: CAFE_mv/\nseed: 1\ntrain_time: 1\naccelerate: 'yes'\ndata_norm: min-max\nepochs: 200\nstart_rectify_epoch: 100\n",
+    "original_sha256": "b1e522e7a01e9f0605763f8e44a11a43d766d22223d13dcbb45886c8c5e4ece3",
+    "portable_text_sha256": "47957290a4931e9c49d1f7393bf1eb7d0fb637e31fdff6742afb1fd3578c4573",
+    "text_scope": "Portable configuration text; original_sha256 identifies the original source file, not this path-adjusted text."
+  },
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

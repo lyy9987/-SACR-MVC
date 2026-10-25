@@ -1,0 +1,28 @@
+{
+  "run_id": "baseline_B_DCMVC_Mfeat",
+  "entry_id": "DCMVC|Mfeat",
+  "method": "DCMVC",
+  "dataset": "Mfeat",
+  "verification_only": true,
+  "execution_kind": "single_fixed_configuration_replay",
+  "metrics": {
+    "ACC": 0.964,
+    "NMI": 0.9214393963036939,
+    "PUR": 0.964,
+    "ARI": 0.9209925061425852,
+    "Fscore": 0.9288710877970697
+  },
+  "original_source_locator": "selected_source_records.jsonl#DCMVC|Mfeat",
+  "original_statistic_type": "representative_single_run",
+  "prediction_file": "verification_20261025/replays/DCMVC/Mfeat/baseline_B_DCMVC_Mfeat/prediction.npz",
+  "prediction_sha256": "3f795bcf1893e64601ac5b8d685093e0f2697129d27beb6f0cd84bc7e7d18888",
+  "config_file": "verification_20261025/replays/DCMVC/Mfeat/baseline_B_DCMVC_Mfeat/config.json",
+  "selected_epoch": 300,
+  "capture_policy": {
+    "kind": "final_native_only",
+    "terminal_epoch": 300
+  },
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

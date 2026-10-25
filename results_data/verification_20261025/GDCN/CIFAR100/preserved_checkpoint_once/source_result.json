@@ -1,0 +1,25 @@
+{
+  "entry_id": "GDCN|CIFAR100",
+  "run_id": "GDCN_CIFAR100_preserved_checkpoint_once",
+  "method": "GDCN",
+  "dataset": "CIFAR100",
+  "execution_kind": "preserved_old_checkpoint_single_native_evaluation",
+  "statistic_type": "single_preserved_checkpoint_native_evaluation",
+  "evaluation_count": 1,
+  "training": false,
+  "seed_set": false,
+  "metrics": {
+    "ACC": 0.9997,
+    "NMI": 0.9995646887612536,
+    "PUR": 0.9997,
+    "ARI": 0.9993941949491477
+  },
+  "prediction_file": "verification_20261025/GDCN/CIFAR100/preserved_checkpoint_once/prediction.npz",
+  "prediction_sha256": "aa43c1d2d5928bb913dff0f817601410c28e1af8069d7e365f991aae6fe5f065",
+  "config_file": "verification_20261025/GDCN/CIFAR100/preserved_checkpoint_once/config.json",
+  "checkpoint_file_name": "Cifar100.pth",
+  "checkpoint_sha256_at_evaluation": "ec75127c71bdc3f86037c39b9ebfbbb7bef94d147ae3d000dee6467d3236e7ab",
+  "evidence_role": "One native evaluation of a preserved checkpoint; not a historical training-time prediction.",
+  "source_reference": "https://doi.org/10.1109/LSP.2026.3668750",
+  "record_origin": "One native evaluation of a preserved checkpoint; not a historical training-time prediction."
+}

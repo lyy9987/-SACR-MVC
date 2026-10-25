@@ -1,0 +1,57 @@
+{
+  "method": "SACR-MVC",
+  "dataset": "ALOI-100",
+  "run_id": "SACR-MVC_ALOI-100_selected",
+  "verification_only": true,
+  "single_fixed_replay": true,
+  "table_run": {
+    "args": {
+      "seed": 101,
+      "batch_size": 256,
+      "mse_epochs": 200,
+      "con_epochs": 100
+    },
+    "env": {
+      "SACR_PREPROCESS_NORM": "minmax",
+      "SACR_REDUCER": "none",
+      "SACR_MAX_VIEW_DIM": "0",
+      "SACR_PREPROCESS_SEED": "303",
+      "SACR_FORCE_FINAL_N_INIT": "200",
+      "SACR_CONFIDENCE_MODE": "none"
+    }
+  },
+  "native_arguments": null,
+  "original_native_command": null,
+  "environment_overrides": {
+    "SACR_PREPROCESS_NORM": "minmax",
+    "SACR_REDUCER": "none",
+    "SACR_MAX_VIEW_DIM": "0",
+    "SACR_PREPROCESS_SEED": "303",
+    "SACR_FORCE_FINAL_N_INIT": "200",
+    "SACR_CONFIDENCE_MODE": "none"
+  },
+  "protocol": null,
+  "selected_epoch": null,
+  "capture_policy": null,
+  "input_manifest": {
+    "file_name": "ALOI-100.mat",
+    "input_sha256": "e20bb24d6473a14e84aba93a92cfd19c4ddbb8ea3fa41618a63049f533da8323",
+    "labels_ordered_sha256": "4ba55c84b28b4d5866eda5452af92479d9da339fb4a8d652fb493add1caadc58",
+    "sample_order_sha256": "f3a00b27bb88f24e3b445f7ec48568a58d1dd4a0880e0ca67e9b032b0e2d36e6",
+    "N": 10800,
+    "V": 4,
+    "K": 100,
+    "dimensions": [
+      77,
+      13,
+      64,
+      125
+    ]
+  },
+  "source_files": [],
+  "original_source_locator": "receipts/frozen_selected.jsonl#sacr_ALOI-100_101_Full",
+  "original_table_statistic_type": "retained_single_run_selected_by_ACC_within_source_configuration",
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

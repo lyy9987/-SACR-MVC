@@ -1,0 +1,99 @@
+{
+  "run_id": "MFLVC_CIFAR100_original_selected",
+  "method": "MFLVC",
+  "dataset": "CIFAR100",
+  "loader_dataset": "Cifar100",
+  "statistic_type": "representative_single_run",
+  "run_count": 1,
+  "seed": 10,
+  "selected_epoch": 350,
+  "native_valid_call": 2,
+  "protocol": {
+    "seed": 10,
+    "seeded_rngs": [
+      "torch",
+      "cuda"
+    ],
+    "unseeded_rngs": [
+      "numpy",
+      "random"
+    ],
+    "reconstruction_epochs": 200,
+    "contrastive_epochs": 100,
+    "finetune_epochs": 50,
+    "batch_size": 256,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0,
+    "feature_dim": 512,
+    "high_feature_dim": 128,
+    "temperature_f": 0.5,
+    "temperature_l": 1.0,
+    "preprocessing": "Original shared loader: transpose by inferred sample axis, sort views by descending feature dimension, per-feature minmax in float32; one-based labels shifted to zero. No SVD/view removal.",
+    "readout": "Last native semantic-label argmax(mean view cluster probabilities); MFLVC KMeans remains only in its original pseudo-label training step.",
+    "selection": "Second/final valid() call, after fixed total epochs; one run."
+  },
+  "capture_policy": {
+    "kind": "terminal_native_call",
+    "native_valid_call": 2,
+    "terminal_epoch": 350
+  },
+  "native_arguments": [
+    "--dataset",
+    "Cifar100"
+  ],
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUDA_VISIBLE_DEVICES": "0"
+  },
+  "recorded_command_thread_environment": {
+    "MKL_NUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2"
+  },
+  "historical_thread_inheritance": "Not recorded; complete historical thread-environment equivalence is not claimed.",
+  "ordered_view_dimensions": [
+    2048,
+    1024,
+    512
+  ],
+  "input_manifest": {
+    "file_name": "cifar100.mat",
+    "input_sha256": "d693a211fd03adc9ce3a0e64208a19a23fd69582739f13686b9edcee90265c82",
+    "labels_ordered_sha256": "ac1fc6f67f41e276cbeebcd46daa93fcb61bfea4800008f7ed155d60f08efe57",
+    "sample_order_sha256": "33236cc6bd19fa6b89e06d441d3fcd8eb37dc8540f6a4f2b627b20af10894a41",
+    "N": 50000,
+    "V": 3,
+    "K": 100,
+    "dimensions": [
+      512,
+      2048,
+      1024
+    ]
+  },
+  "source_files": [
+    {
+      "file_name": "train.py",
+      "sha256": "5eb74eef830de6a7c496c3efe6947d26dba2b936f8c21a89676e8022a7e907d7"
+    },
+    {
+      "file_name": "network.py",
+      "sha256": "e944db4c88bec897bad5d1c95a81f31e33866faff3381d7d266d2f0e80d39ffd"
+    },
+    {
+      "file_name": "loss.py",
+      "sha256": "3522b5455b000be5fd470c4c2828521c143b5f6de2cfd8fd4ca99f542dea38f0"
+    },
+    {
+      "file_name": "metric.py",
+      "sha256": "26d4473a53a17b6131baa3e928bc523e55410048b084b7e8552d13f5571ba902"
+    },
+    {
+      "file_name": "dataloader.py",
+      "sha256": "23fa55231cad34db3230235e8ce8d91f2a21fea2ff5606ff061b601b64f37926"
+    }
+  ],
+  "method_reference": "Manuscript reference 1 (CVPR 2022)",
+  "scope": "Reported single fixed-configuration run with the recorded terminal readout; not a historical training-time prediction.",
+  "record_origin": "Reported single fixed-configuration run with the recorded terminal readout; not a historical training-time prediction."
+}

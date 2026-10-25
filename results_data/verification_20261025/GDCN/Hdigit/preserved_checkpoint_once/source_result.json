@@ -1,0 +1,25 @@
+{
+  "entry_id": "GDCN|Hdigit",
+  "run_id": "GDCN_Hdigit_preserved_checkpoint_once",
+  "method": "GDCN",
+  "dataset": "Hdigit",
+  "execution_kind": "preserved_old_checkpoint_single_native_evaluation",
+  "statistic_type": "single_preserved_checkpoint_native_evaluation",
+  "evaluation_count": 1,
+  "training": false,
+  "seed_set": false,
+  "metrics": {
+    "ACC": 0.9501,
+    "NMI": 0.8968004166315543,
+    "PUR": 0.9501,
+    "ARI": 0.8936104211540482
+  },
+  "prediction_file": "verification_20261025/GDCN/Hdigit/preserved_checkpoint_once/prediction.npz",
+  "prediction_sha256": "d3d426330ac13b9253a3f4c42544806cd700c6b21b3416dd19d3d04cb20e3ed9",
+  "config_file": "verification_20261025/GDCN/Hdigit/preserved_checkpoint_once/config.json",
+  "checkpoint_file_name": "Hdigit.pth",
+  "checkpoint_sha256_at_evaluation": "1657b073d4836aa0b5ef45a0fb1fc28edd3171d81c77d55fd5bb28c42bdb862a",
+  "evidence_role": "One native evaluation of a preserved checkpoint; not a historical training-time prediction.",
+  "source_reference": "https://doi.org/10.1109/LSP.2026.3668750",
+  "record_origin": "One native evaluation of a preserved checkpoint; not a historical training-time prediction."
+}

@@ -1,0 +1,28 @@
+{
+  "run_id": "GCFAgg_ALOI100_original_selected",
+  "entry_id": "GCFAgg|ALOI-100",
+  "method": "GCFAgg",
+  "dataset": "ALOI-100",
+  "verification_only": true,
+  "execution_kind": "single_fixed_configuration_replay",
+  "metrics": {
+    "ACC": 0.8728703703703704,
+    "NMI": 0.9406338527484753,
+    "PUR": 0.8831481481481481,
+    "ARI": 0.8378703848467126
+  },
+  "original_source_locator": "selected_source_records.jsonl#GCFAgg|ALOI-100",
+  "original_statistic_type": "best_ACC_complete_run_from_3",
+  "prediction_file": "verification_20261025/replays/GCFAgg/ALOI-100/GCFAgg_ALOI100_original_selected/prediction.npz",
+  "prediction_sha256": "8c73ef08923227a8b11569c5fe0571bf661c6a34ae80b2d36db46b4d4f487a8e",
+  "config_file": "verification_20261025/replays/GCFAgg/ALOI-100/GCFAgg_ALOI100_original_selected/config.json",
+  "selected_epoch": 300,
+  "capture_policy": {
+    "kind": "terminal_native_call",
+    "native_valid_call": 1,
+    "terminal_epoch": 300
+  },
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

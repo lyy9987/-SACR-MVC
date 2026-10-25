@@ -1,0 +1,55 @@
+{
+  "method": "SACR-MVC",
+  "dataset": "Hdigit",
+  "run_id": "SACR-MVC_Hdigit_selected",
+  "verification_only": true,
+  "single_fixed_replay": true,
+  "table_run": {
+    "args": {
+      "seed": 303,
+      "batch_size": 128,
+      "mse_epochs": 200,
+      "con_epochs": 100
+    },
+    "env": {
+      "SACR_PREPROCESS_NORM": "minmax",
+      "SACR_REDUCER": "none",
+      "SACR_MAX_VIEW_DIM": "0",
+      "SACR_PREPROCESS_SEED": "303",
+      "SACR_FORCE_FINAL_N_INIT": "200",
+      "SACR_CONFIDENCE_MODE": "none"
+    }
+  },
+  "native_arguments": null,
+  "original_native_command": null,
+  "environment_overrides": {
+    "SACR_PREPROCESS_NORM": "minmax",
+    "SACR_REDUCER": "none",
+    "SACR_MAX_VIEW_DIM": "0",
+    "SACR_PREPROCESS_SEED": "303",
+    "SACR_FORCE_FINAL_N_INIT": "200",
+    "SACR_CONFIDENCE_MODE": "none"
+  },
+  "protocol": null,
+  "selected_epoch": null,
+  "capture_policy": null,
+  "input_manifest": {
+    "file_name": "Hdigit.mat",
+    "input_sha256": "af2f600a05137ab12697a169397864d6be7c5bee40ba4ce25db7f4074f0296ce",
+    "labels_ordered_sha256": "c5575395e636cadcdfe5764ffc8d56f56d234a4dc687096f8fc2d975dd6a5597",
+    "sample_order_sha256": "9e1c19b3fdc185411bd1a987deb6a9fda2531116aac060a84c4d878854d1c099",
+    "N": 10000,
+    "V": 2,
+    "K": 10,
+    "dimensions": [
+      784,
+      256
+    ]
+  },
+  "source_files": [],
+  "original_source_locator": "receipts/frozen_selected.jsonl#sacr_Hdigit_303_Full",
+  "original_table_statistic_type": "retained_single_run_selected_by_ACC_within_source_configuration",
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

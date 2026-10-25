@@ -1,0 +1,97 @@
+{
+  "method": "MFLVC",
+  "dataset": "Mfeat",
+  "run_id": "MFLVC_Mfeat_original_selected",
+  "verification_only": true,
+  "single_fixed_replay": true,
+  "table_run": null,
+  "native_arguments": [
+    "--dataset",
+    "Mfeat"
+  ],
+  "original_native_command": [
+    "python",
+    "-u",
+    "train.py",
+    "--dataset",
+    "Mfeat"
+  ],
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUDA_VISIBLE_DEVICES": "0"
+  },
+  "protocol": {
+    "seed": 10,
+    "seeded_rngs": [
+      "torch",
+      "cuda"
+    ],
+    "unseeded_rngs": [
+      "numpy",
+      "random"
+    ],
+    "reconstruction_epochs": 200,
+    "contrastive_epochs": 50,
+    "finetune_epochs": 50,
+    "batch_size": 256,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0,
+    "feature_dim": 512,
+    "high_feature_dim": 128,
+    "temperature_f": 0.5,
+    "temperature_l": 1.0,
+    "preprocessing": "Original shared loader: transpose by inferred sample axis, sort views by descending feature dimension, per-feature minmax in float32; one-based labels shifted to zero. No SVD/view removal.",
+    "readout": "Last native semantic-label argmax(mean view cluster probabilities); MFLVC KMeans remains only in its original pseudo-label training step.",
+    "selection": "Second/final valid() call, after fixed total epochs; one run."
+  },
+  "selected_epoch": 300,
+  "capture_policy": {
+    "kind": "terminal_native_call",
+    "native_valid_call": 2,
+    "terminal_epoch": 300
+  },
+  "input_manifest": {
+    "file_name": "Mfeat.mat",
+    "input_sha256": "f5ad03f0fbdea89e1af38b6a6e2941be8d6bc85ec641b4cdcf884d04c7c94bda",
+    "labels_ordered_sha256": "4e64a02568003d897e7b68ba22d98a34f324c87f72edef91cddc23d3c5cfeb56",
+    "sample_order_sha256": "55f385cf2332d9056aaed6f496e7bebd2df52c6a9547ce2144b309432d4b0290",
+    "N": 2000,
+    "V": 6,
+    "K": 10,
+    "dimensions": [
+      216,
+      76,
+      64,
+      6,
+      240,
+      47
+    ]
+  },
+  "source_files": [
+    {
+      "file_name": "train.py",
+      "sha256": "5eb74eef830de6a7c496c3efe6947d26dba2b936f8c21a89676e8022a7e907d7"
+    },
+    {
+      "file_name": "network.py",
+      "sha256": "e944db4c88bec897bad5d1c95a81f31e33866faff3381d7d266d2f0e80d39ffd"
+    },
+    {
+      "file_name": "loss.py",
+      "sha256": "3522b5455b000be5fd470c4c2828521c143b5f6de2cfd8fd4ca99f542dea38f0"
+    },
+    {
+      "file_name": "metric.py",
+      "sha256": "26d4473a53a17b6131baa3e928bc523e55410048b084b7e8552d13f5571ba902"
+    },
+    {
+      "file_name": "dataloader.py",
+      "sha256": "23fa55231cad34db3230235e8ce8d91f2a21fea2ff5606ff061b601b64f37926"
+    }
+  ],
+  "original_source_locator": "selected_source_records.jsonl#MFLVC|Mfeat",
+  "original_table_statistic_type": "representative_single_run",
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

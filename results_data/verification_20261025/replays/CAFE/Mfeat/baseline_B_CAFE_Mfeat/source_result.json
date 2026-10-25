@@ -1,0 +1,27 @@
+{
+  "run_id": "baseline_B_CAFE_Mfeat",
+  "entry_id": "CAFE|Mfeat",
+  "method": "CAFE",
+  "dataset": "Mfeat",
+  "verification_only": true,
+  "execution_kind": "single_fixed_configuration_replay",
+  "metrics": {
+    "ACC": 0.9455,
+    "NMI": 0.8962309958505984,
+    "ARI": 0.885271864009752
+  },
+  "original_source_locator": "selected_source_records.jsonl#CAFE|Mfeat",
+  "original_statistic_type": "single_run_native_best_eligible_epoch",
+  "prediction_file": "verification_20261025/replays/CAFE/Mfeat/baseline_B_CAFE_Mfeat/prediction.npz",
+  "prediction_sha256": "a4529a66c3c003a17b54813e4cc5f4e679913217b233eecac134a256302ded2b",
+  "config_file": "verification_20261025/replays/CAFE/Mfeat/baseline_B_CAFE_Mfeat/config.json",
+  "selected_epoch": 190,
+  "capture_policy": {
+    "kind": "fixed_original_epoch",
+    "fixed_epoch": 190,
+    "epoch_indexing": "Original zero-based CAFE epoch; preserve epochs200 scheduler while ending after this fixed original selected prefix."
+  },
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

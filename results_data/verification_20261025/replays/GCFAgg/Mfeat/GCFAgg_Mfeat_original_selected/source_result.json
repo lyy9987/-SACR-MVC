@@ -1,0 +1,28 @@
+{
+  "run_id": "GCFAgg_Mfeat_original_selected",
+  "entry_id": "GCFAgg|Mfeat",
+  "method": "GCFAgg",
+  "dataset": "Mfeat",
+  "verification_only": true,
+  "execution_kind": "single_fixed_configuration_replay",
+  "metrics": {
+    "ACC": 0.8345,
+    "NMI": 0.811100105187756,
+    "PUR": 0.8345,
+    "ARI": 0.7441768704462906
+  },
+  "original_source_locator": "selected_source_records.jsonl#GCFAgg|Mfeat",
+  "original_statistic_type": "best_ACC_complete_run_from_3",
+  "prediction_file": "verification_20261025/replays/GCFAgg/Mfeat/GCFAgg_Mfeat_original_selected/prediction.npz",
+  "prediction_sha256": "6feba45cbfe2b4751862a0b8386e5b0c9229faba1302a339b8524a2733cea893",
+  "config_file": "verification_20261025/replays/GCFAgg/Mfeat/GCFAgg_Mfeat_original_selected/config.json",
+  "selected_epoch": 300,
+  "capture_policy": {
+    "kind": "terminal_native_call",
+    "native_valid_call": 1,
+    "terminal_epoch": 300
+  },
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

@@ -1,6 +1,6 @@
 {
   "dataset": "RGB-D",
-  "input_file": "F:\\SACR_MVC_project\\release\\frozen_20260923_v1\\data\\RGB-D.mat",
+  "input_file": "${DATA_ROOT}/RGB-D.mat",
   "input_sha256": "b41e6f68bd1a1d4b632b0c1ecf9ecf2314c7f26519b16ffeb4ec25f27ef6ac88",
   "N": 1449,
   "V": 2,
@@ -35,5 +35,7 @@
       "global_max": 1.0
     }
   ],
-  "loading_seconds": 0.2305761000000004
+  "loading_seconds": 0.2305761000000004,
+  "original_manifest_sha256": "ffe6d93ddda5c067a404205276afd69adfe949bd79432c96754e9c5d66e15d70",
+  "manifest_scope": "Portable-path projection; original_manifest_sha256 identifies the original manifest bytes."
 }

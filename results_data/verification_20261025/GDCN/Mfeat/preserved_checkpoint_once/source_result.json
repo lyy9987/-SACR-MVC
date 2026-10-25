@@ -1,0 +1,25 @@
+{
+  "entry_id": "GDCN|Mfeat",
+  "run_id": "GDCN_Mfeat_preserved_checkpoint_once",
+  "method": "GDCN",
+  "dataset": "Mfeat",
+  "execution_kind": "preserved_old_checkpoint_single_native_evaluation",
+  "statistic_type": "single_preserved_checkpoint_native_evaluation",
+  "evaluation_count": 1,
+  "training": false,
+  "seed_set": false,
+  "metrics": {
+    "ACC": 0.939,
+    "NMI": 0.8900731644957953,
+    "PUR": 0.939,
+    "ARI": 0.8724963861101227
+  },
+  "prediction_file": "verification_20261025/GDCN/Mfeat/preserved_checkpoint_once/prediction.npz",
+  "prediction_sha256": "f61eb0ac6fee9347347674fc5a7588b2c2fa85483418197ebca449f212788127",
+  "config_file": "verification_20261025/GDCN/Mfeat/preserved_checkpoint_once/config.json",
+  "checkpoint_file_name": "Mfeat.pth",
+  "checkpoint_sha256_at_evaluation": "a8009c24ec4b27c71725d455ebcdc5d76ea5f22f68dcea6f97c0672c44d6b2af",
+  "evidence_role": "One native evaluation of a preserved checkpoint; not a historical training-time prediction.",
+  "source_reference": "https://doi.org/10.1109/LSP.2026.3668750",
+  "record_origin": "One native evaluation of a preserved checkpoint; not a historical training-time prediction."
+}

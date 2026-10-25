@@ -1,0 +1,117 @@
+{
+  "method": "GCFAgg",
+  "dataset": "ALOI-100",
+  "run_id": "GCFAgg_ALOI100_original_selected",
+  "verification_only": true,
+  "single_fixed_replay": true,
+  "table_run": null,
+  "native_arguments": [
+    "--dataset",
+    "ALOI-100",
+    "--seed",
+    "10",
+    "--norm",
+    "minmax",
+    "--rec_epochs",
+    "200",
+    "--fine_tune_epochs",
+    "100",
+    "--results",
+    "{RUN_DIR}/native_results.jsonl",
+    "--tag",
+    "gcfagg_ALOI100_seed10"
+  ],
+  "original_native_command": [
+    "python",
+    "-u",
+    "run_gcfagg.py",
+    "--dataset",
+    "ALOI-100",
+    "--seed",
+    "10",
+    "--norm",
+    "minmax",
+    "--rec_epochs",
+    "200",
+    "--fine_tune_epochs",
+    "100",
+    "--results",
+    "{RUN_DIR}/native_results.jsonl",
+    "--tag",
+    "gcfagg_ALOI100_seed10"
+  ],
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "OMP_NUM_THREADS": "8"
+  },
+  "protocol": {
+    "seed": 10,
+    "seeded_rngs": [
+      "torch",
+      "cuda",
+      "numpy",
+      "random"
+    ],
+    "reconstruction_epochs": 200,
+    "finetune_epochs": 100,
+    "batch_size": 256,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0,
+    "low_feature_dim": 512,
+    "high_feature_dim": 128,
+    "temperature_f": 0.5,
+    "preprocessing": "Per-view per-feature minmax; stored MATLAB cell view order preserved; float64 normalization then float32.",
+    "readout": "Final native GCFAgg commonz; KMeans(n_clusters=known K,n_init=100,random_state=None); same original NumPy stream.",
+    "original_queue": "queue_gcfagg_20260926.py",
+    "selection": "Single originally selected seed only, no search over the original other seeds."
+  },
+  "selected_epoch": 300,
+  "capture_policy": {
+    "kind": "terminal_native_call",
+    "native_valid_call": 1,
+    "terminal_epoch": 300
+  },
+  "input_manifest": {
+    "file_name": "ALOI-100.mat",
+    "input_sha256": "e20bb24d6473a14e84aba93a92cfd19c4ddbb8ea3fa41618a63049f533da8323",
+    "labels_ordered_sha256": "4ba55c84b28b4d5866eda5452af92479d9da339fb4a8d652fb493add1caadc58",
+    "sample_order_sha256": "f3a00b27bb88f24e3b445f7ec48568a58d1dd4a0880e0ca67e9b032b0e2d36e6",
+    "N": 10800,
+    "V": 4,
+    "K": 100,
+    "dimensions": [
+      77,
+      13,
+      64,
+      125
+    ]
+  },
+  "source_files": [
+    {
+      "file_name": "run_gcfagg.py",
+      "sha256": "5b1d60f5bb78002c81516581999b8354368e0591eb6a2ae217dc6e12e3a78ff4"
+    },
+    {
+      "file_name": "network.py",
+      "sha256": "b016650253d172bf6f1b020f7a8278a4d2ce5d847c53575d17814b787a0150a8"
+    },
+    {
+      "file_name": "loss.py",
+      "sha256": "fc424262d09f43855cb2fd0f1c01be6dfaff7455bbbf096e58a281ecc5703293"
+    },
+    {
+      "file_name": "metric.py",
+      "sha256": "5a15f48b827c3e1af0bdb43917130e8a58b35c9196a0929d5c7c73dd98cc32a6"
+    },
+    {
+      "file_name": "dataloader.py",
+      "sha256": "ecb533cf678438495b213422bdfa3ffd679e9b9e8a014b581093121fbcbf8143"
+    }
+  ],
+  "original_source_locator": "selected_source_records.jsonl#GCFAgg|ALOI-100",
+  "original_table_statistic_type": "best_ACC_complete_run_from_3",
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

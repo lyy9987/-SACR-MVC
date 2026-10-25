@@ -1,0 +1,354 @@
+{
+  "method": "DCMVC",
+  "dataset": "CIFAR100",
+  "run_id": "baseline_B_DCMVC_CIFAR100",
+  "verification_only": true,
+  "single_fixed_replay": true,
+  "table_run": null,
+  "native_arguments": [
+    "--dataset",
+    "CIFAR100",
+    "--seed",
+    "101",
+    "--batch_size",
+    "256",
+    "--mse_epochs",
+    "200",
+    "--con_epochs",
+    "100",
+    "--k",
+    "5",
+    "--alpha",
+    "0.01",
+    "--beta",
+    "0.1",
+    "--readout_n_init",
+    "20",
+    "--readout_seed",
+    "0"
+  ],
+  "original_native_command": [
+    "python",
+    "-u",
+    "dcmvc.py",
+    "--dataset",
+    "CIFAR100",
+    "--seed",
+    "101",
+    "--batch_size",
+    "256",
+    "--mse_epochs",
+    "200",
+    "--con_epochs",
+    "100",
+    "--k",
+    "5",
+    "--alpha",
+    "0.01",
+    "--beta",
+    "0.1",
+    "--readout_n_init",
+    "20",
+    "--readout_seed",
+    "0"
+  ],
+  "environment_overrides": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "PYTHONUNBUFFERED": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "SACR_DATASET_ROOT": "${DATA_ROOT}",
+    "SACR_PREPROCESS_NORM": "standard",
+    "SACR_REDUCER": "svd",
+    "SACR_MAX_VIEW_DIM": "256",
+    "SACR_PREPROCESS_SEED": "303",
+    "SACR_FORCE_FINAL_N_INIT": "20",
+    "SACR_CONFIDENCE_MODE": "none"
+  },
+  "protocol": null,
+  "selected_epoch": 300,
+  "capture_policy": {
+    "kind": "final_native_only",
+    "terminal_epoch": 300
+  },
+  "input_manifest": {
+    "file_name": "cifar100.mat",
+    "input_sha256": "d693a211fd03adc9ce3a0e64208a19a23fd69582739f13686b9edcee90265c82",
+    "labels_ordered_sha256": "ac1fc6f67f41e276cbeebcd46daa93fcb61bfea4800008f7ed155d60f08efe57",
+    "sample_order_sha256": "33236cc6bd19fa6b89e06d441d3fcd8eb37dc8540f6a4f2b627b20af10894a41",
+    "N": 50000,
+    "V": 3,
+    "K": 100,
+    "dimensions": [
+      512,
+      2048,
+      1024
+    ]
+  },
+  "source_files": [
+    {
+      "file_name": "dcmvc.py",
+      "sha256": "fdfd8c0a3747d2bc8b6d94fba8307c0525497507a2ac398e7692c67395b8bf5d"
+    },
+    {
+      "file_name": "adaptive_topology_selector.py",
+      "sha256": "bffe22d89aaf28ebad7938d83d4e9af327c39e3d3c10ac3e613a877187dee9be"
+    },
+    {
+      "file_name": "check_package.py",
+      "sha256": "c68e07deb82fdd1d4216beebee3750928ba873bd451a271940872b79e4ff4f62"
+    },
+    {
+      "file_name": "consensus_guard.py",
+      "sha256": "ed1cf0b888b67df13304b12d36a812a7fc8bb2297ad87519c9b87b07326c44c9"
+    },
+    {
+      "file_name": "dataloader.py",
+      "sha256": "a1eb5f1a6a856108041a130519fb75e250083ed7ce30b550c233a195654f40f2"
+    },
+    {
+      "file_name": "dataset_metadata.py",
+      "sha256": "40245edebd2519ec9f4bdbe42d0ac7d2cfc34c3d6c7dbe708ad742f01ff7366e"
+    },
+    {
+      "file_name": "diagnose_continuous_gate.py",
+      "sha256": "222abe1c24d533a2f1b60b3befe3659e8010481f7fc5ae3251a694dc6f204501"
+    },
+    {
+      "file_name": "diagnose_contrastive_checkpoints.py",
+      "sha256": "c9afa074a871ed996cd8fa93e6b8cfd15b60d34975d7855f9600cbb85b29e204"
+    },
+    {
+      "file_name": "diagnose_fixed_model.py",
+      "sha256": "5819ed38d181623cbfd7d8a44595ebae9d2b254992a2f371ce069d1ba91ae5d4"
+    },
+    {
+      "file_name": "diagnose_frozen_readouts.py",
+      "sha256": "83d1d2e8937a03e8f86dd450fd3784c3f7c8e531dfa0895e31dea1c754ae0bab"
+    },
+    {
+      "file_name": "diagnose_gcca.py",
+      "sha256": "a76145f16abfe6efc86385e4822324b40704df17d771a62562fe239a4eee07e2"
+    },
+    {
+      "file_name": "diagnose_multigranular_consensus.py",
+      "sha256": "437055ecd89300d61832db3b39f29023a7e4e091c8010e4b5ce477bbe714ebe6"
+    },
+    {
+      "file_name": "diagnose_raw_fusion.py",
+      "sha256": "404491173741bb0abfba86f17dd3ac2c241981e385c4f2edb465f19d5a070d07"
+    },
+    {
+      "file_name": "diagnose_snf.py",
+      "sha256": "198fe2f1a100284ee335f63d57b1f32bc104192b09151fd3216e9032af76cfa8"
+    },
+    {
+      "file_name": "diagnose_structural_teachers.py",
+      "sha256": "b9a6ccfa0843e4dca8e886f9cbb73ceb0c47c205e6e8a2df21d55778dcf529fd"
+    },
+    {
+      "file_name": "evaluate_consensus_guard_gate.py",
+      "sha256": "5db458d3e16c88932bb932ebc037cd5fd89fce602f6277941b3affbda6fae86d"
+    },
+    {
+      "file_name": "evaluate_residual_consensus.py",
+      "sha256": "58ed28bb27c2ee76ad4f2ea2a1ea7ca854013be3235e672568e931f3d0cff70e"
+    },
+    {
+      "file_name": "global_memory.py",
+      "sha256": "cbf1b6ff918a165222d09e4a307d2f0b38759d7977c5bf9176a71ac223c15ff4"
+    },
+    {
+      "file_name": "loss.py",
+      "sha256": "238c939879cbc38fa5c01c8cd946767e08a1088148732628973084374f7615eb"
+    },
+    {
+      "file_name": "metric.py",
+      "sha256": "d442d97b7c3cc1bb2acc6710b57622e62899e43957def60e8c29ee1a55debc3f"
+    },
+    {
+      "file_name": "model.py",
+      "sha256": "04e5c3267cb8ae9d5b985b8d937c4517e082463307c4507ac00fedbe18744288"
+    },
+    {
+      "file_name": "network.py",
+      "sha256": "664ab49bbc61c2603177e85deeb73802f6f7bd318bc8958c2156f15ba05235fe"
+    },
+    {
+      "file_name": "pretrain_selection.py",
+      "sha256": "a6add99f8d9c5844153b8684aff72da79c2a5843f1acb16378ed890af3af5a41"
+    },
+    {
+      "file_name": "robustness.py",
+      "sha256": "ed55ab089eb74532d19da99b97820529c7dec05c3d391b35180df506785814cd"
+    },
+    {
+      "file_name": "run_experiments.py",
+      "sha256": "cd318f54d60c080c6eb693065f8c41fa77def192774113bc214e3368b8790588"
+    },
+    {
+      "file_name": "structural_anchor.py",
+      "sha256": "faf04b184aa432bb1505553803a18aaa6cf6013ca99b86c84e79e2fd2bd89f6c"
+    },
+    {
+      "file_name": "topology_policy.py",
+      "sha256": "15b07617556ca26b4861357a346ba1c5b60771d0f7fc3a0b4f0cfa486d51ef2e"
+    },
+    {
+      "file_name": "train.py",
+      "sha256": "f310fe5ecc625914b2d20009fb63d0829c8544c001308c6bc268d902cf7d3c2c"
+    },
+    {
+      "file_name": "train_final.py",
+      "sha256": "63ab069a004763dc6d195b7c181109842ee8c6fa04b0ca437f5de8e61decdaf6"
+    },
+    {
+      "file_name": "unified_recovery.py",
+      "sha256": "c9daaf4c97929bf357689ad939cb9ed19223a3676f753d4f1cd069589cbb638f"
+    },
+    {
+      "file_name": "unified_relation.py",
+      "sha256": "15f23319d3b3cda5a25088a452fa175929ece86cae85bb9d8917ce938c8000e9"
+    },
+    {
+      "file_name": "eval_readout_ablation.py",
+      "sha256": "344b69a86d0145ba77cdbe60b004eec8ce22f8673d6e6e331a1e6e94b99189e2"
+    },
+    {
+      "file_name": "confidence_intervention.py",
+      "sha256": "b699af59e14964dcafcb5ea69888a86208815bcbe9f34ff5c53d883180704302"
+    },
+    {
+      "file_name": "beta_mixture.py",
+      "sha256": "9ed6d861df0e392369dc8c6c4e718664254eb9c72139091562ccc04eb627198a"
+    },
+    {
+      "file_name": "faiss_kmeans.py",
+      "sha256": "b34423085ee54564b4907f08d681c97a65b266dd4af106854541b4a02460135c"
+    },
+    {
+      "file_name": "gaussian_mixture.py",
+      "sha256": "74f655b619882e6209c0247386240ae9f7a8d85002cb6c0fa686aff33e50da2a"
+    },
+    {
+      "file_name": "__base__.py",
+      "sha256": "e03a1fcf131e2ac46eb9bce0e4dfb90f61d9fb67021fd6925b8724f57ca8bc6f"
+    },
+    {
+      "file_name": "__init__.py",
+      "sha256": "7ac1f794a880902c03bac4b7462a69aaa7f3c780d3cd8841661eb1ef109785b4"
+    },
+    {
+      "file_name": "kmeans.py",
+      "sha256": "be517387f43f3000c7237df5312b43003614aa301924d18205a96078137f3311"
+    },
+    {
+      "file_name": "kmeans_plus_plus.py",
+      "sha256": "149878011db111b589a36a45a91eb5318426e1276dc2f7a83a3618bf9ba2b8ee"
+    },
+    {
+      "file_name": "__init__.py",
+      "sha256": "96415180f583095793d5b47f8cff4d8cd4814f4e0ea7b1ad618d1313d72ca697"
+    },
+    {
+      "file_name": "check_datasets.py",
+      "sha256": "a58dfa3b4bf7b4e8c266c9a5a06986b18fb9839985b5bc85c71a879acbab601a"
+    },
+    {
+      "file_name": "check_datasets_extended.py",
+      "sha256": "d1651d5fa87e9ccd18740116923d63f7fc8dabf362891817b4846c20ae1036f1"
+    },
+    {
+      "file_name": "check_package.py",
+      "sha256": "be1801871eb3dea3a0cacafa0285905e608cd443d07e25aff505a8e561f7e883"
+    },
+    {
+      "file_name": "dataloader.py",
+      "sha256": "325f3ed5a427952d47863d753475e44b05e529fa25a1d2e72fa7c4e8f168da7e"
+    },
+    {
+      "file_name": "dataset_config.py",
+      "sha256": "2d3d610a89140ace1504982d8b6bda3f3bfc4790aa7b107eb17f9024e563e527"
+    },
+    {
+      "file_name": "hard_eval.py",
+      "sha256": "766f9e64c30752294c8dd9f580d42b80ed535839096e59ad433406817bda3fb0"
+    },
+    {
+      "file_name": "loss.py",
+      "sha256": "fc59e00405b61a2aab1bed83c8bb5c105c65d3fb08c8165088facd497b9a3bde"
+    },
+    {
+      "file_name": "metric.py",
+      "sha256": "c1e90ebc324bc0d89f379dec7cb8050cf2a0b206add919b6655b577fc3f521ab"
+    },
+    {
+      "file_name": "model.py",
+      "sha256": "31c86083abacb7b520eb47c1309bad3422dab26feddc76644261a0ac841f359d"
+    },
+    {
+      "file_name": "network.py",
+      "sha256": "8478919065bb660dd4190c418b16e0b8b79da0482f2c3f6a02e19b4921314e90"
+    },
+    {
+      "file_name": "run_dcmvc_group.py",
+      "sha256": "4cec59504dadb4fc8aff1006d366609f4c557e53eb1b9f6aeaf96482bbab1c43"
+    },
+    {
+      "file_name": "summarize_results.py",
+      "sha256": "bce75f8e4eb885d963cbbd53f2b54c7a7124d918ddaf4c5abb93cbee3d77d4e4"
+    },
+    {
+      "file_name": "test.py",
+      "sha256": "776f0a7b918e34c80e4baa1ed14320d36f7ac888b1158ac5a468a009988f84ea"
+    },
+    {
+      "file_name": "train.py",
+      "sha256": "aecab2cc2ed99dbbef2a5ca4939b4fe38e05cf8123a653d1a10207d29fbee35f"
+    },
+    {
+      "file_name": "train_dcmvc_extended.py",
+      "sha256": "e53429e62c6f8e5fa698c679f28637ec26550570b47805387f7ea1c4b6a2634a"
+    },
+    {
+      "file_name": "beta_mixture.py",
+      "sha256": "9ed6d861df0e392369dc8c6c4e718664254eb9c72139091562ccc04eb627198a"
+    },
+    {
+      "file_name": "faiss_kmeans.py",
+      "sha256": "7765c5038512fb24f2f9d6d0d360637adbd32d2476f533a36eef03e0f3d5c960"
+    },
+    {
+      "file_name": "gaussian_mixture.py",
+      "sha256": "74f655b619882e6209c0247386240ae9f7a8d85002cb6c0fa686aff33e50da2a"
+    },
+    {
+      "file_name": "__base__.py",
+      "sha256": "e03a1fcf131e2ac46eb9bce0e4dfb90f61d9fb67021fd6925b8724f57ca8bc6f"
+    },
+    {
+      "file_name": "__init__.py",
+      "sha256": "4f5a24687d914c6f7665ed013fa7100c03ea986f7f73d6e84191073b50fe44c5"
+    },
+    {
+      "file_name": "kmeans.py",
+      "sha256": "be517387f43f3000c7237df5312b43003614aa301924d18205a96078137f3311"
+    },
+    {
+      "file_name": "kmeans_plus_plus.py",
+      "sha256": "149878011db111b589a36a45a91eb5318426e1276dc2f7a83a3618bf9ba2b8ee"
+    },
+    {
+      "file_name": "__init__.py",
+      "sha256": "96415180f583095793d5b47f8cff4d8cd4814f4e0ea7b1ad618d1313d72ca697"
+    }
+  ],
+  "original_source_locator": "selected_source_records.jsonl#DCMVC|CIFAR100",
+  "original_table_statistic_type": "representative_single_run",
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

@@ -25,16 +25,8 @@
   "metrics": {
     "ACC": 0.37267080745341613,
     "NMI_arithmetic_shared": 0.3195865194768001,
-    "NMI_max_author": 0.31287218091201335,
     "ARI": 0.11037772324064814,
-    "PUR": 0.505175983436853,
-    "FMI": 0.25531833127792075,
-    "HI": 0.31287218091201335,
-    "CI": 0.32659536196163635,
-    "VM": 0.31958651947680006,
-    "Precision_author_pairs": 0.22294881227394103,
-    "Recall_author_pairs": 0.29238751990499584,
-    "Fscore_author_pairs": 0.2529899260582602
+    "PUR": 0.505175983436853
   },
   "label": "native CGDR with minimal independent correct-onehot semantic patch and disclosed compatibility/resource adaptations"
 }

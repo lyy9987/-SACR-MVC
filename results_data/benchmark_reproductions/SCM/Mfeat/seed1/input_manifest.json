@@ -1,6 +1,6 @@
 {
   "dataset": "Mfeat",
-  "input_file": "F:\\SACR_MVC_project\\release\\frozen_20260923_v1\\data\\Mfeat.mat",
+  "input_file": "${DATA_ROOT}/Mfeat.mat",
   "input_sha256": "f5ad03f0fbdea89e1af38b6a6e2941be8d6bc85ec641b4cdcf884d04c7c94bda",
   "N": 2000,
   "V": 6,
@@ -83,5 +83,7 @@
       "global_max": 777.86181640625
     }
   ],
-  "loading_seconds": 0.07739919999999989
+  "loading_seconds": 0.07739919999999989,
+  "original_manifest_sha256": "eb81b8bde5c6bc311ddfbc748e8534ee0578bdc382ac96dec38e50ab158a4edc",
+  "manifest_scope": "Portable-path projection; original_manifest_sha256 identifies the original manifest bytes."
 }

@@ -47,10 +47,7 @@
     "KMeans_algorithm": "lloyd",
     "readout_note": "n_init=10 fixes the effective sklearn1.3 default explicitly; random_state fixes the otherwise unspecified RNG. No repeated label-based readout selection.",
     "NMI_normalization": "arithmetic",
-    "checkpoint": "final only",
-    "four_metrics_same_saved_prediction": true,
-    "all_six_results_retained_regardless_of_rank": true,
-    "post_score_tuning_or_seed_retries": false
+    "checkpoint": "final only"
   },
   "elapsed_seconds": 57.7595953,
   "statistic_type": "one_fixed_seed_final_native_KMeans_complete_partition",
@@ -59,6 +56,8 @@
   "KMeans_n_iter": 38,
   "final_prediction_sha256": "68cbc13c45f9ab43d9e53707b813647d0f16992e817a56ebac02691755755a83",
   "final_checkpoint_sha256": "d39573d4de570dd2a1a530ceb85201af710c13c3651d077a40afd6d6e0cd6b5e",
-  "input_manifest_sha256": "833507bb03f05fb4839d060124b35f2e93b2d9633649165ae78dd6d25f5f249e",
-  "config_sha256": "d23faa6a49581a559f0390145513d3197a86314555361de6453dc2da640c1eb0"
+  "original_config_sha256": "d23faa6a49581a559f0390145513d3197a86314555361de6453dc2da640c1eb0",
+  "portable_config_sha256": "fd9ff17b1e2d5ea88457f7605dd173d6d54520af49badd1e13044aaf6b935c40",
+  "original_input_manifest_sha256": "833507bb03f05fb4839d060124b35f2e93b2d9633649165ae78dd6d25f5f249e",
+  "portable_input_manifest_sha256": "b56197ada9203126ee6dd90643275dd32a5c4f20337d6a4fe3783e9683462029"
 }

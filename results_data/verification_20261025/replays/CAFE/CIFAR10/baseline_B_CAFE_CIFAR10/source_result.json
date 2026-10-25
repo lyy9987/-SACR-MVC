@@ -1,0 +1,27 @@
+{
+  "run_id": "baseline_B_CAFE_CIFAR10",
+  "entry_id": "CAFE|CIFAR10",
+  "method": "CAFE",
+  "dataset": "CIFAR10",
+  "verification_only": true,
+  "execution_kind": "single_fixed_configuration_replay",
+  "metrics": {
+    "ACC": 0.98336,
+    "NMI": 0.9573637906460939,
+    "ARI": 0.9639499632136552
+  },
+  "original_source_locator": "selected_source_records.jsonl#CAFE|CIFAR10",
+  "original_statistic_type": "single_run_native_best_eligible_epoch",
+  "prediction_file": "verification_20261025/replays/CAFE/CIFAR10/baseline_B_CAFE_CIFAR10/prediction.npz",
+  "prediction_sha256": "ed851a5da69ba086243de9e350c330b37ae08300f4b9aa79fe8969ad33582704",
+  "config_file": "verification_20261025/replays/CAFE/CIFAR10/baseline_B_CAFE_CIFAR10/config.json",
+  "selected_epoch": 110,
+  "capture_policy": {
+    "kind": "fixed_original_epoch",
+    "fixed_epoch": 110,
+    "epoch_indexing": "Original zero-based CAFE epoch; preserve epochs200 scheduler while ending after this fixed original selected prefix."
+  },
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

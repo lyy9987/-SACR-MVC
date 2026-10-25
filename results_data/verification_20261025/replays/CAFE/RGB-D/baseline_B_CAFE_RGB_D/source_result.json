@@ -1,0 +1,27 @@
+{
+  "run_id": "baseline_B_CAFE_RGB_D",
+  "entry_id": "CAFE|RGB-D",
+  "method": "CAFE",
+  "dataset": "RGB-D",
+  "verification_only": true,
+  "execution_kind": "single_fixed_configuration_replay",
+  "metrics": {
+    "ACC": 0.3146997929606625,
+    "NMI": 0.22215882160169945,
+    "ARI": 0.13110789592614647
+  },
+  "original_source_locator": "selected_source_records.jsonl#CAFE|RGB-D",
+  "original_statistic_type": "single_run_native_best_eligible_epoch",
+  "prediction_file": "verification_20261025/replays/CAFE/RGB-D/baseline_B_CAFE_RGB_D/prediction.npz",
+  "prediction_sha256": "2e9e1593f1274efe986c8332a312b0c1255e311f42215f871e99848ed2554c7e",
+  "config_file": "verification_20261025/replays/CAFE/RGB-D/baseline_B_CAFE_RGB_D/config.json",
+  "selected_epoch": 110,
+  "capture_policy": {
+    "kind": "fixed_original_epoch",
+    "fixed_epoch": 110,
+    "epoch_indexing": "Original zero-based CAFE epoch; preserve epochs200 scheduler while ending after this fixed original selected prefix."
+  },
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

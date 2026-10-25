@@ -1,0 +1,63 @@
+{
+  "method": "GDCN",
+  "dataset": "Hdigit",
+  "execution_kind": "preserved_old_checkpoint_single_native_evaluation",
+  "statistic_type": "single_preserved_checkpoint_native_evaluation",
+  "evaluation_count": 1,
+  "training": false,
+  "seed_set": false,
+  "selected_seed": null,
+  "native_evaluation": "Exactly one original metric.valid invocation; original inference batches256/shuffleFalse; diffusion B10/45 samplingsteps; KMeans n_init100 without random_state unchanged.",
+  "repeat_policy": "One prespecified native evaluation per preserved dataset checkpoint; no best-score choice across repeats or the separate Mfeat retraining attempt.",
+  "network": {
+    "constructor": "GCFAggMVC",
+    "low_feature_dim": 512,
+    "high_feature_dim": 128,
+    "ordered_view_dimensions": [
+      784,
+      256
+    ]
+  },
+  "preprocessing": "Original retained loader: per-feature minmax in float32; views ordered by descending dimension; sample order retained.",
+  "checkpoint": {
+    "file_name": "Hdigit.pth",
+    "sha256": "1657b073d4836aa0b5ef45a0fb1fc28edd3171d81c77d55fd5bb28c42bdb862a",
+    "training_time_sha256_available": false
+  },
+  "historical_log_terminal_epoch": 250,
+  "input_manifest": {
+    "file_name": "Hdigit.mat",
+    "input_sha256": "af2f600a05137ab12697a169397864d6be7c5bee40ba4ce25db7f4074f0296ce",
+    "labels_ordered_sha256": "c5575395e636cadcdfe5764ffc8d56f56d234a4dc687096f8fc2d975dd6a5597",
+    "sample_order_sha256": "9e1c19b3fdc185411bd1a987deb6a9fda2531116aac060a84c4d878854d1c099",
+    "N": 10000,
+    "V": 2,
+    "K": 10,
+    "dimensions": [
+      784,
+      256
+    ]
+  },
+  "source_reference": "https://doi.org/10.1109/LSP.2026.3668750",
+  "source_files": [
+    {
+      "file_name": "network.py",
+      "sha256": "ac393feb2292f6989e4de4068b7c7c84639c33c7d246814048f74eb47ce80585"
+    },
+    {
+      "file_name": "metric.py",
+      "sha256": "5349d373f563f9650d5252f973aa0754b8870fd17f7a8338bc53bfeba101f188"
+    },
+    {
+      "file_name": "dataloader.py",
+      "sha256": "23fa55231cad34db3230235e8ce8d91f2a21fea2ff5606ff061b601b64f37926"
+    },
+    {
+      "file_name": "train.py",
+      "sha256": "eeed1f3aee2edbfefa4d7be75871425fa28db935267cfb25ae34d10635f5b7f9"
+    }
+  ],
+  "randomness_boundary": "No RNG seed was set for this evaluation; native diffusion sampling and KMeans readout are stochastic. This saved partition is a new preserved-weight readout, not the historical training-time partition.",
+  "checkpoint_provenance_boundary": "Preserved file path, historical log and timestamps corroborate the old weight source; the exact historical selected checkpoint/partition was not bound by a stored training-time hash or RNG state.",
+  "record_origin": "One native evaluation of a preserved checkpoint; not a historical training-time prediction."
+}

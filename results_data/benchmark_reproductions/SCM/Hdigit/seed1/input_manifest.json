@@ -1,6 +1,6 @@
 {
   "dataset": "Hdigit",
-  "input_file": "F:\\SACR_MVC_project\\release\\frozen_20260923_v1\\data\\Hdigit.mat",
+  "input_file": "${DATA_ROOT}/Hdigit.mat",
   "input_sha256": "af2f600a05137ab12697a169397864d6be7c5bee40ba4ce25db7f4074f0296ce",
   "N": 10000,
   "V": 2,
@@ -35,5 +35,7 @@
       "global_max": 255.0
     }
   ],
-  "loading_seconds": 0.2889452000000001
+  "loading_seconds": 0.2889452000000001,
+  "original_manifest_sha256": "a8bd5b7dc89a946c6fb444b20db4890adc31aad7f1802f5d957c4f1aba95d7a7",
+  "manifest_scope": "Portable-path projection; original_manifest_sha256 identifies the original manifest bytes."
 }

@@ -1,0 +1,27 @@
+{
+  "run_id": "baseline_B_CAFE_ALOI_100",
+  "entry_id": "CAFE|ALOI-100",
+  "method": "CAFE",
+  "dataset": "ALOI-100",
+  "verification_only": true,
+  "execution_kind": "single_fixed_configuration_replay",
+  "metrics": {
+    "ACC": 0.8000925925925926,
+    "NMI": 0.8605725618754537,
+    "ARI": 0.6881422219620664
+  },
+  "original_source_locator": "selected_source_records.jsonl#CAFE|ALOI-100",
+  "original_statistic_type": "single_run_native_best_eligible_epoch",
+  "prediction_file": "verification_20261025/replays/CAFE/ALOI-100/baseline_B_CAFE_ALOI_100/prediction.npz",
+  "prediction_sha256": "1685bb276a8c7ac18dff731feeaeafe0a67d4a4ded52bc5cf2377dd23d6e39c1",
+  "config_file": "verification_20261025/replays/CAFE/ALOI-100/baseline_B_CAFE_ALOI_100/config.json",
+  "selected_epoch": 199,
+  "capture_policy": {
+    "kind": "fixed_original_epoch",
+    "fixed_epoch": 199,
+    "epoch_indexing": "Original zero-based CAFE epoch; preserve epochs200 scheduler while ending after this fixed original selected prefix."
+  },
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

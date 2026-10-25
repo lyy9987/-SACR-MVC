@@ -24,7 +24,7 @@
   "seed": 0,
   "environment": {
     "python": "3.8.20 (default, Oct  3 2024, 15:19:54) [MSC v.1929 64 bit (AMD64)]",
-    "python_executable": "D:\\anaconda\\envs\\dcmvc_fix\\python.exe",
+    "python_executable": "python",
     "torch": "2.4.1",
     "numpy": "1.24.3",
     "scipy": "1.10.1",

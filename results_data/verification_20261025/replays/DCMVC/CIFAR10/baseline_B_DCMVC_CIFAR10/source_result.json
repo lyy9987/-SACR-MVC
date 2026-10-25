@@ -1,0 +1,28 @@
+{
+  "run_id": "baseline_B_DCMVC_CIFAR10",
+  "entry_id": "DCMVC|CIFAR10",
+  "method": "DCMVC",
+  "dataset": "CIFAR10",
+  "verification_only": true,
+  "execution_kind": "single_fixed_configuration_replay",
+  "metrics": {
+    "ACC": 0.99536,
+    "NMI": 0.9869773379728992,
+    "PUR": 0.99536,
+    "ARI": 0.9897931113501233,
+    "Fscore": 0.9908136232292301
+  },
+  "original_source_locator": "selected_source_records.jsonl#DCMVC|CIFAR10",
+  "original_statistic_type": "representative_single_run",
+  "prediction_file": "verification_20261025/replays/DCMVC/CIFAR10/baseline_B_DCMVC_CIFAR10/prediction.npz",
+  "prediction_sha256": "bd24ad62e393a498a8316a9661547f70e8d5a3453418e7b6fb31165a890b886e",
+  "config_file": "verification_20261025/replays/DCMVC/CIFAR10/baseline_B_DCMVC_CIFAR10/config.json",
+  "selected_epoch": 300,
+  "capture_policy": {
+    "kind": "final_native_only",
+    "terminal_epoch": 300
+  },
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

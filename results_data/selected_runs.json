@@ -279,11 +279,661 @@
         "PUR": 0.655624568668047,
         "ARI": 0.3908197666506804
       },
-      "metrics_display_precision_only": false,
       "receipt_binding_id": "sacr_RGB-D_303_Full",
       "prediction_file": "benchmark_reproductions/SACR-MVC/RGB-D/bound_partition.npz",
       "samples": 1449,
       "classes": 13
+    },
+    {
+      "run_id": "GDCN_RGB_D_preserved_checkpoint_once",
+      "method": "GDCN",
+      "dataset": "RGB-D",
+      "seed": null,
+      "metrics": {
+        "ACC": 0.2712215320910973,
+        "NMI": 0.20752876875063622,
+        "PUR": 0.43478260869565216,
+        "ARI": 0.11103634990464671
+      },
+      "prediction_file": "verification_20261025/GDCN/RGB-D/preserved_checkpoint_once/prediction.npz",
+      "prediction_sha256": "4e16b227647ecf8c3cfc8efd4381d5018426b7205c01d365acd7d2ec1ac5a014",
+      "samples": 1449,
+      "classes": 13,
+      "config_file": "verification_20261025/GDCN/RGB-D/preserved_checkpoint_once/config.json",
+      "source_record_file": "verification_20261025/GDCN/RGB-D/preserved_checkpoint_once/source_result.json",
+      "statistic_type": "single_preserved_checkpoint_native_evaluation",
+      "evidence_role": "Saved on 2026-10-25 from one native evaluation of a preserved old checkpoint; not a historical training-time partition."
+    },
+    {
+      "run_id": "GDCN_ALOI_100_preserved_checkpoint_once",
+      "method": "GDCN",
+      "dataset": "ALOI-100",
+      "seed": null,
+      "metrics": {
+        "ACC": 0.9153703703703704,
+        "NMI": 0.9366449076945331,
+        "PUR": 0.9177777777777778,
+        "ARI": 0.8543169709144476
+      },
+      "prediction_file": "verification_20261025/GDCN/ALOI-100/preserved_checkpoint_once/prediction.npz",
+      "prediction_sha256": "05ae06a002528d80522a29faa0ee4225cfc7824ae976189f1baa7541f520e354",
+      "samples": 10800,
+      "classes": 100,
+      "config_file": "verification_20261025/GDCN/ALOI-100/preserved_checkpoint_once/config.json",
+      "source_record_file": "verification_20261025/GDCN/ALOI-100/preserved_checkpoint_once/source_result.json",
+      "statistic_type": "single_preserved_checkpoint_native_evaluation",
+      "evidence_role": "Saved on 2026-10-25 from one native evaluation of a preserved old checkpoint; not a historical training-time partition."
+    },
+    {
+      "run_id": "GDCN_Hdigit_preserved_checkpoint_once",
+      "method": "GDCN",
+      "dataset": "Hdigit",
+      "seed": null,
+      "metrics": {
+        "ACC": 0.9501,
+        "NMI": 0.8968004166315543,
+        "PUR": 0.9501,
+        "ARI": 0.8936104211540482
+      },
+      "prediction_file": "verification_20261025/GDCN/Hdigit/preserved_checkpoint_once/prediction.npz",
+      "prediction_sha256": "d3d426330ac13b9253a3f4c42544806cd700c6b21b3416dd19d3d04cb20e3ed9",
+      "samples": 10000,
+      "classes": 10,
+      "config_file": "verification_20261025/GDCN/Hdigit/preserved_checkpoint_once/config.json",
+      "source_record_file": "verification_20261025/GDCN/Hdigit/preserved_checkpoint_once/source_result.json",
+      "statistic_type": "single_preserved_checkpoint_native_evaluation",
+      "evidence_role": "Saved on 2026-10-25 from one native evaluation of a preserved old checkpoint; not a historical training-time partition."
+    },
+    {
+      "run_id": "GDCN_Mfeat_preserved_checkpoint_once",
+      "method": "GDCN",
+      "dataset": "Mfeat",
+      "seed": null,
+      "metrics": {
+        "ACC": 0.939,
+        "NMI": 0.8900731644957953,
+        "PUR": 0.939,
+        "ARI": 0.8724963861101227
+      },
+      "prediction_file": "verification_20261025/GDCN/Mfeat/preserved_checkpoint_once/prediction.npz",
+      "prediction_sha256": "f61eb0ac6fee9347347674fc5a7588b2c2fa85483418197ebca449f212788127",
+      "samples": 2000,
+      "classes": 10,
+      "config_file": "verification_20261025/GDCN/Mfeat/preserved_checkpoint_once/config.json",
+      "source_record_file": "verification_20261025/GDCN/Mfeat/preserved_checkpoint_once/source_result.json",
+      "statistic_type": "single_preserved_checkpoint_native_evaluation",
+      "evidence_role": "Saved on 2026-10-25 from one native evaluation of a preserved old checkpoint; not a historical training-time partition."
+    },
+    {
+      "run_id": "GDCN_CIFAR10_preserved_checkpoint_once",
+      "method": "GDCN",
+      "dataset": "CIFAR10",
+      "seed": null,
+      "metrics": {
+        "ACC": 0.9946,
+        "NMI": 0.9847991169885492,
+        "PUR": 0.9946,
+        "ARI": 0.9881259872930923
+      },
+      "prediction_file": "verification_20261025/GDCN/CIFAR10/preserved_checkpoint_once/prediction.npz",
+      "prediction_sha256": "5433a8c06c40d399e8e421226ab7052a95a9e92fa85c10d02b4607484317fd0a",
+      "samples": 50000,
+      "classes": 10,
+      "config_file": "verification_20261025/GDCN/CIFAR10/preserved_checkpoint_once/config.json",
+      "source_record_file": "verification_20261025/GDCN/CIFAR10/preserved_checkpoint_once/source_result.json",
+      "statistic_type": "single_preserved_checkpoint_native_evaluation",
+      "evidence_role": "Saved on 2026-10-25 from one native evaluation of a preserved old checkpoint; not a historical training-time partition."
+    },
+    {
+      "run_id": "GDCN_CIFAR100_preserved_checkpoint_once",
+      "method": "GDCN",
+      "dataset": "CIFAR100",
+      "seed": null,
+      "metrics": {
+        "ACC": 0.9997,
+        "NMI": 0.9995646887612536,
+        "PUR": 0.9997,
+        "ARI": 0.9993941949491477
+      },
+      "prediction_file": "verification_20261025/GDCN/CIFAR100/preserved_checkpoint_once/prediction.npz",
+      "prediction_sha256": "aa43c1d2d5928bb913dff0f817601410c28e1af8069d7e365f991aae6fe5f065",
+      "samples": 50000,
+      "classes": 100,
+      "config_file": "verification_20261025/GDCN/CIFAR100/preserved_checkpoint_once/config.json",
+      "source_record_file": "verification_20261025/GDCN/CIFAR100/preserved_checkpoint_once/source_result.json",
+      "statistic_type": "single_preserved_checkpoint_native_evaluation",
+      "evidence_role": "Saved on 2026-10-25 from one native evaluation of a preserved old checkpoint; not a historical training-time partition."
+    },
+    {
+      "run_id": "SACR-MVC_Mfeat_selected",
+      "method": "SACR-MVC",
+      "dataset": "Mfeat",
+      "seed": 404,
+      "metrics": {
+        "ACC": 0.966,
+        "NMI": 0.9267184586264461,
+        "PUR": 0.966,
+        "ARI": 0.9256415227975497,
+        "Fscore": 0.9330552579125723
+      },
+      "prediction_file": "verification_20261025/replays/SACR-MVC/Mfeat/SACR-MVC_Mfeat_selected/prediction.npz",
+      "prediction_sha256": "6c7e43d266e7771c61c8c4744eafa725e4eff2620f8c97ddb4db0d02444e10a8",
+      "samples": 2000,
+      "classes": 10,
+      "config_file": "verification_20261025/replays/SACR-MVC/Mfeat/SACR-MVC_Mfeat_selected/config.json",
+      "source_record_file": "verification_20261025/replays/SACR-MVC/Mfeat/SACR-MVC_Mfeat_selected/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "receipts/frozen_selected.jsonl#sacr_Mfeat_404_Full",
+      "original_table_statistic_type": "retained_single_run_selected_by_ACC_within_source_configuration",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "SACR-MVC_Hdigit_selected",
+      "method": "SACR-MVC",
+      "dataset": "Hdigit",
+      "seed": 303,
+      "metrics": {
+        "ACC": 0.9963,
+        "NMI": 0.988293295069406,
+        "PUR": 0.9963,
+        "ARI": 0.9917957557300227,
+        "Fscore": 0.99261544499116
+      },
+      "prediction_file": "verification_20261025/replays/SACR-MVC/Hdigit/SACR-MVC_Hdigit_selected/prediction.npz",
+      "prediction_sha256": "dfef1b793a031b9ff785306c6d8ef38092a9ab1a6e21f3c9873e77a21077f19b",
+      "samples": 10000,
+      "classes": 10,
+      "config_file": "verification_20261025/replays/SACR-MVC/Hdigit/SACR-MVC_Hdigit_selected/config.json",
+      "source_record_file": "verification_20261025/replays/SACR-MVC/Hdigit/SACR-MVC_Hdigit_selected/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "receipts/frozen_selected.jsonl#sacr_Hdigit_303_Full",
+      "original_table_statistic_type": "retained_single_run_selected_by_ACC_within_source_configuration",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "SACR-MVC_ALOI-100_selected",
+      "method": "SACR-MVC",
+      "dataset": "ALOI-100",
+      "seed": 101,
+      "metrics": {
+        "ACC": 0.9446296296296296,
+        "NMI": 0.9652344109206074,
+        "PUR": 0.9506481481481481,
+        "ARI": 0.9185188424108582,
+        "Fscore": 0.919452218745754
+      },
+      "prediction_file": "verification_20261025/replays/SACR-MVC/ALOI-100/SACR-MVC_ALOI-100_selected/prediction.npz",
+      "prediction_sha256": "3d0491f243674591d204d66d6e29d699d6ba017de3854bbe709f24b1eba402d3",
+      "samples": 10800,
+      "classes": 100,
+      "config_file": "verification_20261025/replays/SACR-MVC/ALOI-100/SACR-MVC_ALOI-100_selected/config.json",
+      "source_record_file": "verification_20261025/replays/SACR-MVC/ALOI-100/SACR-MVC_ALOI-100_selected/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "receipts/frozen_selected.jsonl#sacr_ALOI-100_101_Full",
+      "original_table_statistic_type": "retained_single_run_selected_by_ACC_within_source_configuration",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "GCFAgg_RGBD_original_selected",
+      "method": "GCFAgg",
+      "dataset": "RGB-D",
+      "seed": 202,
+      "metrics": {
+        "ACC": 0.2836438923395445,
+        "NMI": 0.19975645459201932,
+        "PUR": 0.44582470669427193,
+        "ARI": 0.12610916313440856
+      },
+      "prediction_file": "verification_20261025/replays/GCFAgg/RGB-D/GCFAgg_RGBD_original_selected/prediction.npz",
+      "prediction_sha256": "64ffeae3616aff71598491ec7bbb05f2bc1ba667daaeda66c0c1de6941788e7d",
+      "samples": 1449,
+      "classes": 13,
+      "config_file": "verification_20261025/replays/GCFAgg/RGB-D/GCFAgg_RGBD_original_selected/config.json",
+      "source_record_file": "verification_20261025/replays/GCFAgg/RGB-D/GCFAgg_RGBD_original_selected/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "selected_source_records.jsonl#GCFAgg|RGB-D",
+      "original_table_statistic_type": "best_ACC_complete_run_from_3",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "SCMVC_RGBD_original_selected",
+      "method": "SCMVC",
+      "dataset": "RGB-D",
+      "seed": 10,
+      "metrics": {
+        "ACC": 0.36853002070393376,
+        "NMI": 0.27010197137881553,
+        "PUR": 0.5003450655624568,
+        "ARI": 0.20213860206693948
+      },
+      "prediction_file": "verification_20261025/replays/SCMVC/RGB-D/SCMVC_RGBD_original_selected/prediction.npz",
+      "prediction_sha256": "58d4a70d33957e58fe89331e9235297109e9ab4f41af19593d958d41e6bd9294",
+      "samples": 1449,
+      "classes": 13,
+      "config_file": "verification_20261025/replays/SCMVC/RGB-D/SCMVC_RGBD_original_selected/config.json",
+      "source_record_file": "verification_20261025/replays/SCMVC/RGB-D/SCMVC_RGBD_original_selected/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "benchmark_reproductions/epoch_metrics/SCMVC_RGB-D.csv",
+      "original_table_statistic_type": "single_run_native_best_ACC_epoch_all_metrics_from_same_epoch",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "GCFAgg_Mfeat_original_selected",
+      "method": "GCFAgg",
+      "dataset": "Mfeat",
+      "seed": 202,
+      "metrics": {
+        "ACC": 0.8345,
+        "NMI": 0.811100105187756,
+        "PUR": 0.8345,
+        "ARI": 0.7441768704462906
+      },
+      "prediction_file": "verification_20261025/replays/GCFAgg/Mfeat/GCFAgg_Mfeat_original_selected/prediction.npz",
+      "prediction_sha256": "6feba45cbfe2b4751862a0b8386e5b0c9229faba1302a339b8524a2733cea893",
+      "samples": 2000,
+      "classes": 10,
+      "config_file": "verification_20261025/replays/GCFAgg/Mfeat/GCFAgg_Mfeat_original_selected/config.json",
+      "source_record_file": "verification_20261025/replays/GCFAgg/Mfeat/GCFAgg_Mfeat_original_selected/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "selected_source_records.jsonl#GCFAgg|Mfeat",
+      "original_table_statistic_type": "best_ACC_complete_run_from_3",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "SCMVC_Mfeat_original_selected",
+      "method": "SCMVC",
+      "dataset": "Mfeat",
+      "seed": 10,
+      "metrics": {
+        "ACC": 0.9465,
+        "NMI": 0.8906771603298295,
+        "PUR": 0.9465,
+        "ARI": 0.8853500146651685
+      },
+      "prediction_file": "verification_20261025/replays/SCMVC/Mfeat/SCMVC_Mfeat_original_selected/prediction.npz",
+      "prediction_sha256": "0fb5ba7e65e99860ef1b5602199ed59af43b207410b65305a0f7c76cdb06f4d8",
+      "samples": 2000,
+      "classes": 10,
+      "config_file": "verification_20261025/replays/SCMVC/Mfeat/SCMVC_Mfeat_original_selected/config.json",
+      "source_record_file": "verification_20261025/replays/SCMVC/Mfeat/SCMVC_Mfeat_original_selected/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "benchmark_reproductions/epoch_metrics/SCMVC_Mfeat.csv",
+      "original_table_statistic_type": "single_run_native_best_ACC_epoch_all_metrics_from_same_epoch",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "MFLVC_Mfeat_original_selected",
+      "method": "MFLVC",
+      "dataset": "Mfeat",
+      "seed": 10,
+      "metrics": {
+        "ACC": 0.858,
+        "NMI": 0.8625228788377719,
+        "PUR": 0.8585,
+        "ARI": 0.8033733960410856
+      },
+      "prediction_file": "verification_20261025/replays/MFLVC/Mfeat/MFLVC_Mfeat_original_selected/prediction.npz",
+      "prediction_sha256": "1df4888fd2f74a6eab39ab022420562659c0c97f7a7676bd950374473cd8f28d",
+      "samples": 2000,
+      "classes": 10,
+      "config_file": "verification_20261025/replays/MFLVC/Mfeat/MFLVC_Mfeat_original_selected/config.json",
+      "source_record_file": "verification_20261025/replays/MFLVC/Mfeat/MFLVC_Mfeat_original_selected/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "selected_source_records.jsonl#MFLVC|Mfeat",
+      "original_table_statistic_type": "representative_single_run",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "baseline_B_CAFE_Mfeat",
+      "method": "CAFE",
+      "dataset": "Mfeat",
+      "seed": {
+        "value": 1,
+        "RNG_initialized": true,
+        "train_time": 1
+      },
+      "metrics": {
+        "ACC": 0.9455,
+        "NMI": 0.8962309958505984,
+        "ARI": 0.885271864009752
+      },
+      "prediction_file": "verification_20261025/replays/CAFE/Mfeat/baseline_B_CAFE_Mfeat/prediction.npz",
+      "prediction_sha256": "a4529a66c3c003a17b54813e4cc5f4e679913217b233eecac134a256302ded2b",
+      "samples": 2000,
+      "classes": 10,
+      "config_file": "verification_20261025/replays/CAFE/Mfeat/baseline_B_CAFE_Mfeat/config.json",
+      "source_record_file": "verification_20261025/replays/CAFE/Mfeat/baseline_B_CAFE_Mfeat/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "selected_source_records.jsonl#CAFE|Mfeat",
+      "original_table_statistic_type": "single_run_native_best_eligible_epoch",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "GCFAgg_ALOI100_original_selected",
+      "method": "GCFAgg",
+      "dataset": "ALOI-100",
+      "seed": 10,
+      "metrics": {
+        "ACC": 0.8728703703703704,
+        "NMI": 0.9406338527484753,
+        "PUR": 0.8831481481481481,
+        "ARI": 0.8378703848467126
+      },
+      "prediction_file": "verification_20261025/replays/GCFAgg/ALOI-100/GCFAgg_ALOI100_original_selected/prediction.npz",
+      "prediction_sha256": "8c73ef08923227a8b11569c5fe0571bf661c6a34ae80b2d36db46b4d4f487a8e",
+      "samples": 10800,
+      "classes": 100,
+      "config_file": "verification_20261025/replays/GCFAgg/ALOI-100/GCFAgg_ALOI100_original_selected/config.json",
+      "source_record_file": "verification_20261025/replays/GCFAgg/ALOI-100/GCFAgg_ALOI100_original_selected/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "selected_source_records.jsonl#GCFAgg|ALOI-100",
+      "original_table_statistic_type": "best_ACC_complete_run_from_3",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "TMCN_RGBD_original_selected",
+      "method": "TMCN",
+      "dataset": "RGB-D",
+      "seed": 10,
+      "metrics": {
+        "ACC": 0.1932367149758454,
+        "NMI": 0.11958147820610135,
+        "PUR": 0.3547273982056591,
+        "ARI": 0.04822584399896076
+      },
+      "prediction_file": "verification_20261025/replays/TMCN/RGB-D/TMCN_RGBD_original_selected/prediction.npz",
+      "prediction_sha256": "ebba1fc92d85f0142bac3e033732822afe694eb1c93a59d2d5a62f4f18d82ba9",
+      "samples": 1449,
+      "classes": 13,
+      "config_file": "verification_20261025/replays/TMCN/RGB-D/TMCN_RGBD_original_selected/config.json",
+      "source_record_file": "verification_20261025/replays/TMCN/RGB-D/TMCN_RGBD_original_selected/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "selected_source_records.jsonl#TMCN|RGB-D",
+      "original_table_statistic_type": "representative_single_run",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "baseline_B_DCMVC_Mfeat",
+      "method": "DCMVC",
+      "dataset": "Mfeat",
+      "seed": {
+        "value": 101,
+        "RNG_initialized": true
+      },
+      "metrics": {
+        "ACC": 0.964,
+        "NMI": 0.9214393963036939,
+        "PUR": 0.964,
+        "ARI": 0.9209925061425852,
+        "Fscore": 0.9288710877970697
+      },
+      "prediction_file": "verification_20261025/replays/DCMVC/Mfeat/baseline_B_DCMVC_Mfeat/prediction.npz",
+      "prediction_sha256": "3f795bcf1893e64601ac5b8d685093e0f2697129d27beb6f0cd84bc7e7d18888",
+      "samples": 2000,
+      "classes": 10,
+      "config_file": "verification_20261025/replays/DCMVC/Mfeat/baseline_B_DCMVC_Mfeat/config.json",
+      "source_record_file": "verification_20261025/replays/DCMVC/Mfeat/baseline_B_DCMVC_Mfeat/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "selected_source_records.jsonl#DCMVC|Mfeat",
+      "original_table_statistic_type": "representative_single_run",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "baseline_B_CAFE_RGB_D",
+      "method": "CAFE",
+      "dataset": "RGB-D",
+      "seed": {
+        "value": 1,
+        "RNG_initialized": true,
+        "train_time": 1
+      },
+      "metrics": {
+        "ACC": 0.3146997929606625,
+        "NMI": 0.22215882160169945,
+        "ARI": 0.13110789592614647
+      },
+      "prediction_file": "verification_20261025/replays/CAFE/RGB-D/baseline_B_CAFE_RGB_D/prediction.npz",
+      "prediction_sha256": "2e9e1593f1274efe986c8332a312b0c1255e311f42215f871e99848ed2554c7e",
+      "samples": 1449,
+      "classes": 13,
+      "config_file": "verification_20261025/replays/CAFE/RGB-D/baseline_B_CAFE_RGB_D/config.json",
+      "source_record_file": "verification_20261025/replays/CAFE/RGB-D/baseline_B_CAFE_RGB_D/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "selected_source_records.jsonl#CAFE|RGB-D",
+      "original_table_statistic_type": "single_run_native_best_eligible_epoch",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "baseline_B_CAFE_ALOI_100",
+      "method": "CAFE",
+      "dataset": "ALOI-100",
+      "seed": {
+        "value": 1,
+        "RNG_initialized": true,
+        "train_time": 1
+      },
+      "metrics": {
+        "ACC": 0.8000925925925926,
+        "NMI": 0.8605725618754537,
+        "ARI": 0.6881422219620664
+      },
+      "prediction_file": "verification_20261025/replays/CAFE/ALOI-100/baseline_B_CAFE_ALOI_100/prediction.npz",
+      "prediction_sha256": "1685bb276a8c7ac18dff731feeaeafe0a67d4a4ded52bc5cf2377dd23d6e39c1",
+      "samples": 10800,
+      "classes": 100,
+      "config_file": "verification_20261025/replays/CAFE/ALOI-100/baseline_B_CAFE_ALOI_100/config.json",
+      "source_record_file": "verification_20261025/replays/CAFE/ALOI-100/baseline_B_CAFE_ALOI_100/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "selected_source_records.jsonl#CAFE|ALOI-100",
+      "original_table_statistic_type": "single_run_native_best_eligible_epoch",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "baseline_B_CAFE_CIFAR10",
+      "method": "CAFE",
+      "dataset": "CIFAR10",
+      "seed": {
+        "value": 1,
+        "RNG_initialized": true,
+        "train_time": 1
+      },
+      "metrics": {
+        "ACC": 0.98336,
+        "NMI": 0.9573637906460939,
+        "ARI": 0.9639499632136552
+      },
+      "prediction_file": "verification_20261025/replays/CAFE/CIFAR10/baseline_B_CAFE_CIFAR10/prediction.npz",
+      "prediction_sha256": "ed851a5da69ba086243de9e350c330b37ae08300f4b9aa79fe8969ad33582704",
+      "samples": 50000,
+      "classes": 10,
+      "config_file": "verification_20261025/replays/CAFE/CIFAR10/baseline_B_CAFE_CIFAR10/config.json",
+      "source_record_file": "verification_20261025/replays/CAFE/CIFAR10/baseline_B_CAFE_CIFAR10/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "selected_source_records.jsonl#CAFE|CIFAR10",
+      "original_table_statistic_type": "single_run_native_best_eligible_epoch",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "TMCN_CIFAR10_historical_loader_selected",
+      "method": "TMCN",
+      "dataset": "CIFAR10",
+      "seed": 10,
+      "metrics": {
+        "ACC": 0.87614,
+        "NMI": 0.8069705793722889,
+        "PUR": 0.87614,
+        "ARI": 0.7559203415691036
+      },
+      "prediction_file": "verification_20261025/TMCN/CIFAR10/corrected_historical_loader_single_run/prediction.npz",
+      "prediction_sha256": "47cc5e0c750fe1b9d0ce658a3b93cc391b023a64a497633583dbd0b6ea81f80a",
+      "samples": 50000,
+      "classes": 10,
+      "config_file": "verification_20261025/TMCN/CIFAR10/corrected_historical_loader_single_run/config.json",
+      "source_record_file": "verification_20261025/TMCN/CIFAR10/corrected_historical_loader_single_run/source_result.json",
+      "verification_only": false,
+      "statistic_type": "representative_single_run",
+      "evidence_role": "Reported single fixed-configuration run with the recorded terminal readout; not a historical training-time prediction.",
+      "record_origin": "Reported single fixed-configuration run with the recorded terminal readout; not a historical training-time prediction."
+    },
+    {
+      "run_id": "SACR-MVC_CIFAR100_selected",
+      "method": "SACR-MVC",
+      "dataset": "CIFAR100",
+      "seed": 101,
+      "metrics": {
+        "ACC": 0.99976,
+        "NMI": 0.9996300593085892,
+        "PUR": 0.99976,
+        "ARI": 0.9995150399326911,
+        "Fscore": 0.9995198799327737
+      },
+      "prediction_file": "verification_20261025/replays/SACR-MVC/CIFAR100/SACR-MVC_CIFAR100_selected/prediction.npz",
+      "prediction_sha256": "ac4d2476a6fb47a01a00acceb75a004e3ca2d58d0f3be8abc6946058cc503d6d",
+      "samples": 50000,
+      "classes": 100,
+      "config_file": "verification_20261025/replays/SACR-MVC/CIFAR100/SACR-MVC_CIFAR100_selected/config.json",
+      "source_record_file": "verification_20261025/replays/SACR-MVC/CIFAR100/SACR-MVC_CIFAR100_selected/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "receipts/frozen_selected.jsonl#sacr_CIFAR100_101_Full",
+      "original_table_statistic_type": "retained_single_run_selected_by_ACC_within_source_configuration",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "SACR-MVC_CIFAR10_original_omp4_selected",
+      "method": "SACR-MVC",
+      "dataset": "CIFAR10",
+      "seed": 2424,
+      "metrics": {
+        "ACC": 0.99552,
+        "NMI": 0.9872652572829141,
+        "PUR": 0.99552,
+        "ARI": 0.9901474896133607,
+        "Fscore": 0.9911325674105794
+      },
+      "prediction_file": "verification_20261025/replays/SACR-MVC/CIFAR10/SACR-MVC_CIFAR10_original_omp4_selected/prediction.npz",
+      "prediction_sha256": "7a27c909a93c6409336358d7b65292e534d84ab12d105ef2b53055f019b65ab8",
+      "samples": 50000,
+      "classes": 10,
+      "config_file": "verification_20261025/replays/SACR-MVC/CIFAR10/SACR-MVC_CIFAR10_original_omp4_selected/config.json",
+      "source_record_file": "verification_20261025/replays/SACR-MVC/CIFAR10/SACR-MVC_CIFAR10_original_omp4_selected/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "receipts/cifar10_promoted_RESULT_JSON.txt",
+      "original_table_statistic_type": "retained_single_run_selected_by_ACC_within_source_configuration",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "MFLVC_CIFAR100_original_selected",
+      "method": "MFLVC",
+      "dataset": "CIFAR100",
+      "seed": 10,
+      "metrics": {
+        "ACC": 0.81988,
+        "NMI": 0.9510486453153785,
+        "PUR": 0.81988,
+        "ARI": 0.7848068541797749
+      },
+      "prediction_file": "verification_20261025/MFLVC/CIFAR100/fixed_terminal350_second_native_valid/prediction.npz",
+      "prediction_sha256": "219c97e22e014c7888b94ece5b0c337b576c46394fda2d80599ba3aa3dbd7841",
+      "samples": 50000,
+      "classes": 100,
+      "config_file": "verification_20261025/MFLVC/CIFAR100/fixed_terminal350_second_native_valid/config.json",
+      "source_record_file": "verification_20261025/MFLVC/CIFAR100/fixed_terminal350_second_native_valid/source_result.json",
+      "verification_only": false,
+      "statistic_type": "representative_single_run",
+      "selected_epoch": 350,
+      "native_valid_call": 2,
+      "evidence_role": "Reported single fixed-configuration run with the recorded terminal readout; not a historical training-time prediction.",
+      "record_origin": "Reported single fixed-configuration run with the recorded terminal readout; not a historical training-time prediction."
+    },
+    {
+      "run_id": "baseline_B_DCMVC_CIFAR100",
+      "method": "DCMVC",
+      "dataset": "CIFAR100",
+      "seed": {
+        "value": 101,
+        "RNG_initialized": true
+      },
+      "metrics": {
+        "ACC": 0.98642,
+        "NMI": 0.9973164422601468,
+        "PUR": 0.98966,
+        "ARI": 0.9871019371829577,
+        "Fscore": 0.9872612294778095
+      },
+      "prediction_file": "verification_20261025/replays/DCMVC/CIFAR100/baseline_B_DCMVC_CIFAR100/prediction.npz",
+      "prediction_sha256": "37c6fa1cf5c80cf6451f6eb91e76420c6c6c880c06ebb7d7acc133e62eebf24d",
+      "samples": 50000,
+      "classes": 100,
+      "config_file": "verification_20261025/replays/DCMVC/CIFAR100/baseline_B_DCMVC_CIFAR100/config.json",
+      "source_record_file": "verification_20261025/replays/DCMVC/CIFAR100/baseline_B_DCMVC_CIFAR100/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "selected_source_records.jsonl#DCMVC|CIFAR100",
+      "original_table_statistic_type": "representative_single_run",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
+    },
+    {
+      "run_id": "baseline_B_DCMVC_CIFAR10",
+      "method": "DCMVC",
+      "dataset": "CIFAR10",
+      "seed": {
+        "value": 404,
+        "RNG_initialized": true
+      },
+      "metrics": {
+        "ACC": 0.99536,
+        "NMI": 0.9869773379728992,
+        "PUR": 0.99536,
+        "ARI": 0.9897931113501233,
+        "Fscore": 0.9908136232292301
+      },
+      "prediction_file": "verification_20261025/replays/DCMVC/CIFAR10/baseline_B_DCMVC_CIFAR10/prediction.npz",
+      "prediction_sha256": "bd24ad62e393a498a8316a9661547f70e8d5a3453418e7b6fb31165a890b886e",
+      "samples": 50000,
+      "classes": 10,
+      "config_file": "verification_20261025/replays/DCMVC/CIFAR10/baseline_B_DCMVC_CIFAR10/config.json",
+      "source_record_file": "verification_20261025/replays/DCMVC/CIFAR10/baseline_B_DCMVC_CIFAR10/source_result.json",
+      "verification_only": true,
+      "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "original_source_locator": "selected_source_records.jsonl#DCMVC|CIFAR10",
+      "original_table_statistic_type": "representative_single_run",
+      "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+      "statistic_type": "single_fixed_configuration_replay"
     }
   ],
   "selection_metadata": [
@@ -365,6 +1015,134 @@
       },
       "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition",
       "available_run_count": 5,
+      "selected_run_count": 1
+    },
+    {
+      "method": "GDCN",
+      "dataset": "RGB-D",
+      "statistic_type": "single_preserved_checkpoint_native_evaluation",
+      "selected_run_id": "GDCN_RGB_D_preserved_checkpoint_once",
+      "selected_seed": null,
+      "metrics": {
+        "ACC": 0.2712215320910973,
+        "NMI": 0.20752876875063622,
+        "PUR": 0.43478260869565216,
+        "ARI": 0.11103634990464671
+      },
+      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection.",
+      "available_run_count": 1,
+      "selected_run_count": 1
+    },
+    {
+      "method": "GDCN",
+      "dataset": "ALOI-100",
+      "statistic_type": "single_preserved_checkpoint_native_evaluation",
+      "selected_run_id": "GDCN_ALOI_100_preserved_checkpoint_once",
+      "selected_seed": null,
+      "metrics": {
+        "ACC": 0.9153703703703704,
+        "NMI": 0.9366449076945331,
+        "PUR": 0.9177777777777778,
+        "ARI": 0.8543169709144476
+      },
+      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection.",
+      "available_run_count": 1,
+      "selected_run_count": 1
+    },
+    {
+      "method": "GDCN",
+      "dataset": "Hdigit",
+      "statistic_type": "single_preserved_checkpoint_native_evaluation",
+      "selected_run_id": "GDCN_Hdigit_preserved_checkpoint_once",
+      "selected_seed": null,
+      "metrics": {
+        "ACC": 0.9501,
+        "NMI": 0.8968004166315543,
+        "PUR": 0.9501,
+        "ARI": 0.8936104211540482
+      },
+      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection.",
+      "available_run_count": 1,
+      "selected_run_count": 1
+    },
+    {
+      "method": "GDCN",
+      "dataset": "Mfeat",
+      "statistic_type": "single_preserved_checkpoint_native_evaluation",
+      "selected_run_id": "GDCN_Mfeat_preserved_checkpoint_once",
+      "selected_seed": null,
+      "metrics": {
+        "ACC": 0.939,
+        "NMI": 0.8900731644957953,
+        "PUR": 0.939,
+        "ARI": 0.8724963861101227
+      },
+      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection.",
+      "available_run_count": 1,
+      "selected_run_count": 1
+    },
+    {
+      "method": "GDCN",
+      "dataset": "CIFAR10",
+      "statistic_type": "single_preserved_checkpoint_native_evaluation",
+      "selected_run_id": "GDCN_CIFAR10_preserved_checkpoint_once",
+      "selected_seed": null,
+      "metrics": {
+        "ACC": 0.9946,
+        "NMI": 0.9847991169885492,
+        "PUR": 0.9946,
+        "ARI": 0.9881259872930923
+      },
+      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection.",
+      "available_run_count": 1,
+      "selected_run_count": 1
+    },
+    {
+      "method": "GDCN",
+      "dataset": "CIFAR100",
+      "statistic_type": "single_preserved_checkpoint_native_evaluation",
+      "selected_run_id": "GDCN_CIFAR100_preserved_checkpoint_once",
+      "selected_seed": null,
+      "metrics": {
+        "ACC": 0.9997,
+        "NMI": 0.9995646887612536,
+        "PUR": 0.9997,
+        "ARI": 0.9993941949491477
+      },
+      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection.",
+      "available_run_count": 1,
+      "selected_run_count": 1
+    },
+    {
+      "method": "TMCN",
+      "dataset": "CIFAR10",
+      "statistic_type": "representative_single_run",
+      "selected_run_id": "TMCN_CIFAR10_historical_loader_selected",
+      "selected_seed": 10,
+      "metrics": {
+        "ACC": 0.87614,
+        "NMI": 0.8069705793722889,
+        "PUR": 0.87614,
+        "ARI": 0.7559203415691036
+      },
+      "selection": "One prespecified corrected-original-loader run, seed 10, reconstruction 200 plus fine-tuning 10; no score-based selection.",
+      "available_run_count": 1,
+      "selected_run_count": 1
+    },
+    {
+      "method": "MFLVC",
+      "dataset": "CIFAR100",
+      "statistic_type": "representative_single_run",
+      "selected_run_id": "MFLVC_CIFAR100_original_selected",
+      "selected_seed": 10,
+      "metrics": {
+        "ACC": 0.81988,
+        "NMI": 0.9510486453153785,
+        "PUR": 0.81988,
+        "ARI": 0.7848068541797749
+      },
+      "selection": "One prespecified terminal350 run, second native valid; no intermediate, best-metric or repeat selection. Torch/CUDA seeded; NumPy/Python unseeded.",
+      "available_run_count": 1,
       "selected_run_count": 1
     }
   ],
@@ -456,5 +1234,5 @@
       ]
     }
   },
-  "selection_verification_boundary": "Only selected partitions are included; original maxima are described by selection metadata, not rechecked from unselected candidates in this supplement."
+  "selection_verification_boundary": "Only selected partitions are included; original maxima are described by selection metadata, not rechecked from unselected candidates in this supplement. Six GDCN partitions were saved on 2026-10-25 by one native evaluation of each preserved old checkpoint; they are separate from original training-time partitions."
 }

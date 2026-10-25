@@ -1,0 +1,28 @@
+{
+  "run_id": "SCMVC_Mfeat_original_selected",
+  "entry_id": "SCMVC|Mfeat",
+  "method": "SCMVC",
+  "dataset": "Mfeat",
+  "verification_only": true,
+  "execution_kind": "single_fixed_configuration_replay",
+  "metrics": {
+    "ACC": 0.9465,
+    "NMI": 0.8906771603298295,
+    "PUR": 0.9465,
+    "ARI": 0.8853500146651685
+  },
+  "original_source_locator": "benchmark_reproductions/epoch_metrics/SCMVC_Mfeat.csv",
+  "original_statistic_type": "single_run_native_best_ACC_epoch_all_metrics_from_same_epoch",
+  "prediction_file": "verification_20261025/replays/SCMVC/Mfeat/SCMVC_Mfeat_original_selected/prediction.npz",
+  "prediction_sha256": "0fb5ba7e65e99860ef1b5602199ed59af43b207410b65305a0f7c76cdb06f4d8",
+  "config_file": "verification_20261025/replays/SCMVC/Mfeat/SCMVC_Mfeat_original_selected/config.json",
+  "selected_epoch": 210,
+  "capture_policy": {
+    "kind": "fixed_original_epoch",
+    "fixed_epoch": 210,
+    "original_total_budget": 250
+  },
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

@@ -1,6 +1,6 @@
 {
   "dataset": "ALOI-100",
-  "input_file": "F:\\SACR_MVC_project\\release\\frozen_20260923_v1\\data\\ALOI-100.mat",
+  "input_file": "${DATA_ROOT}/ALOI-100.mat",
   "input_sha256": "e20bb24d6473a14e84aba93a92cfd19c4ddbb8ea3fa41618a63049f533da8323",
   "N": 10800,
   "V": 4,
@@ -59,5 +59,7 @@
       "global_max": 0.9999005198478699
     }
   ],
-  "loading_seconds": 0.17246799999999984
+  "loading_seconds": 0.17246799999999984,
+  "original_manifest_sha256": "833507bb03f05fb4839d060124b35f2e93b2d9633649165ae78dd6d25f5f249e",
+  "manifest_scope": "Portable-path projection; original_manifest_sha256 identifies the original manifest bytes."
 }

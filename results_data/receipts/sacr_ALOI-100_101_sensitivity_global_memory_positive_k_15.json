@@ -15,7 +15,7 @@
     "15"
   ],
   "env": {
-    "SACR_DATASET_ROOT": "F:\\SACR_MVC_project\\release\\frozen_20260923_v1\\data",
+    "SACR_DATASET_ROOT": "${DATA_ROOT}",
     "SACR_PREPROCESS_NORM": "minmax",
     "SACR_REDUCER": "none",
     "SACR_MAX_VIEW_DIM": "0",
@@ -31,6 +31,5 @@
     "ARI": 0.907475103234805,
     "Fscore": 0.9086590073225924
   },
-  "route": "scalable_global_memory",
-  "log": "F:\\SACR_MVC_project\\paper_draft_20260923\\manual_sensitivity\\sacr_ALOI-100_101_sensitivity_global_memory_positive_k_15.log"
+  "route": "scalable_global_memory"
 }

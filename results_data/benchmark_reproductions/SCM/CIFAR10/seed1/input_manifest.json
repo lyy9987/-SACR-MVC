@@ -1,6 +1,6 @@
 {
   "dataset": "CIFAR10",
-  "input_file": "F:\\SACR_MVC_project\\release\\frozen_20260923_v1\\data\\cifar10.mat",
+  "input_file": "${DATA_ROOT}/cifar10.mat",
   "input_sha256": "9b8ef1e354f54382a26b1c5b11812d4ad94e63c5da78c56df19e8195398e60fb",
   "N": 50000,
   "V": 3,
@@ -47,5 +47,7 @@
       "global_max": 5.932600021362305
     }
   ],
-  "loading_seconds": 9.1027855
+  "loading_seconds": 9.1027855,
+  "original_manifest_sha256": "770c2f9024bad7bcb7b67765d07dfaaf3f7e09e3b71fa51864624b5455d9ae6c",
+  "manifest_scope": "Portable-path projection; original_manifest_sha256 identifies the original manifest bytes."
 }

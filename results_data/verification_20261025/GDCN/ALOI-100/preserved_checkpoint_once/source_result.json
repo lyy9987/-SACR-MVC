@@ -1,0 +1,25 @@
+{
+  "entry_id": "GDCN|ALOI-100",
+  "run_id": "GDCN_ALOI_100_preserved_checkpoint_once",
+  "method": "GDCN",
+  "dataset": "ALOI-100",
+  "execution_kind": "preserved_old_checkpoint_single_native_evaluation",
+  "statistic_type": "single_preserved_checkpoint_native_evaluation",
+  "evaluation_count": 1,
+  "training": false,
+  "seed_set": false,
+  "metrics": {
+    "ACC": 0.9153703703703704,
+    "NMI": 0.9366449076945331,
+    "PUR": 0.9177777777777778,
+    "ARI": 0.8543169709144476
+  },
+  "prediction_file": "verification_20261025/GDCN/ALOI-100/preserved_checkpoint_once/prediction.npz",
+  "prediction_sha256": "05ae06a002528d80522a29faa0ee4225cfc7824ae976189f1baa7541f520e354",
+  "config_file": "verification_20261025/GDCN/ALOI-100/preserved_checkpoint_once/config.json",
+  "checkpoint_file_name": "ALOI-100.pth",
+  "checkpoint_sha256_at_evaluation": "682aa55cce47e51e315a00aaacd61207879b9acc472511847526ae1412f84805",
+  "evidence_role": "One native evaluation of a preserved checkpoint; not a historical training-time prediction.",
+  "source_reference": "https://doi.org/10.1109/LSP.2026.3668750",
+  "record_origin": "One native evaluation of a preserved checkpoint; not a historical training-time prediction."
+}

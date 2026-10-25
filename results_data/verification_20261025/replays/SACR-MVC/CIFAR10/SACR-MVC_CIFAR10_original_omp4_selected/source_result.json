@@ -1,0 +1,37 @@
+{
+  "run_id": "SACR-MVC_CIFAR10_original_omp4_selected",
+  "entry_id": "SACR-MVC|CIFAR10",
+  "method": "SACR-MVC",
+  "dataset": "CIFAR10",
+  "verification_only": true,
+  "execution_kind": "single_fixed_configuration_replay",
+  "metrics": {
+    "ACC": 0.99552,
+    "NMI": 0.9872652572829141,
+    "PUR": 0.99552,
+    "ARI": 0.9901474896133607,
+    "Fscore": 0.9911325674105794
+  },
+  "original_source_locator": "receipts/cifar10_promoted_RESULT_JSON.txt",
+  "original_statistic_type": "retained_single_run_selected_by_ACC_within_source_configuration",
+  "prediction_file": "verification_20261025/replays/SACR-MVC/CIFAR10/SACR-MVC_CIFAR10_original_omp4_selected/prediction.npz",
+  "prediction_sha256": "7a27c909a93c6409336358d7b65292e534d84ab12d105ef2b53055f019b65ab8",
+  "config_file": "verification_20261025/replays/SACR-MVC/CIFAR10/SACR-MVC_CIFAR10_original_omp4_selected/config.json",
+  "selected_epoch": null,
+  "capture_policy": null,
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "runtime_thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "NUMEXPR_NUM_THREADS": null
+  },
+  "runtime_thread_source_boundary": "The original caller explicitly set OMP_NUM_THREADS=4. The other historical inherited thread settings were not recorded.",
+  "known_original_thread_setting": {
+    "OMP_NUM_THREADS": "4"
+  },
+  "other_historical_inherited_thread_values": "not recorded",
+  "runtime_provenance_scope": "Actual settings at this run; unrecorded historical inheritance is not asserted to match.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

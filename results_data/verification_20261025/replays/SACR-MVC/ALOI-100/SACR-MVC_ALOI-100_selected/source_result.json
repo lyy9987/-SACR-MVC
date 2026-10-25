@@ -1,0 +1,25 @@
+{
+  "run_id": "SACR-MVC_ALOI-100_selected",
+  "entry_id": "SACR-MVC|ALOI-100",
+  "method": "SACR-MVC",
+  "dataset": "ALOI-100",
+  "verification_only": true,
+  "execution_kind": "single_fixed_configuration_replay",
+  "metrics": {
+    "ACC": 0.9446296296296296,
+    "NMI": 0.9652344109206074,
+    "PUR": 0.9506481481481481,
+    "ARI": 0.9185188424108582,
+    "Fscore": 0.919452218745754
+  },
+  "original_source_locator": "receipts/frozen_selected.jsonl#sacr_ALOI-100_101_Full",
+  "original_statistic_type": "retained_single_run_selected_by_ACC_within_source_configuration",
+  "prediction_file": "verification_20261025/replays/SACR-MVC/ALOI-100/SACR-MVC_ALOI-100_selected/prediction.npz",
+  "prediction_sha256": "3d0491f243674591d204d66d6e29d699d6ba017de3854bbe709f24b1eba402d3",
+  "config_file": "verification_20261025/replays/SACR-MVC/ALOI-100/SACR-MVC_ALOI-100_selected/config.json",
+  "selected_epoch": null,
+  "capture_policy": null,
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

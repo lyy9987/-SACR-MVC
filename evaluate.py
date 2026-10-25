@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 import sys
 from run import ROOT, DATASETS, preset
+from runtime_environment import configure_runtime_environment
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
@@ -24,8 +25,7 @@ def main():
     os.environ.update(cfg["env"])
     os.environ["SACR_DATASET_ROOT"] = str(args.data_root.resolve())
     os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
-    for name in ("OMP_NUM_THREADS", "MKL_NUM_THREADS", "OPENBLAS_NUM_THREADS", "NUMEXPR_NUM_THREADS"):
-        os.environ[name] = "2"
+    configure_runtime_environment(args.dataset, os.environ)
     sys.path.insert(0, str(ROOT / "src"))
     import torch
     import numpy as np

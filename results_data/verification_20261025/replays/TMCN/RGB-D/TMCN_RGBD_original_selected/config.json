@@ -1,0 +1,91 @@
+{
+  "method": "TMCN",
+  "dataset": "RGB-D",
+  "run_id": "TMCN_RGBD_original_selected",
+  "verification_only": true,
+  "single_fixed_replay": true,
+  "table_run": null,
+  "native_arguments": [
+    "--dataset",
+    "RGB-D"
+  ],
+  "original_native_command": [
+    "python",
+    "-u",
+    "train.py",
+    "--dataset",
+    "RGB-D"
+  ],
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "OMP_NUM_THREADS": "4"
+  },
+  "protocol": {
+    "seed": 10,
+    "seeded_rngs": [
+      "torch",
+      "cuda",
+      "numpy",
+      "random"
+    ],
+    "reconstruction_epochs": 200,
+    "finetune_epochs": 100,
+    "batch_size": 256,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0,
+    "low_feature_dim": 512,
+    "high_feature_dim": 128,
+    "temperature_f": 0.5,
+    "preprocessing": "Original shared loader: transpose by inferred sample axis, sort views by descending feature dimension, per-feature minmax in float32; one-based labels shifted to zero. No SVD/view removal.",
+    "readout": "One final native TMCNF commonz readout; KMeans(n_clusters=known K,n_init=100,random_state=None).",
+    "selection": "Declared final epoch only; no intermediate/best metric selection.",
+    "extra_dependency": "einops 0.7.0 required APIs are available in existing dcmvc_fix environment."
+  },
+  "selected_epoch": 300,
+  "capture_policy": {
+    "kind": "terminal_native_call",
+    "native_valid_call": 1,
+    "terminal_epoch": 300
+  },
+  "input_manifest": {
+    "file_name": "RGB-D.mat",
+    "input_sha256": "b41e6f68bd1a1d4b632b0c1ecf9ecf2314c7f26519b16ffeb4ec25f27ef6ac88",
+    "labels_ordered_sha256": "f577fcc7ec87b1814ca41de1c8a2d03d105ae3fc4fbcd4c4ec26b8e8f75ca91c",
+    "sample_order_sha256": "d15cd19c4448fc0b70c34f05b36f2811779c0f7a7bbe3afee2e543bc4563ff0c",
+    "N": 1449,
+    "V": 2,
+    "K": 13,
+    "dimensions": [
+      2048,
+      300
+    ]
+  },
+  "source_files": [
+    {
+      "file_name": "train.py",
+      "sha256": "6ecaca7e47484c686f24f355eba4f2222bad2465599e4961b5bf2913acf67b7a"
+    },
+    {
+      "file_name": "network.py",
+      "sha256": "e3da3680455fec2754867563e4c9a6c2f220dc628c47346c814d796f79261195"
+    },
+    {
+      "file_name": "loss.py",
+      "sha256": "7651323b342e525b2eb47a03471d2b93976bcb6c7188c6ed866cf7a3d02249db"
+    },
+    {
+      "file_name": "metric.py",
+      "sha256": "e75a545e0f2a14077d75bae55d6b715dcd89b38d6347cae7e3cab899bbe95c18"
+    },
+    {
+      "file_name": "dataloader.py",
+      "sha256": "23fa55231cad34db3230235e8ce8d91f2a21fea2ff5606ff061b601b64f37926"
+    }
+  ],
+  "original_source_locator": "selected_source_records.jsonl#TMCN|RGB-D",
+  "original_table_statistic_type": "representative_single_run",
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

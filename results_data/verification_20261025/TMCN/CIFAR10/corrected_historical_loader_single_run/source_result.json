@@ -1,0 +1,22 @@
+{
+  "entry_id": "TMCN|CIFAR10",
+  "run_id": "TMCN_CIFAR10_historical_loader_selected",
+  "method": "TMCN",
+  "dataset": "CIFAR10",
+  "statistic_type": "representative_single_run",
+  "run_count": 1,
+  "seed": 10,
+  "selected_epoch": 210,
+  "metrics": {
+    "ACC": 0.87614,
+    "NMI": 0.8069705793722889,
+    "PUR": 0.87614,
+    "ARI": 0.7559203415691036
+  },
+  "prediction_file": "verification_20261025/TMCN/CIFAR10/corrected_historical_loader_single_run/prediction.npz",
+  "prediction_sha256": "47cc5e0c750fe1b9d0ce658a3b93cc391b023a64a497633583dbd0b6ea81f80a",
+  "config_file": "verification_20261025/TMCN/CIFAR10/corrected_historical_loader_single_run/config.json",
+  "evidence_role": "Reported single fixed-configuration run with the recorded terminal readout; not a historical training-time prediction.",
+  "method_reference": "https://doi.org/10.1109/ICASSP49660.2025.10890288",
+  "record_origin": "Reported single fixed-configuration run with the recorded terminal readout; not a historical training-time prediction."
+}

@@ -1,0 +1,89 @@
+{
+  "run_id": "TMCN_CIFAR10_historical_loader_selected",
+  "method": "TMCN",
+  "dataset": "CIFAR10",
+  "loader_dataset": "Cifar10",
+  "statistic_type": "representative_single_run",
+  "run_count": 1,
+  "seed": 10,
+  "selected_epoch": 210,
+  "protocol": {
+    "seed": 10,
+    "seeded_rngs": [
+      "torch",
+      "cuda",
+      "numpy",
+      "random"
+    ],
+    "reconstruction_epochs": 200,
+    "finetune_epochs": 10,
+    "batch_size": 256,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0,
+    "low_feature_dim": 512,
+    "high_feature_dim": 128,
+    "temperature_f": 0.5,
+    "preprocessing": "Preserved 2026-09-18 TMCN loader: orient views to sample-by-feature, preserve native MAT cell order when all expected views are present; sort only after view reduction/filtering. Per-feature float32 minmax; one-based labels shifted to zero. No SVD/view removal. Historical network input dimensions in order: [1024, 2048, 512].",
+    "readout": "One final native TMCNF commonz readout; KMeans(n_clusters=known K,n_init=100,random_state=None).",
+    "selection": "Declared final epoch only; no intermediate/best metric selection.",
+    "extra_dependency": "einops 0.7.0 required APIs are available in existing dcmvc_fix environment."
+  },
+  "capture_policy": {
+    "kind": "terminal_native_call",
+    "native_valid_call": 1,
+    "terminal_epoch": 210
+  },
+  "native_arguments": [
+    "--dataset",
+    "Cifar10"
+  ],
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUDA_VISIBLE_DEVICES": "0"
+  },
+  "ordered_view_dimensions": [
+    1024,
+    2048,
+    512
+  ],
+  "recovered_loader_sha256": "aa1cb77484e0e8b38491d5251c370bfdaa86d0b83da22757debd9e8bce73c967",
+  "input_manifest": {
+    "file_name": "cifar10.mat",
+    "input_sha256": "9b8ef1e354f54382a26b1c5b11812d4ad94e63c5da78c56df19e8195398e60fb",
+    "labels_ordered_sha256": "a2084e87c76d1d22ef5ac30a81addb49027565cdc65f0e1b451ae5969d56117e",
+    "sample_order_sha256": "33236cc6bd19fa6b89e06d441d3fcd8eb37dc8540f6a4f2b627b20af10894a41",
+    "N": 50000,
+    "V": 3,
+    "K": 10,
+    "dimensions": [
+      512,
+      2048,
+      1024
+    ]
+  },
+  "source_files": [
+    {
+      "file_name": "train.py",
+      "sha256": "6ecaca7e47484c686f24f355eba4f2222bad2465599e4961b5bf2913acf67b7a"
+    },
+    {
+      "file_name": "network.py",
+      "sha256": "e3da3680455fec2754867563e4c9a6c2f220dc628c47346c814d796f79261195"
+    },
+    {
+      "file_name": "loss.py",
+      "sha256": "7651323b342e525b2eb47a03471d2b93976bcb6c7188c6ed866cf7a3d02249db"
+    },
+    {
+      "file_name": "metric.py",
+      "sha256": "e75a545e0f2a14077d75bae55d6b715dcd89b38d6347cae7e3cab899bbe95c18"
+    },
+    {
+      "file_name": "dataloader.py",
+      "sha256": "aa1cb77484e0e8b38491d5251c370bfdaa86d0b83da22757debd9e8bce73c967"
+    }
+  ],
+  "method_reference": "https://doi.org/10.1109/ICASSP49660.2025.10890288",
+  "scope": "Reported single fixed-configuration run with the recorded terminal readout; not a historical training-time prediction.",
+  "record_origin": "Reported single fixed-configuration run with the recorded terminal readout; not a historical training-time prediction."
+}

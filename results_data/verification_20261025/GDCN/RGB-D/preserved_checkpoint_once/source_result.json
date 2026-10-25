@@ -1,0 +1,25 @@
+{
+  "entry_id": "GDCN|RGB-D",
+  "run_id": "GDCN_RGB_D_preserved_checkpoint_once",
+  "method": "GDCN",
+  "dataset": "RGB-D",
+  "execution_kind": "preserved_old_checkpoint_single_native_evaluation",
+  "statistic_type": "single_preserved_checkpoint_native_evaluation",
+  "evaluation_count": 1,
+  "training": false,
+  "seed_set": false,
+  "metrics": {
+    "ACC": 0.2712215320910973,
+    "NMI": 0.20752876875063622,
+    "PUR": 0.43478260869565216,
+    "ARI": 0.11103634990464671
+  },
+  "prediction_file": "verification_20261025/GDCN/RGB-D/preserved_checkpoint_once/prediction.npz",
+  "prediction_sha256": "4e16b227647ecf8c3cfc8efd4381d5018426b7205c01d365acd7d2ec1ac5a014",
+  "config_file": "verification_20261025/GDCN/RGB-D/preserved_checkpoint_once/config.json",
+  "checkpoint_file_name": "RGB-D.pth",
+  "checkpoint_sha256_at_evaluation": "3d004dc2df9f0cd5e813c0914c854e6585bf71e5b38508f7de662139a75e083f",
+  "evidence_role": "One native evaluation of a preserved checkpoint; not a historical training-time prediction.",
+  "source_reference": "https://doi.org/10.1109/LSP.2026.3668750",
+  "record_origin": "One native evaluation of a preserved checkpoint; not a historical training-time prediction."
+}

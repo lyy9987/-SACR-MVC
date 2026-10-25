@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 import subprocess
 import sys
+from runtime_environment import configure_runtime_environment, numerical_thread_environment
 
 ROOT = Path(__file__).resolve().parent
 DATASETS = ("RGB-D", "Mfeat", "CIFAR10", "Hdigit", "ALOI-100", "CIFAR100")
@@ -55,9 +56,7 @@ def main():
             p.error("--data-root is required for training")
     else:
         env["SACR_DATASET_ROOT"] = str(args.data_root.expanduser().resolve())
-    # Match the two-thread numerical-library setting used for the recorded runs.
-    for name in ("OMP_NUM_THREADS", "MKL_NUM_THREADS", "OPENBLAS_NUM_THREADS", "NUMEXPR_NUM_THREADS"):
-        env[name] = "2"
+    configure_runtime_environment(args.dataset, env)
     run_dir = args.output_dir.expanduser().resolve() / (args.dataset + "_" + args.protocol + "_" + str(cfg["args"]["seed"]) + "_" + args.variant)
     cli = dict(cfg["args"])
     cli.update(VARIANTS[args.variant])
@@ -65,7 +64,7 @@ def main():
     command = [sys.executable, "-u", str(ROOT / "src/train_final.py")]
     for name, value in cli.items():
         command += ["--" + name, str(value)]
-    print(json.dumps({"command": command, "env": {k: v for k, v in env.items() if k.startswith("SACR_")}, "cwd": str(run_dir)}, ensure_ascii=False), flush=True)
+    print(json.dumps({"command": command, "env": {k: v for k, v in env.items() if k.startswith("SACR_")}, "runtime_env": numerical_thread_environment(env), "cwd": str(run_dir)}, ensure_ascii=False), flush=True)
     if args.dry_run:
         return
     run_dir.mkdir(parents=True, exist_ok=True)

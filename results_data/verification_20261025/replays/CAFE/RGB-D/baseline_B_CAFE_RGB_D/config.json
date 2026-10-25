@@ -1,0 +1,122 @@
+{
+  "method": "CAFE",
+  "dataset": "RGB-D",
+  "run_id": "baseline_B_CAFE_RGB_D",
+  "verification_only": true,
+  "single_fixed_replay": true,
+  "table_run": null,
+  "native_arguments": [
+    "--config_file",
+    "RGBD.yaml"
+  ],
+  "original_native_command": [
+    "python",
+    "-u",
+    "main.py",
+    "--config_file",
+    "config/RGBD.yaml"
+  ],
+  "environment_overrides": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "PYTHONUNBUFFERED": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "protocol": null,
+  "selected_epoch": 110,
+  "capture_policy": {
+    "kind": "fixed_original_epoch",
+    "fixed_epoch": 110,
+    "epoch_indexing": "Original zero-based CAFE epoch; preserve epochs200 scheduler while ending after this fixed original selected prefix."
+  },
+  "input_manifest": {
+    "file_name": "RGB-D.mat",
+    "input_sha256": "b41e6f68bd1a1d4b632b0c1ecf9ecf2314c7f26519b16ffeb4ec25f27ef6ac88",
+    "labels_ordered_sha256": "f577fcc7ec87b1814ca41de1c8a2d03d105ae3fc4fbcd4c4ec26b8e8f75ca91c",
+    "sample_order_sha256": "d15cd19c4448fc0b70c34f05b36f2811779c0f7a7bbe3afee2e543bc4563ff0c",
+    "N": 1449,
+    "V": 2,
+    "K": 13,
+    "dimensions": [
+      2048,
+      300
+    ]
+  },
+  "source_files": [
+    {
+      "file_name": "dataset_loader.py",
+      "sha256": "081559ec08f8381f8e931083f80f59866fa1eeea153734a205cb729434b941fe"
+    },
+    {
+      "file_name": "main.py",
+      "sha256": "346366b647c358acd10f096e29b1e24a8a53c1abfb04065ca8797df8b61cf720"
+    },
+    {
+      "file_name": "model.py",
+      "sha256": "e45b896e2cca8dc13ec7eb14f725c7fbb150935ebad9f08852585a65a497e7f1"
+    },
+    {
+      "file_name": "train.py",
+      "sha256": "ce5d0656e7a070b91852bbab1594489c5e4bc9f517da2caa40cec1a002287ee1"
+    },
+    {
+      "file_name": "utils.py",
+      "sha256": "73ff6e37bdad783b1a751fb0491895637ca34800090b7f24ce18d99a69065a34"
+    },
+    {
+      "file_name": "alias.py",
+      "sha256": "3848e906e07b9331bd819023c5e8699287707ff90cc8acf4c402ef946016e50b"
+    },
+    {
+      "file_name": "line.py",
+      "sha256": "fb25109ba102c34b7e9fb600a4d45f055e6b0fcdb7e9542deb166dd5b0b4d51b"
+    },
+    {
+      "file_name": "__base__.py",
+      "sha256": "1f988a5ce390caf3d555b829895f189ca2ece54d36341c087a582301a4bb693a"
+    },
+    {
+      "file_name": "__init__.py",
+      "sha256": "5dd8f8e26f08019df1773197bfa7a0093acdac50bcb4943a267760fdfa589b4e"
+    },
+    {
+      "file_name": "beta_mixture.py",
+      "sha256": "e883c624027e2e7fb41a81f6e5fa3dc5dce70234cca0367115cad8f58ba83017"
+    },
+    {
+      "file_name": "faiss_kmeans.py",
+      "sha256": "6dc959246c4c86c3a5da822b6e404ff71601591a2f95e314a0e7a51e426f5615"
+    },
+    {
+      "file_name": "gaussian_mixture.py",
+      "sha256": "60b327ae5af5218100655e51d5c74ebeeb95be5dc002e487487eebfd200123a6"
+    },
+    {
+      "file_name": "__init__.py",
+      "sha256": "e4eec7673bca857759eb0c1b84421e63064feadc161c6470e3d21f0815bab59c"
+    },
+    {
+      "file_name": "kmeans.py",
+      "sha256": "296b2a825d51916be6834c3e62c0d0df86ac2f03322dc0b9464a9102ba4c0699"
+    },
+    {
+      "file_name": "kmeans_plus_plus.py",
+      "sha256": "4037a5ddcc01fd053540019e93be5b323be3110d60b9999efd6340daca504023"
+    }
+  ],
+  "original_source_locator": "selected_source_records.jsonl#CAFE|RGB-D",
+  "original_table_statistic_type": "single_run_native_best_eligible_epoch",
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "selected_native_config_file": {
+    "file_name": "RGBD.yaml",
+    "text": "dataset: RGB-D\nencoder_dim:\n  - [ 2048, 1024, 1024, 1024, 128 ]\n  - [ 300, 1024, 1024, 1024, 128 ]\nn_classes: 13\nn_samples: 1449\nbatch_size: 1449\ntemperature: 0.9\nalpha: 1\nbeta: 1\nblr: 5.0e-5\nweight_decay: 0\ndata_path: ${DATA_ROOT}\noutput_dir: CAFE/\nseed: 1\ntrain_time: 1\naccelerate: 'yes'\ndata_norm: min-max\nepochs: 200\nstart_rectify_epoch: 100\n",
+    "original_sha256": "cfa8c2b75e6982ac37235a274ddebea5db464fa077a50b336c121199c9ed6fb6",
+    "portable_text_sha256": "dc02aeb1d7c921c24c9c028491dd45cb6bd64bf56b662eb6c190f213577a4d5d",
+    "text_scope": "Portable configuration text; original_sha256 identifies the original source file, not this path-adjusted text."
+  },
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}

@@ -1,0 +1,91 @@
+{
+  "method": "SCMVC",
+  "dataset": "RGB-D",
+  "run_id": "SCMVC_RGBD_original_selected",
+  "verification_only": true,
+  "single_fixed_replay": true,
+  "table_run": null,
+  "native_arguments": [
+    "--dataset",
+    "RGB-D"
+  ],
+  "original_native_command": [
+    "python",
+    "-u",
+    "train.py",
+    "--dataset",
+    "RGB-D"
+  ],
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "OMP_NUM_THREADS": "4"
+  },
+  "protocol": {
+    "seed": 10,
+    "seeded_rngs": [
+      "torch",
+      "cuda",
+      "numpy",
+      "random"
+    ],
+    "original_pretraining_budget": 200,
+    "original_contrastive_budget": 50,
+    "batch_size": 256,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0,
+    "feature_dim": 64,
+    "high_feature_dim": 20,
+    "temperature": 1,
+    "preprocessing": "Original shared loader: transpose by inferred sample axis, sort views by descending feature dimension, per-feature minmax in float32; one-based labels shifted to zero. No SVD/view removal.",
+    "readout": "Original global H at fixed historical epoch, native KMeans(n_clusters=known K,n_init=100,random_state=None). Earlier epoch evaluations are retained because their RNG consumption belongs to the original training prefix.",
+    "selection": "Capture only fixed original selected epoch; never take a new best.",
+    "prefix_stop": "Wrapper stops immediately after the original valid() at epoch 247 completes; no training beyond the selected epoch and no repeat."
+  },
+  "selected_epoch": 247,
+  "capture_policy": {
+    "kind": "fixed_original_epoch",
+    "fixed_epoch": 247,
+    "original_total_budget": 250
+  },
+  "input_manifest": {
+    "file_name": "RGB-D.mat",
+    "input_sha256": "b41e6f68bd1a1d4b632b0c1ecf9ecf2314c7f26519b16ffeb4ec25f27ef6ac88",
+    "labels_ordered_sha256": "f577fcc7ec87b1814ca41de1c8a2d03d105ae3fc4fbcd4c4ec26b8e8f75ca91c",
+    "sample_order_sha256": "d15cd19c4448fc0b70c34f05b36f2811779c0f7a7bbe3afee2e543bc4563ff0c",
+    "N": 1449,
+    "V": 2,
+    "K": 13,
+    "dimensions": [
+      2048,
+      300
+    ]
+  },
+  "source_files": [
+    {
+      "file_name": "train.py",
+      "sha256": "6ab00051968951cdacc51486ebeeeae7815a8447f7d1673ae06170d295aacf0b"
+    },
+    {
+      "file_name": "network.py",
+      "sha256": "df449150ee4bde4919c770db7b2625038386cf5923212cc80a07bd66091a8fd8"
+    },
+    {
+      "file_name": "loss.py",
+      "sha256": "acd53e0ba75dfb72a636938231cbfce02c26172312abd67f68e6f966b65cbe21"
+    },
+    {
+      "file_name": "metric.py",
+      "sha256": "16638f36f616dc316d6cad3fe2de669dda1a9165eae323a0c76d30c15e33c748"
+    },
+    {
+      "file_name": "dataloader.py",
+      "sha256": "23fa55231cad34db3230235e8ce8d91f2a21fea2ff5606ff061b601b64f37926"
+    }
+  ],
+  "original_source_locator": "benchmark_reproductions/epoch_metrics/SCMVC_RGB-D.csv",
+  "original_table_statistic_type": "single_run_native_best_ACC_epoch_all_metrics_from_same_epoch",
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}
