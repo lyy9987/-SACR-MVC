@@ -28,4 +28,4 @@ Replot Figure 6 without training: `python results_data/scripts/reproduce_fig6_rg
 
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) records source citations and license scope. The MIT license covers the torch_clustering component. Existing copyright and author headers remain in source files.
 
-The Figure 6 helper dependency is pinned to the locally checked matplotlib 3.7.3 environment. This cleanup checked imports and `--help` only; it did not regenerate the original Figure 6 or its coordinates. Run `python results_data/scripts/reproduce_fig6_rgbd.py --help` to inspect the output-directory argument without loading arrays or running t-SNE.
+Run `python results_data/scripts/reproduce_fig6_rgbd.py --help` to inspect the output-directory argument without loading arrays or running t-SNE.
