@@ -17,16 +17,18 @@ These are upstream package access points, checked on 2026-10-20. The cloud archi
 
 `N × d` below denotes the matrix after the loader aligns the sample axis; the listed feature dimensions preserve the stored view order.
 
-| Dataset | Filename | N | K | Raw dimensions per view | MATLAB feature and label fields | Supplied table preset |
-|---|---|---:|---:|---|---|---|
-| RGB-D | `RGB-D.mat` | 1,449 | 13 | 2,048; 300 | `X` 1×2 cell (`N × d`); `Y` | Min-max, no reduction |
-| Mfeat | `Mfeat.mat` | 2,000 | 10 | 216; 76; 64; 6; 240; 47 | `X` 6×1 cell (`N × d`); `Y` | Standardization, no reduction |
-| Hdigit | `Hdigit.mat` | 10,000 | 10 | 784; 256 | `data` 1×2 cell (`d × N`); `truelabel` 1×2 identical label cells | Min-max, no reduction |
-| ALOI-100 | `ALOI-100.mat` | 10,800 | 100 | 77; 13; 64; 125 | `X` 1×4 cell (`N × d`); `Y` | Min-max, no reduction |
-| CIFAR10 | `cifar10.mat` | 50,000 | 10 | 512; 2,048; 1,024 | `data` 3×1 cell (`d × N`); `truelabel` | Truncated SVD to 384 per view, then standardization |
-| CIFAR100 | `cifar100.mat` | 50,000 | 100 | 512; 2,048; 1,024 | `data` 3×1 cell (`d × N`); `truelabel` | Truncated SVD to 256 per view, then standardization |
+| Dataset | Filename | N | K | Raw dimensions per view | MATLAB feature and label fields |
+|---|---|---:|---:|---|---|
+| RGB-D | `RGB-D.mat` | 1,449 | 13 | 2,048; 300 | `X` 1×2 cell (`N × d`); `Y` |
+| Mfeat | `Mfeat.mat` | 2,000 | 10 | 216; 76; 64; 6; 240; 47 | `X` 6×1 cell (`N × d`); `Y` |
+| Hdigit | `Hdigit.mat` | 10,000 | 10 | 784; 256 | `data` 1×2 cell (`d × N`); `truelabel` 1×2 identical label cells |
+| ALOI-100 | `ALOI-100.mat` | 10,800 | 100 | 77; 13; 64; 125 | `X` 1×4 cell (`N × d`); `Y` |
+| CIFAR10 | `cifar10.mat` | 50,000 | 10 | 512; 2,048; 1,024 | `data` 3×1 cell (`d × N`); `truelabel` |
+| CIFAR100 | `cifar100.mat` | 50,000 | 100 | 512; 2,048; 1,024 | `data` 3×1 cell (`d × N`); `truelabel` |
 
-The loader accepts `Hdigit_official.mat` or `Hdigit.mat`, preferring the former if both are present. For exact input identity, use the file that matches the `Hdigit.mat` hash below. The CIFAR10 table preset uses dimensionality 384. The reduction seed is 303 in the supplied configurations. Reduction precedes normalization. Generic loaders transpose `d × N` matrices to `N × d` and map one-based labels to zero-based labels. All stored feature views are used; the CIFAR `MissingStatus` and `index` fields are not used to mask or reorder features.
+Input preprocessing and clustering readout follow the supplied configurations for each reported local result. The dimensions above describe the original stored feature views.
+
+The loader accepts `Hdigit_official.mat` or `Hdigit.mat`, preferring the former if both are present. For exact input identity, use the file that matches the `Hdigit.mat` hash below. Generic loaders transpose `d × N` matrices to `N × d` and map one-based labels to zero-based labels. All stored feature views are used; the CIFAR `MissingStatus` and `index` fields are not used to mask or reorder features.
 
 ## SHA-256 of the recorded input files
 
