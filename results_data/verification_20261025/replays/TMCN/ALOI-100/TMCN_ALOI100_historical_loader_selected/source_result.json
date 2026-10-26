@@ -1,0 +1,28 @@
+{
+  "run_id": "TMCN_ALOI100_historical_loader_selected",
+  "entry_id": "TMCN|ALOI-100",
+  "method": "TMCN",
+  "dataset": "ALOI-100",
+  "verification_only": true,
+  "execution_kind": "single_fixed_configuration_replay",
+  "metrics": {
+    "ACC": 0.7697222222222222,
+    "NMI": 0.8842637137059661,
+    "PUR": 0.8013888888888889,
+    "ARI": 0.6930448504722052
+  },
+  "original_source_locator": "selected_source_records.jsonl#TMCN|ALOI-100",
+  "original_statistic_type": "representative_single_run",
+  "prediction_file": "verification_20261025/replays/TMCN/ALOI-100/TMCN_ALOI100_historical_loader_selected/prediction.npz",
+  "prediction_sha256": "200139f579d5d67419671150609a275cf3362c61f27929c872e3d8d07e677447",
+  "config_file": "verification_20261025/replays/TMCN/ALOI-100/TMCN_ALOI100_historical_loader_selected/config.json",
+  "selected_epoch": 300,
+  "capture_policy": {
+    "kind": "terminal_native_call",
+    "native_valid_call": 1,
+    "terminal_epoch": 300
+  },
+  "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
+  "statistic_type": "single_fixed_configuration_replay"
+}
