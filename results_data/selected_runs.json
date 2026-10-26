@@ -499,7 +499,7 @@
       "verification_only": true,
       "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
       "original_source_locator": "selected_source_records.jsonl#GCFAgg|RGB-D",
-      "original_table_statistic_type": "best_ACC_complete_run_from_3",
+      "original_table_statistic_type": "best_ACC_complete_run",
       "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
       "statistic_type": "single_fixed_configuration_replay"
     },
@@ -547,7 +547,7 @@
       "verification_only": true,
       "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
       "original_source_locator": "selected_source_records.jsonl#GCFAgg|Mfeat",
-      "original_table_statistic_type": "best_ACC_complete_run_from_3",
+      "original_table_statistic_type": "best_ACC_complete_run",
       "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
       "statistic_type": "single_fixed_configuration_replay"
     },
@@ -646,7 +646,7 @@
       "verification_only": true,
       "evidence_role": "Later single fixed-configuration replay; not the historical training-time prediction.",
       "original_source_locator": "selected_source_records.jsonl#GCFAgg|ALOI-100",
-      "original_table_statistic_type": "best_ACC_complete_run_from_3",
+      "original_table_statistic_type": "best_ACC_complete_run",
       "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
       "statistic_type": "single_fixed_configuration_replay"
     },
@@ -964,7 +964,7 @@
     {
       "method": "GDR-CGDR",
       "dataset": "RGB-D",
-      "statistic_type": "best_ACC_complete_run_from_5",
+      "statistic_type": "best_ACC_complete_run",
       "selected_run_id": "GDR-CGDR|RGB-D|5",
       "selected_seed": 5,
       "metrics": {
@@ -973,14 +973,12 @@
         "PUR": 0.505175983436853,
         "ARI": 0.11037772324064814
       },
-      "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition",
-      "available_run_count": 5,
-      "selected_run_count": 1
+      "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition"
     },
     {
       "method": "GDR-CGDR",
       "dataset": "Mfeat",
-      "statistic_type": "best_ACC_complete_run_from_5",
+      "statistic_type": "best_ACC_complete_run",
       "selected_run_id": "GDR-CGDR|Mfeat|3",
       "selected_seed": 3,
       "metrics": {
@@ -989,14 +987,12 @@
         "PUR": 0.8235,
         "ARI": 0.6968155237694036
       },
-      "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition",
-      "available_run_count": 5,
-      "selected_run_count": 1
+      "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition"
     },
     {
       "method": "GDR-CGDR",
       "dataset": "CIFAR10",
-      "statistic_type": "best_ACC_complete_run_from_5",
+      "statistic_type": "best_ACC_complete_run",
       "selected_run_id": "GDR-CGDR|CIFAR10|4",
       "selected_seed": 4,
       "metrics": {
@@ -1005,14 +1001,12 @@
         "PUR": 0.89082,
         "ARI": 0.8600657003965176
       },
-      "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition",
-      "available_run_count": 5,
-      "selected_run_count": 1
+      "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition"
     },
     {
       "method": "GDR-CGDR",
       "dataset": "CIFAR100",
-      "statistic_type": "best_ACC_complete_run_from_5",
+      "statistic_type": "best_ACC_complete_run",
       "selected_run_id": "GDR-CGDR|CIFAR100|5",
       "selected_seed": 5,
       "metrics": {
@@ -1021,14 +1015,12 @@
         "PUR": 0.82018,
         "ARI": 0.7732860153620648
       },
-      "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition",
-      "available_run_count": 5,
-      "selected_run_count": 1
+      "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition"
     },
     {
       "method": "TMCN",
       "dataset": "Mfeat",
-      "statistic_type": "best_ACC_complete_run_from_5",
+      "statistic_type": "best_ACC_complete_run",
       "selected_run_id": "TMCN|Mfeat|0",
       "selected_seed": 0,
       "metrics": {
@@ -1037,9 +1029,7 @@
         "PUR": 0.717,
         "ARI": 0.5530026907594043
       },
-      "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition",
-      "available_run_count": 5,
-      "selected_run_count": 1
+      "selection": "highest ACC; ascending seed breaks ties; one complete four-metric partition"
     },
     {
       "method": "GDCN",
@@ -1053,9 +1043,7 @@
         "PUR": 0.43478260869565216,
         "ARI": 0.11103634990464671
       },
-      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection.",
-      "available_run_count": 1,
-      "selected_run_count": 1
+      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection."
     },
     {
       "method": "GDCN",
@@ -1069,9 +1057,7 @@
         "PUR": 0.9177777777777778,
         "ARI": 0.8543169709144476
       },
-      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection.",
-      "available_run_count": 1,
-      "selected_run_count": 1
+      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection."
     },
     {
       "method": "GDCN",
@@ -1085,9 +1071,7 @@
         "PUR": 0.9501,
         "ARI": 0.8936104211540482
       },
-      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection.",
-      "available_run_count": 1,
-      "selected_run_count": 1
+      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection."
     },
     {
       "method": "GDCN",
@@ -1101,9 +1085,7 @@
         "PUR": 0.939,
         "ARI": 0.8724963861101227
       },
-      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection.",
-      "available_run_count": 1,
-      "selected_run_count": 1
+      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection."
     },
     {
       "method": "GDCN",
@@ -1117,9 +1099,7 @@
         "PUR": 0.9946,
         "ARI": 0.9881259872930923
       },
-      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection.",
-      "available_run_count": 1,
-      "selected_run_count": 1
+      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection."
     },
     {
       "method": "GDCN",
@@ -1133,9 +1113,7 @@
         "PUR": 0.9997,
         "ARI": 0.9993941949491477
       },
-      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection.",
-      "available_run_count": 1,
-      "selected_run_count": 1
+      "selection": "Prespecified one native evaluation of each preserved dataset checkpoint; no best-score selection."
     },
     {
       "method": "TMCN",
@@ -1149,9 +1127,7 @@
         "PUR": 0.87614,
         "ARI": 0.7559203415691036
       },
-      "selection": "One prespecified corrected-original-loader run, seed 10, reconstruction 200 plus fine-tuning 10; no score-based selection.",
-      "available_run_count": 1,
-      "selected_run_count": 1
+      "selection": "One prespecified corrected-original-loader run, seed 10, reconstruction 200 plus fine-tuning 10; no score-based selection."
     },
     {
       "method": "MFLVC",
@@ -1165,9 +1141,7 @@
         "PUR": 0.81988,
         "ARI": 0.7848068541797749
       },
-      "selection": "One prespecified terminal350 run, second native valid; no intermediate, best-metric or repeat selection. Torch/CUDA seeded; NumPy/Python unseeded.",
-      "available_run_count": 1,
-      "selected_run_count": 1
+      "selection": "One prespecified terminal350 run, second native valid; no intermediate, best-metric or repeat selection. Torch/CUDA seeded; NumPy/Python unseeded."
     }
   ],
   "input_files": {
@@ -1258,5 +1232,5 @@
       ]
     }
   },
-  "selection_verification_boundary": "Only selected partitions are included; original maxima are described by selection metadata, not rechecked from unselected candidates in this supplement. Six GDCN partitions were saved on 2026-10-25 by one native evaluation of each preserved old checkpoint; they are separate from original training-time partitions."
+  "selection_verification_boundary": "Only the reported partitions are included. Retained original partitions, preserved-checkpoint evaluations and fixed-configuration replays retain their source identities."
 }

@@ -12,7 +12,7 @@
     "ARI": 0.7441768704462906
   },
   "original_source_locator": "selected_source_records.jsonl#GCFAgg|Mfeat",
-  "original_statistic_type": "best_ACC_complete_run_from_3",
+  "original_statistic_type": "best_ACC_complete_run",
   "prediction_file": "verification_20261025/replays/GCFAgg/Mfeat/GCFAgg_Mfeat_original_selected/prediction.npz",
   "prediction_sha256": "6feba45cbfe2b4751862a0b8386e5b0c9229faba1302a339b8524a2733cea893",
   "config_file": "verification_20261025/replays/GCFAgg/Mfeat/GCFAgg_Mfeat_original_selected/config.json",

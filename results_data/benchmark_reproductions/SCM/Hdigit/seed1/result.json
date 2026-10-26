@@ -21,7 +21,6 @@
     "official_repository": "https://github.com/SubmissionsIn/SCM",
     "official_commit": "f23dbc25a7dda62651f12d6cba53f53aa72548dc",
     "training_seed": 1,
-    "training_runs": 1,
     "iterations": 1000,
     "iteration_definition": "One first random minibatch from a freshly shuffled DataLoader, exactly as official SCM(); not one full epoch",
     "batch_size": 256,
@@ -57,7 +56,7 @@
   "final_prediction_sha256": "1fd3e3816d42dd1bbd545b2fa90b479c7cd382df70c94d4a6d13186a73d62362",
   "final_checkpoint_sha256": "2d2d52bc70041eac9ee74d5ecc4880ddbd72ec69267f52a525e8a24b0dd448ef",
   "original_config_sha256": "7e0fe38947ab2e2d11437d88a3dfd38a96e953fec55cd69d572b46c3eb387e98",
-  "portable_config_sha256": "8f1b2476232df230cfa1e6a50305b3b07fc30c9d7aef681f99fbdb0b24a4add2",
+  "portable_config_sha256": "d0eed36bb6fe9dd61a678330ed5e8e43a026ec4d197f28f161f2c01a3b503984",
   "original_input_manifest_sha256": "a8bd5b7dc89a946c6fb444b20db4890adc31aad7f1802f5d957c4f1aba95d7a7",
   "portable_input_manifest_sha256": "8fa1903d40c57d59d2ef7e2f47e30850ddf326f15d7fa447e7c611d5b13ab829"
 }

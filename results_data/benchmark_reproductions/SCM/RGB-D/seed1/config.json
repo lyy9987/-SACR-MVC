@@ -6,7 +6,6 @@
   "official_repository": "https://github.com/SubmissionsIn/SCM",
   "official_commit": "f23dbc25a7dda62651f12d6cba53f53aa72548dc",
   "training_seed": 1,
-  "training_runs": 1,
   "iterations": 1000,
   "iteration_definition": "One first random minibatch from a freshly shuffled DataLoader, exactly as official SCM(); not one full epoch",
   "batch_size": 256,

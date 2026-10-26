@@ -12,7 +12,7 @@
     "ARI": 0.8378703848467126
   },
   "original_source_locator": "selected_source_records.jsonl#GCFAgg|ALOI-100",
-  "original_statistic_type": "best_ACC_complete_run_from_3",
+  "original_statistic_type": "best_ACC_complete_run",
   "prediction_file": "verification_20261025/replays/GCFAgg/ALOI-100/GCFAgg_ALOI100_original_selected/prediction.npz",
   "prediction_sha256": "8c73ef08923227a8b11569c5fe0571bf661c6a34ae80b2d36db46b4d4f487a8e",
   "config_file": "verification_20261025/replays/GCFAgg/ALOI-100/GCFAgg_ALOI100_original_selected/config.json",

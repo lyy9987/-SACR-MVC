@@ -4,7 +4,6 @@
   "method": "MFLVC",
   "dataset": "CIFAR100",
   "statistic_type": "representative_single_run",
-  "run_count": 1,
   "seed": 10,
   "selected_epoch": 350,
   "native_valid_call": 2,

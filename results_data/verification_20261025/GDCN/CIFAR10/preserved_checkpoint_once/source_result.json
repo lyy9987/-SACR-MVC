@@ -5,7 +5,6 @@
   "dataset": "CIFAR10",
   "execution_kind": "preserved_old_checkpoint_single_native_evaluation",
   "statistic_type": "single_preserved_checkpoint_native_evaluation",
-  "evaluation_count": 1,
   "training": false,
   "seed_set": false,
   "metrics": {

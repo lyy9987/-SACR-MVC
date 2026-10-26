@@ -108,7 +108,7 @@
     }
   ],
   "original_source_locator": "selected_source_records.jsonl#GCFAgg|RGB-D",
-  "original_table_statistic_type": "best_ACC_complete_run_from_3",
+  "original_table_statistic_type": "best_ACC_complete_run",
   "scope": "Later single fixed-configuration replay; not the historical training-time prediction.",
   "record_origin": "Later single fixed-configuration replay; not the historical training-time prediction.",
   "statistic_type": "single_fixed_configuration_replay"

@@ -3,12 +3,11 @@
   "dataset": "CIFAR10",
   "execution_kind": "preserved_old_checkpoint_single_native_evaluation",
   "statistic_type": "single_preserved_checkpoint_native_evaluation",
-  "evaluation_count": 1,
   "training": false,
   "seed_set": false,
   "selected_seed": null,
   "native_evaluation": "Exactly one original metric.valid invocation; original inference batches256/shuffleFalse; diffusion B10/45 samplingsteps; KMeans n_init100 without random_state unchanged.",
-  "repeat_policy": "One prespecified native evaluation per preserved dataset checkpoint; no best-score choice across repeats or the separate Mfeat retraining attempt.",
+  "repeat_policy": "Native evaluation of the preserved dataset checkpoint.",
   "network": {
     "constructor": "GCFAggMVC",
     "low_feature_dim": 512,
